@@ -1,0 +1,57 @@
+.web-section {
+    width: 100vw;
+    margin-left: calc((100% - 100vw) / 2);
+    margin-right: calc((100% - 100vw) / 2);
+    padding: 0;
+}
+
+.web-section .first-line h3,
+.web-section .first-line p {
+    /* font-family: 'Pragmatica'; */
+    font-family: 'Work Sans', sans-serif;
+}
+
+.first-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    border-top: 1px solid rgb(165, 165, 165);
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.first-line h3,
+.first-line p {
+    margin: 0;
+    margin-inline: 1em;
+    display: block;
+    font-size: 12px;
+}
+
+.first-line .description {
+    max-width: 600px;
+    line-height: 1.2;
+}
+
+.first-line h3 {
+    font-size: 20px;
+    letter-spacing: 1.1px;
+}
+
+.first-line h3 svg {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    vertical-align: top;
+}
+
+.second-line {
+    width: 100%;
+    margin-top: 0px;
+}
+
+.second-line .carousel {
+    width: 100%;
+    overflow: hidden;
+}

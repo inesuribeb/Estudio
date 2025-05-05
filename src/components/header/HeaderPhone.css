@@ -1,0 +1,219 @@
+.header-phone {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    /* font-family: 'Pragmatica', -apple-system, BlinkMacSystemFont, sans-serif; */
+    font-family: 'Work Sans', sans-serif;
+    background: transparent; 
+}
+
+.header-phone__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 84px;
+    padding: 0 16px;
+}
+
+
+.header-phone__title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    /* font-family: 'Pragmatica'; */
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 1.4px;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 84px;
+    right: 0;
+    bottom: 0;
+    background: #f4f4f4;
+    border-left: 1px solid black;
+    z-index: 100;
+    opacity: 0;
+    animation: fadeIn 0.2s ease-in-out 0.2s forwards;
+}
+
+.mobile-menu__nav {
+    padding-top: 120px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    /* font-family: 'Pragmatica'; */
+    font-family: 'Work Sans', sans-serif;
+    opacity: 0;
+    animation: fadeIn 0.4s ease-in-out 0.4s forwards;
+    padding-right: 30px;
+
+    position:relative;
+}
+.header-special-bg *{
+    background-color: #E4B5C2;
+  }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.mobile-menu__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    /* font-family: 'Pragmatica'; */
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+
+    justify-content: space-between; 
+    width:100%
+}
+
+.mobile-menu__link span:last-child {
+    margin-left: auto; 
+}
+
+.mobile-menu__link:hover {
+    opacity: 0.7;
+}
+
+/* .arrow-icon {
+    position:absolute;
+} */
+.arrow-icon-left {
+    position:absolute;
+}
+
+.arrow-icon-left svg{
+    color: grey;
+    width: 18px;
+    height: 18px;
+    vertical-align: bottom;
+}
+
+.arrow-icon-left button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.arrow-icon svg{
+    color: grey;
+    width: 18px;
+    height: 18px;
+    vertical-align: bottom;
+}
+
+.arrow-icon button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.hamburger-button {
+    position: absolute;
+    left: 29px;
+    padding: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 45;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-line {
+    width: 18px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-line.top {
+    transform: translateY(-6px);
+}
+
+.hamburger-line.bottom {
+    transform: translateY(6px);
+}
+
+.hamburger-button.active .hamburger-line.top {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-button.active .hamburger-line.bottom {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-button.active .hamburger-line.top,
+.hamburger-button.active .hamburger-line.middle,
+.hamburger-button.active .hamburger-line.bottom {
+    transition: transform 0.2s ease-in-out 0.2s;
+}
+
+.hamburger-button.active .hamburger-line.top,
+.hamburger-button.active .hamburger-line.middle {
+    transform: rotate(45deg);
+}
+
+.hamburger-button.active .hamburger-line.bottom {
+    transform: rotate(-45deg);
+}
+
+
+
+
+.mobile-menu submenu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 84px;
+    padding: 0 16px;
+}
+
+.submenu-header {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.submenu-header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+
+
+

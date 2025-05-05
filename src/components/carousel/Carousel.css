@@ -1,0 +1,45 @@
+@keyframes scroll {
+    0% { 
+        transform: translateX(0); 
+    }
+    100% { 
+        transform: translateX(-50%);
+    }
+}
+
+.carousel {
+    height: 350px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    width: max-content;
+    height: 100%;
+    animation: scroll 100s linear infinite;
+    animation-play-state: paused;
+}
+
+.carousel-track.is-visible {
+    animation-play-state: running;
+}
+
+.carousel-track:hover {
+    animation-play-state: paused;
+}
+
+.carousel-track > img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+
+
+
+

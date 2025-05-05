@@ -1,0 +1,24 @@
+.footer-content {
+    background-color: black;
+    color: #F6EAD3;
+    padding: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content h1 {
+    font-size: 11px;
+    margin: 0;
+}
+
+.footer-content .my-name {
+    font-size: 30px;
+    margin-bottom: 5px;
+}

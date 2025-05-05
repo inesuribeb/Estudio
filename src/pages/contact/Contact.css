@@ -1,0 +1,219 @@
+.contact-page {
+    width: 100%;
+    height: 0;
+    /* background-color: #E4B5C2; */
+    padding: 0;
+    /* transition: all 0.7s ease-out; */
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: calc(16% - 4rem) calc(16% - 4rem) calc(68% - 4rem);
+    gap: 5rem;
+    box-sizing: border-box;
+    position: relative;
+
+    transform: translateY(-100%);
+    height: 0;
+}
+
+.contact-page::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100% + 60px);
+    height: calc(100% + 60px);
+    background-image: url('/CAPTURAS/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(25px) saturate(0.8);
+    z-index: -1;
+    animation: zoomBackground 10s infinite alternate ease-in-out;
+}
+
+@keyframes zoomBackground {
+    0% {
+        background-size: 100%;
+    }
+    100% {
+        background-size: 160%;
+    }
+}
+
+.contact-page > div {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.contact-page.open {
+    height: 90vh;
+    padding-left: 1rem;
+    padding-top: 0rem;
+    box-sizing: border-box;
+
+    transform: translateY(0);
+    height: 90vh;
+    transition: height 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.contact-page.open > div {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.8s ease-out 0.3s;
+}
+
+
+.first-column-contact,
+.second-column-contact,
+.third-column-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.first-column-contact h5,
+.second-column-contact h5,
+.third-column-contact h5 {
+    background-color: transparent;
+    /* font-family: 'Pragmatica'; */
+    font-family: 'Work Sans', sans-serif;
+
+    font-weight: 800;
+    box-sizing: border-box;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    /* color: #D50429; */
+    color: wheat;
+}
+
+.third-column-contact p {
+    background-color: transparent;
+    font-size: clamp(2rem, 2.25vw, 1.65rem);
+    box-sizing: border-box;
+    /* color: #D50429; */
+    color: wheat;
+    /* font-family: 'Pragmatica'; */
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.third-column-contact p i {
+    background-color: transparent;
+}
+
+.first-column-contact ul,
+.second-column-contact ul {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.first-column-contact li,
+.second-column-contact li {
+    background-color: transparent;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    /* font-family: 'Pragmatica'; */
+    font-family: 'Work Sans', sans-serif;
+
+    font-weight: 800;
+    width: 80%;
+    /* color: #D50429; */
+    color: wheat;
+}
+
+.second-line-contact ul li a {
+    background-color: transparent;
+}
+
+.second-line-contact ul li a:hover {
+    opacity: 0.7;
+}
+
+.first-line-contact,
+.second-line-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: transparent;
+}
+
+.first-line-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 60px;
+}
+
+.first-line-contact img {
+    background: transparent;
+    display: flex;
+    position: relative;
+    top: 0.5rem;
+    left: -1.7rem;
+    width: 80%;
+    /* filter: brightness(0) 
+            saturate(100%)    
+            invert(49%)                      
+            sepia(75%)                      
+            hue-rotate(310deg)              
+            saturate(565%)                 
+            brightness(77%)   */
+        filter: 
+            brightness(1.3)     /* Aumentamos el brillo */
+            invert(69%)                      
+            saturate(40%)      /* Reducimos la saturación para hacerlo más pastel */
+            sepia(40%)         /* Mantenemos algo de sepia para el tono cálido */
+            hue-rotate(30deg)  /* Rotamos hacia tonos más amarillentos */
+            brightness(96%); 
+}
+
+.second-line-contact ul li svg {
+    width: 13px;
+    height: 13px;
+    background: transparent;
+    stroke-width: 0.5;
+}
+
+.contact-page .close-button {
+    position: absolute;
+    top: 1.4rem;
+    right: 1rem;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    /* font-family: 'Pragmatica'; */
+    font-family: 'Work Sans', sans-serif;
+
+    /* color: #D50429; */
+    color: wheat;
+    cursor: pointer;
+    font-size: 0.83em;
+    font-weight: 800;
+    z-index: 10;
+    letter-spacing: 0.20em;
+}
+
+.contact-page.open .close-button {
+    display: block;
+}
+
+.contact-page .close-button:hover {
+    opacity: 0.7;
+}
+
+
+.contact-page.closing {
+    transform: translateY(-100%);
+    height: 0;
+    transition: height 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.contact-page.closing > div {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}

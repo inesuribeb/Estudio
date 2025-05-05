@@ -1,0 +1,60 @@
+.home-container {
+    background-image: url(/CAPTURAS/fondohome.png); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    color: white; 
+    position: relative;
+    animation: fadeInBg 0.5s ease-in forwards;
+}
+
+@keyframes fadeInBg {
+    from { 
+        opacity: 0; 
+    }
+    to { 
+        opacity: 1; 
+    }
+}
+
+.title-home-desktop {
+    position: absolute;
+    top: 75%; 
+    left: 20%; 
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.title-home-desktop-text {
+    color: rgb(208,45,28); 
+    background-color: transparent;
+    text-decoration: none; 
+    letter-spacing: 0.10em;
+    font-size: 170%;
+    font-family: 'BLUE OCEAN';
+    transition: color 0.3s ease; 
+    animation: fadeInHome 2s ease-in-out infinite;
+    z-index: 100;
+
+}
+
+.title-home-desktop-text:hover {
+    color: black;
+}
+
+@keyframes fadeInHome {
+    0% { opacity: 0.6; }
+    50% { opacity: 0.8; }
+    100% { opacity: 0.6; }
+}
+
+@font-face {
+    font-family: "BLUE OCEAN";
+    src: url('/fonts/BLUE OCEAN.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal;
+}

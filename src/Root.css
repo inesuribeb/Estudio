@@ -1,0 +1,46 @@
+.outlet-desktop {
+    margin-top: 100px;
+  animation: fadeInDesktop 0.5s ease-in forwards;
+}
+
+@keyframes fadeInDesktop {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+  /* .footer {
+    animation: fadeInFooter 0.5s ease-in forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards; 
+    will-change: opacity; 
+}
+
+@keyframes fadeInFooter {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+} */
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInDesktop 0.7s ease-in forwards;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInDesktop {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}

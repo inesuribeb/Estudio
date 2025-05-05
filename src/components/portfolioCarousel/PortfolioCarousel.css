@@ -1,0 +1,55 @@
+@keyframes scrollMobile {
+    0% { 
+        transform: translateX(0); 
+    }
+    100% { 
+        transform: translateX(-50%);
+    }
+}
+
+.carousel-portfolio-mobile {
+    height: 300px; 
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position: relative;
+
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x; 
+}
+
+.carousel-track-mobile {
+    display: flex;
+    width: max-content;
+    height: 100%;
+    animation: scrollMobile 100s linear infinite;
+    animation-play-state: running; 
+    will-change: transform; 
+}
+
+.carousel-track-mobile.is-visible {
+    animation-play-state: running;
+}
+
+.carousel-track-mobile:hover {
+    animation-play-state: paused;
+}
+
+.carousel-track-mobile > img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .carousel-portfolio-mobile {
+        height: 250px; 
+    }
+
+    .carousel-track-mobile > img {
+        height: 100%;
+        width: auto;
+    }
+}

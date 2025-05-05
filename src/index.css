@@ -1,0 +1,63 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300&display=swap');
+
+/* * {
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+.root-phone__content {
+  background-color:  #f4f4f4;
+  /* background-color: #F6EAD3; */
+  min-height: 100vh;
+}
+
+html, body {
+  margin: 0; 
+  height: 100%; 
+  background-color: #f4f4f4;
+  /* background-color: #F6EAD3; */
+  flex-direction: column;
+  display: flex;
+}
+
+a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  /* font-family: 'Times New Roman';  */
+  font-family: 'Pragmatica';
+  font-size: 15px; 
+  text-transform: uppercase; 
+  font-weight: 300;
+  letter-spacing: 0.30em;
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  /* background-color: #F6EAD3; */
+
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  margin-top: 10vh;
+  background-color: #f4f4f4;
+  /* background-color: #F6EAD3; */
+
+}
