@@ -22,10 +22,10 @@ function Header2({ onContactClick }) {
         // Guardar la posición actual de scroll
         const scrollPosition = window.scrollY;
         localStorage.setItem(SCROLL_POSITION_KEY, scrollPosition.toString());
-        
+
         // Indicar que se está realizando un cambio de idioma
         localStorage.setItem('is_language_change', 'true');
-        
+
         // Llamar a la función de cambio de idioma del contexto
         toggleLanguage();
     };
@@ -198,6 +198,7 @@ function Header2({ onContactClick }) {
                                 // className={isActive('/services') ? 'active' : ''}
                                 className={isActive(getRoute('services')) ? 'active' : ''}  // ✅ CORRECTO
                             >
+                                {isActive(getRoute('services')) && <span className="active-indicator"></span>}
                                 {t('services')}
                             </Link>
                         </li>
@@ -209,6 +210,7 @@ function Header2({ onContactClick }) {
                                 // className={isActive('/portfolio') ? 'active' : ''}
                                 className={isActive(getRoute('portfolio')) ? 'active' : ''}  // ✅ CORRECTO
                             >
+                                {isActive(getRoute('portfolio')) && <span className="active-indicator"></span>}
                                 {t('portfolio')}
                             </Link>
                         </li>
@@ -220,10 +222,11 @@ function Header2({ onContactClick }) {
                                 // className={isActive('/about') ? 'active' : ''}
                                 className={isActive(getRoute('about')) ? 'active' : ''}  // ✅ CORRECTO
                             >
+                                {isActive(getRoute('about')) && <span className="active-indicator"></span>}
                                 {t('about')}
                             </Link>
                         </li>
-                       
+
                     </ul>
                 </nav>
             </div>

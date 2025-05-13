@@ -1,3 +1,5 @@
+// Root.jsx modificado para ocultar footer en rutas de menú y portafolio
+
 import { Outlet } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { LanguageProvider } from './components/contexts/LanguageContext';
@@ -14,7 +16,14 @@ function Root() {
     const [isUserScrolling, setIsUserScrolling] = useState(false);
     const location = useLocation();
 
+    // Verificar si estamos en una ruta de menú
     const isMenuRoute = location.pathname === '/menu' || location.pathname === '/main-menu';
+    
+    // Verificar si estamos en una ruta de portafolio
+    const isPortfolioRoute = location.pathname === '/portfolio' || location.pathname === '/portafolio';
+    
+    // Verificar si debemos ocultar el footer (en rutas de menú o portafolio)
+    const hideFooter = isMenuRoute || isPortfolioRoute;
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
@@ -71,17 +80,8 @@ function Root() {
                     onClose={() => setIsContactOpen(false)}
                     headerClosing={headerClosing}
                 />
-                {/* <div className={`main-content ${isContactOpen ? 'shifted' : ''}`}>
-                <Header onContactClick={handleContactClick} />
-                <main className='outlet-desktop' key={location.pathname}>
-                    <Outlet />
-                </main>
-            </div> */}
 
-                {/* <div className={`main-content ${isContactOpen ? 'shifted' : ''}`}>
-                    <Header2 onContactClick={handleContactClick} /> */}
                 <div className={`main-content ${isContactOpen && !isMenuRoute ? 'shifted' : ''}`}>
-                    {/* Mostrar Header solo si no estamos en una ruta de menú */}
                     {!isMenuRoute && (
                         <Header2 onContactClick={handleContactClick} />
                     )}
@@ -95,10 +95,13 @@ function Root() {
                         }} />
                     </main>
                 </div>
-                {/* <Footer className="footer"></Footer> */}
-                <div className="fade-in" key={location.pathname}>
-                    <Footer />
-                </div>
+                
+                {/* Mostrar Footer solo si no estamos en una ruta de menú o portafolio */}
+                {!hideFooter && (
+                    <div className="fade-in" key={location.pathname}>
+                        <Footer />
+                    </div>
+                )}
 
                 <Modal
                     isOpen={isModalOpen}

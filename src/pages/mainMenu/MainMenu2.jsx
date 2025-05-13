@@ -2,16 +2,15 @@ import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../../components/contexts/LanguageContext';
 import './mainMenu.css'
 
-// function MainMenu2({ t, getRoute }) 
-function MainMenu2(){
+function MainMenu2() {
     const { t, getRoute } = useLanguage();
+    const location = useLocation();
 
     const isActive = (path) => {
         return location.pathname === path;
     };
 
     const handleNavClick = () => {
-
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
@@ -20,34 +19,44 @@ function MainMenu2(){
 
     return (
         <div className='main-menu-wrapper'>
-            {/* <h1>Hola</h1> */}
+            <div className='red-mini-circle-menu'></div>
+
             <nav>
                 <ul>
                     <li>
                         <Link
                             to={getRoute('services')}
                             onClick={handleNavClick}
-                            className={isActive(getRoute('services')) ? 'active' : ''}  // ✅ CORRECTO
+                            className={isActive(getRoute('services')) ? 'active' : ''}
                         >
-                            {t('services')}
+                            <div className="link-content">
+                                <span className="menu-number menu-number-right">[01]</span>
+                                <span className="text-content">{t('services')}</span>
+                            </div>
                         </Link>
                     </li>
                     <li>
                         <Link
                             to={getRoute('portfolio')}
                             onClick={handleNavClick}
-                            className={isActive(getRoute('portfolio')) ? 'active' : ''}  // ✅ CORRECTO
+                            className={isActive(getRoute('portfolio')) ? 'active' : ''}
                         >
-                            {t('portfolio')}
+                            <div className="link-content">
+                                <span className="menu-number menu-number-left">[02]</span>
+                                <span className="text-content">{t('portfolio')}</span>
+                            </div>
                         </Link>
                     </li>
                     <li>
                         <Link
                             to={getRoute('about')}
                             onClick={handleNavClick}
-                            className={isActive(getRoute('about')) ? 'active' : ''}  // ✅ CORRECTO
+                            className={isActive(getRoute('about')) ? 'active' : ''}
                         >
-                            {t('about')}
+                            <div className="link-content">
+                                <span className="menu-number menu-number-right">[03]</span>
+                                <span className="text-content">{t('about')}</span>
+                            </div>
                         </Link>
                     </li>
                 </ul>

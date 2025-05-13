@@ -67,18 +67,32 @@
 }
 
 /* MENÚ NAVEGACIÓN */
-.navigator-mobile {
+/* .navigator-mobile {
     position: fixed;
     top: 0;
     left: -100%;
     width: 27%;
-    /* width: 100%; */
     height: 100vh;
     background-color: var(--light-color);
     z-index: 150;
     display: flex;
     align-items: center;
-    transition: left 0.3s ease; /* Solo una vez */
+    transition: left 0.3s ease; 
+} */
+.navigator-mobile {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    /* top: -7rem;
+    left: 0; */
+    width: 100%;
+    height: 7rem;
+    margin-bottom: 0rem;
+    background-color: var(--light-color);
+    z-index: 150;
+    display: flex;
+    align-items: flex-start;
+    transition: top 0.5s ease; 
 }
 
 .navigator-mobile.open {
@@ -91,10 +105,13 @@
 
 .navigator-mobile ul {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     list-style: none;
     padding: 50px 0;
     margin: 0;
+
+    flex-direction: row;
+    justify-content: center;
 }
 
 .navigator-mobile li {
@@ -107,10 +124,60 @@
     font-family: 'Work Sans', sans-serif;
     letter-spacing: 0.30em;
     font-size: 15px;
+
+    position: relative; /* Necesario para el posicionamiento absoluto de los corchetes */
+    display: inline-block; 
 }
 
-.navigator-mobile .active {
+/* .navigator-mobile .active {
     color: red;
+} */
+.navigator-mobile .active {
+    color: inherit; /* Mantiene el color original en lugar de rojo */
+}
+
+.navigator-mobile a .active-indicator {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--corporative-color);
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    right: -10px;
+}
+
+.navigator-mobile .active::before {
+    content: "[";
+    position: absolute;
+    left: -10px;
+    margin-right: 0; 
+}
+
+.navigator-mobile .active::after {
+    content: "]";
+    position: absolute;
+    right: -10px;
+    margin-left: 0; 
+}
+
+.navigator-mobile li a:hover {
+    color: inherit;
+    position: relative;
+}
+
+.navigator-mobile li a:hover::before {
+    content: "[";
+    position: absolute;
+    left: -10px;
+    margin-right: 0; 
+}
+
+.navigator-mobile li a:hover::after {
+    content: "]";
+    position: absolute;
+    right: -10px;
+    margin-left: 0; 
 }
 
 .contact-button {
