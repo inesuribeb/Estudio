@@ -1,0 +1,146 @@
+/* CSS limpio sin duplicados */
+
+.header-container-mobile {
+    width: 100%;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    padding: 30px 50px;
+}
+
+.header-container-mobile:hover {
+    background-color: var(--light-color);
+}
+
+.header-top-section {
+    display: flex;
+    position: relative; 
+    flex-direction: row;
+    /* gap: 2rem; */
+    height: 2.5rem;
+    z-index: 500;
+}
+
+.header-hamburger {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: auto; /* Permitir que tome el ancho natural */
+
+    margin-right: 2rem;
+    transition: all 0.3s ease;
+}
+
+.red-mini-circle {
+    display: flex;
+    width: 15px;
+    height: 15px;
+    background-color: var(--corporative-color);
+    border-radius: 50%;
+}
+
+.header-title-div {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    transition: margin-left 0.3s ease;
+}
+
+.header-title {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-title h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0em;
+    margin: 0;
+    font-family: 'Argesta';
+    padding: 0;
+    white-space: nowrap;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* MENÚ NAVEGACIÓN */
+.navigator-mobile {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    /* width: 27%; */
+    width: 50%;
+    height: 100vh;
+    background-color: var(--light-color);
+    z-index: 150;
+    display: flex;
+    align-items: center;
+    transition: left 0.3s ease; /* Solo una vez */
+}
+
+.navigator-mobile.open {
+    left: 0;
+}
+
+.navigator-mobile nav {
+    width: 100%;
+}
+
+.navigator-mobile ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 50px 0;
+    margin: 0;
+}
+
+.navigator-mobile li {
+    margin: 20px 40px;
+}
+
+.navigator-mobile a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 0.30em;
+    font-size: 15px;
+}
+
+.navigator-mobile .active {
+    color: red;
+}
+
+.contact-button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 0.30em;
+}
+
+/* EFECTOS HOVER */
+.navigator-mobile.open ~ .header-top-section .header-hamburger svg {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+/* .navigator-mobile.open ~ .header-top-section .header-hamburger {
+    width: 0;
+    margin-right: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    overflow: hidden;
+} */
+
+/* .navigator-mobile.open ~ .header-top-section .header-title-div {
+    margin-left: -30px; 
+    transition: margin-left 0.3s ease;
+} */

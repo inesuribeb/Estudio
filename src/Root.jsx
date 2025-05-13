@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import Header from './components/header/Header';
+import Header2 from './components/header/Header2';
 import React, { useState, useEffect } from 'react';
 import Contact from './pages/contact/Contact';
 import Modal from './pages/art/Modal';
@@ -76,7 +76,7 @@ function Root() {
             </div> */}
 
             <div className={`main-content ${isContactOpen ? 'shifted' : ''}`}>
-                <Header onContactClick={handleContactClick} />
+                <Header2 onContactClick={handleContactClick} />
                 <main className='outlet-desktop' key={location.pathname}>
                     <Outlet context={{
                         isModalOpen,

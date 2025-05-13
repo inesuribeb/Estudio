@@ -61,3 +61,8 @@ main {
   /* background-color: #F6EAD3; */
 
 }
+
+:root {
+  --corporative-color: red;
+  --light-color: #f4f4f4;
+}

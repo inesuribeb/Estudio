@@ -1,4 +1,4 @@
-import React, { useState , useEffect } from 'react';
+import { useState , useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 
@@ -21,24 +21,6 @@ function Header({ onContactClick }) {
     }
   };
 
-  // const handleNavClick = () => {
-  //   const mainContent = document.querySelector('.main-content');
-  //   if (mainContent?.classList.contains('shifted')) {
-  //     handleContactToggle();
-  //     setTimeout(() => {
-  //       window.scrollTo({
-  //         top: 0,
-  //         behavior: 'smooth'
-  //       });
-  //     }, 600);
-  //   } else {
-  //     window.scrollTo({
-  //       top: 0,
-  //       behavior: 'smooth'
-  //     });
-  //   }
-  // };
-
   const handleNavClick = () => {
     const mainContent = document.querySelector('.main-content');
     if (mainContent?.classList.contains('shifted')) {
@@ -56,7 +38,6 @@ function Header({ onContactClick }) {
   };
 
   useEffect(() => {
-    // Iniciar animación solo si venimos de home
     if (location.state?.from === '/') {
       setShouldAnimate(true);
     }
@@ -66,7 +47,6 @@ function Header({ onContactClick }) {
     <div className="header-container-desktop">
       <div className="header-home-desktop">
         <Link to="/"
-          // onClick={handleCombinedClick}
           onClick={handleNavClick}
 
         >

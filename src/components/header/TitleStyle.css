@@ -1,0 +1,93 @@
+.title-with-spacing {
+    position: relative;
+    height: 1.4em; 
+    width: 100%;
+    display: block;
+}
+
+/* Estilo base para cada letra */
+.title-letter {
+    position: absolute;
+    transition: all 0.3s ease;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/* Posicionamiento vertical escalonado usando variables CSS */
+.title-letter:nth-child(1) { --left: 0; } /* E */
+.title-letter:nth-child(2) {  --left: 0.5em; } /* S */
+.title-letter:nth-child(3) {  --left: 0.9em; } /* T */
+.title-letter:nth-child(4) {  --left: 1.2em; } /* U */
+.title-letter:nth-child(5) {  --left: 1.8em; } /* D */
+.title-letter:nth-child(6) {  --left: 2.4em; } /* I */
+.title-letter:nth-child(7) {  --left: 2.5em; } /* O */
+
+/* Posicionamiento para INES */
+.title-letter:nth-child(9) {  --left: 4em; } 
+.title-letter:nth-child(10) { --left: 4.3em; }
+.title-letter:nth-child(11) { --left: 4.9em; } 
+.title-letter:nth-child(12) {  --left: 5.4em; } 
+
+/* Posicionamiento para URIBE */
+.title-letter:nth-child(14) {  --left: 6.7em; } /* U */
+.title-letter:nth-child(15) {  --left: 7.4em; } /* R */
+.title-letter:nth-child(16) { --left: 7.9em; } /* I */
+.title-letter:nth-child(17) { --left: 8.1em; } /* B */
+.title-letter:nth-child(18) {  --left: 8.7em; } /* E */
+
+/* Aplicar las variables */
+.title-letter {
+    top: var(--top, 0);
+    left: var(--left, 0);
+}
+
+/* Ocultar los espacios */
+.title-space {
+    display: none;
+}
+
+/* Transición cuando el menú está abierto */
+.navigator-mobile.open ~ .header-top-section .title-letter {
+    /* Incrementar el espaciado cuando el menú está abierto */
+    top: calc(var(--top) + 0.2em);
+    left: calc(var(--left) + 0.2em);
+}
+
+/* Animación de aparición escalonada */
+@keyframes letterFadeIn {
+    from {
+        opacity: 0;
+        /* transform: translateY(5px); */
+    }
+    to {
+        opacity: 1;
+        /* transform: translateY(0); */
+    }
+}
+
+.title-letter {
+    animation: letterFadeIn 0.01s forwards;
+    opacity: 0;
+}
+
+/* Retraso para cada letra */
+.title-letter:nth-child(1) { animation-delay: 0.05s; }
+.title-letter:nth-child(2) { animation-delay: 0.1s; }
+.title-letter:nth-child(3) { animation-delay: 0.15s; }
+.title-letter:nth-child(4) { animation-delay: 0.2s; }
+.title-letter:nth-child(5) { animation-delay: 0.25s; }
+.title-letter:nth-child(6) { animation-delay: 0.3s; }
+.title-letter:nth-child(7) { animation-delay: 0.35s; }
+.title-letter:nth-child(8) { animation-delay: 0.4s; } /* Espacio, si existe */
+.title-letter:nth-child(9) { animation-delay: 0.45s; }
+.title-letter:nth-child(10) { animation-delay: 0.5s; }
+.title-letter:nth-child(11) { animation-delay: 0.55s; }
+.title-letter:nth-child(12) { animation-delay: 0.6s; }
+.title-letter:nth-child(13) { animation-delay: 0.65s; } /* Espacio, si existe */
+.title-letter:nth-child(14) { animation-delay: 0.7s; }
+.title-letter:nth-child(15) { animation-delay: 0.75s; }
+.title-letter:nth-child(16) { animation-delay: 0.8s; }
+.title-letter:nth-child(17) { animation-delay: 0.85s; }
+.title-letter:nth-child(18) { animation-delay: 0.9s; }
+
+

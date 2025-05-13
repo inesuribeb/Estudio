@@ -23,3 +23,7 @@
     src: url('/fonts/argestadisplay-regular-webfont.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'LogoFont';
+    src: url('/fonts/PlayFairDisplay-VariableFont_wght.ttf') format('truetype');
+}
