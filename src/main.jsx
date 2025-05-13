@@ -1,6 +1,6 @@
 import React, { StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 
 import Root from './Root.jsx';
@@ -17,6 +17,15 @@ const PortfolioProjectSection = React.lazy(() => import('./pages/code/PortfolioP
 const Contact = React.lazy(() => import('./pages/contact/Contact.jsx'));
 const ContactPhone = React.lazy(() => import('./pages/contact/ContactPhone.jsx'));
 
+const Services = React.lazy(() => import('./pages/services/Services.jsx'));
+const ServicesPhone = React.lazy(() => import('./pages/services/ServicesPhone.jsx'));
+
+const Portfolio = React.lazy(() => import('./pages/portfolio/Portfolio.jsx'));
+const PortfolioPhone = React.lazy(() => import('./pages/portfolio/PortfolioPhone.jsx'));
+
+const About = React.lazy(() => import('./pages/about/About.jsx'));
+const AboutPhone = React.lazy(() => import('./pages/about/AboutPhone.jsx'));
+
 const ResponsiveComponent = ({ MobileVersion, DesktopVersion }) => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
   
@@ -32,19 +41,73 @@ const RootWrapper = () => {
   return isMobile ? <RootPhone /> : <Root />;
 };
 
-
 const router = createBrowserRouter([
   {
     path: '/',
     element: <ResponsiveComponent 
       MobileVersion={HomePhone} 
       DesktopVersion={Home} 
-    /> 
+    />,
   },
   {
     path: '/',
-    element: <RootWrapper />,  
+    element: <RootWrapper />,
     children: [
+      // Redirecciones
+      {
+        path: '/inicio',
+        element: <Navigate to="/" replace />
+      },
+      {
+        path: '/home',
+        element: <Navigate to="/" replace />
+      },
+      
+      // Rutas en español
+      {
+        path: 'arte',
+        element: <ResponsiveComponent 
+          MobileVersion={PhotoDesignPhone} 
+          DesktopVersion={PhotoDesign} 
+        />
+      },
+      {
+        path: 'codigo',
+        element: <ResponsiveComponent 
+          MobileVersion={PortfolioProjectSection} 
+          DesktopVersion={WebProjects} 
+        />
+      },
+      {
+        path: 'contacto',
+        element: <ResponsiveComponent 
+          MobileVersion={ContactPhone} 
+          DesktopVersion={Contact} 
+        />
+      },
+      {
+        path: 'servicios',
+        element: <ResponsiveComponent 
+          MobileVersion={ServicesPhone} 
+          DesktopVersion={Services} 
+        />
+      },
+      {
+        path: 'portafolio',
+        element: <ResponsiveComponent 
+          MobileVersion={PortfolioPhone} 
+          DesktopVersion={Portfolio} 
+        />
+      },
+      {
+        path: 'sobre-mi',
+        element: <ResponsiveComponent 
+          MobileVersion={AboutPhone} 
+          DesktopVersion={About} 
+        />
+      },
+      
+      // Rutas en inglés (mismos componentes, diferentes URLs)
       {
         path: 'art',
         element: <ResponsiveComponent 
@@ -65,7 +128,28 @@ const router = createBrowserRouter([
           MobileVersion={ContactPhone} 
           DesktopVersion={Contact} 
         />
-      }
+      },
+      {
+        path: 'services',
+        element: <ResponsiveComponent 
+          MobileVersion={ServicesPhone} 
+          DesktopVersion={Services} 
+        />
+      },
+      {
+        path: 'portfolio',
+        element: <ResponsiveComponent 
+          MobileVersion={PortfolioPhone} 
+          DesktopVersion={Portfolio} 
+        />
+      },
+      {
+        path: 'about',
+        element: <ResponsiveComponent 
+          MobileVersion={AboutPhone} 
+          DesktopVersion={About} 
+        />
+      },
     ]
   }
 ]);

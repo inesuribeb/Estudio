@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+import { LanguageProvider } from './components/contexts/LanguageContext';
 import Header2 from './components/header/Header2';
 import React, { useState, useEffect } from 'react';
 import Contact from './pages/contact/Contact';
@@ -17,8 +18,8 @@ function Root() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
     const [navigationHandlers, setNavigationHandlers] = useState({
-        handleNext: () => {},
-        handlePrevious: () => {}
+        handleNext: () => { },
+        handlePrevious: () => { }
     });
 
     useEffect(() => {
@@ -62,44 +63,46 @@ function Root() {
     };
 
     return (
-        <div className="root-container">
-            <Contact
-                isOpen={isContactOpen}
-                onClose={() => setIsContactOpen(false)}
-                headerClosing={headerClosing}
-            />
-            {/* <div className={`main-content ${isContactOpen ? 'shifted' : ''}`}>
+        <LanguageProvider>
+            <div className="root-container">
+                <Contact
+                    isOpen={isContactOpen}
+                    onClose={() => setIsContactOpen(false)}
+                    headerClosing={headerClosing}
+                />
+                {/* <div className={`main-content ${isContactOpen ? 'shifted' : ''}`}>
                 <Header onContactClick={handleContactClick} />
                 <main className='outlet-desktop' key={location.pathname}>
                     <Outlet />
                 </main>
             </div> */}
 
-            <div className={`main-content ${isContactOpen ? 'shifted' : ''}`}>
-                <Header2 onContactClick={handleContactClick} />
-                <main className='outlet-desktop' key={location.pathname}>
-                    <Outlet context={{
-                        isModalOpen,
-                        setIsModalOpen,
-                        selectedImage,
-                        setSelectedImage,
-                        setNavigationHandlers
-                    }} />
-                </main>
-            </div>
-            {/* <Footer className="footer"></Footer> */}
-            <div className="fade-in" key={location.pathname}>
-                <Footer />
-            </div>
+                <div className={`main-content ${isContactOpen ? 'shifted' : ''}`}>
+                    <Header2 onContactClick={handleContactClick} />
+                    <main className='outlet-desktop' key={location.pathname}>
+                        <Outlet context={{
+                            isModalOpen,
+                            setIsModalOpen,
+                            selectedImage,
+                            setSelectedImage,
+                            setNavigationHandlers
+                        }} />
+                    </main>
+                </div>
+                {/* <Footer className="footer"></Footer> */}
+                <div className="fade-in" key={location.pathname}>
+                    <Footer />
+                </div>
 
-            <Modal
-                isOpen={isModalOpen}
-                onClose={() => setIsModalOpen(false)}
-                image={selectedImage}
-                onNext={navigationHandlers.handleNext}
-                onPrevious={navigationHandlers.handlePrevious}
-            />
-        </div>
+                <Modal
+                    isOpen={isModalOpen}
+                    onClose={() => setIsModalOpen(false)}
+                    image={selectedImage}
+                    onNext={navigationHandlers.handleNext}
+                    onPrevious={navigationHandlers.handlePrevious}
+                />
+            </div>
+        </LanguageProvider>
     );
 }
 

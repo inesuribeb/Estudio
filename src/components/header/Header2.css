@@ -3,7 +3,7 @@
 .header-container-mobile {
     width: 100%;
     background-color: transparent;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 200;
     padding: 30px 50px;
@@ -18,7 +18,7 @@
     position: relative; 
     flex-direction: row;
     /* gap: 2rem; */
-    height: 2.5rem;
+    /* height: 2.5rem; */
     z-index: 500;
 }
 
@@ -71,8 +71,8 @@
     position: fixed;
     top: 0;
     left: -100%;
-    /* width: 27%; */
-    width: 50%;
+    width: 27%;
+    /* width: 100%; */
     height: 100vh;
     background-color: var(--light-color);
     z-index: 150;
@@ -144,3 +144,31 @@
     margin-left: -30px; 
     transition: margin-left 0.3s ease;
 } */
+
+
+
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1100;
+}
+
+.language-selector span {
+    font-size: 1rem;
+    transition: font-weight 0.3s;
+    transition: color 0.3;
+    font-weight: 300;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.language-selector .active {
+    color: var(--corporative-color);
+}
+
+.language-selector .divider {
+    color: black;
+}

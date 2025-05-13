@@ -1,0 +1,34 @@
+.portfolio-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-options {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.option-art,
+.option-web {
+    flex: 1;
+    transition: filter 0.3s ease;
+    height: 100vh;
+    overflow: hidden;
+    position: relative; 
+}
+
+.option-art img,
+.option-web img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .portfolio-options:hover .option-art img:not(:hover) {
+    filter: blur(5px);
+}
+
+.portfolio-options:hover .option-web img:not(:hover) {
+    filter: blur(5px);
+} */

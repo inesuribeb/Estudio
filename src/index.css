@@ -21,8 +21,8 @@ html, body {
   height: 100%; 
   background-color: #f4f4f4;
   /* background-color: #F6EAD3; */
-  flex-direction: column;
-  display: flex;
+  /* flex-direction: column;
+  display: flex; */
 }
 
 a {
@@ -55,8 +55,8 @@ h1 {
 
 main {
   flex: 1;
-  padding: 20px;
-  margin-top: 10vh;
+  /* padding: 20px; */
+  /* margin-top: 10vh; */
   background-color: #f4f4f4;
   /* background-color: #F6EAD3; */
 
