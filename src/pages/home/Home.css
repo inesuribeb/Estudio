@@ -35,7 +35,8 @@
     text-decoration: none; 
     letter-spacing: 0.10em;
     font-size: 170%;
-    font-family: 'BLUE OCEAN';
+    /* font-family: 'BLUE OCEAN'; */
+    font-family: 'Argesta';
     transition: color 0.3s ease; 
     animation: fadeInHome 2s ease-in-out infinite;
     z-index: 100;

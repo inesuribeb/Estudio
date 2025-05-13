@@ -7,6 +7,8 @@
     display: flex;
     flex-direction: row;
     position: relative;
+
+
 }
 
 .option-art,
@@ -23,7 +25,50 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    transition: filter 0.4s ease, transform 0.4s ease;
+
 }
+
+
+.option-art a,
+.option-web a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+}
+
+.option-art h1 {
+    position: absolute;
+    bottom: 17rem; 
+    right: 0rem;       
+    transform: rotate(-90deg);
+    transform-origin: right bottom;
+    color: var(--light-color);
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+}
+
+.option-web h1 {
+    position: absolute;
+    bottom: 5.5rem; 
+    right: 0rem;       
+    transform: rotate(-90deg);
+    transform-origin: right bottom;
+    color: var(--light-color);
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+}
+
+
 
 /* .portfolio-options:hover .option-art img:not(:hover) {
     filter: blur(5px);
@@ -31,4 +76,9 @@
 
 .portfolio-options:hover .option-web img:not(:hover) {
     filter: blur(5px);
+} */
+
+/* .option-art:hover img,
+.option-web:hover img {
+    filter: blur(18px) brightness(0.9);
 } */

@@ -11,6 +11,9 @@
     color: black;
 
     position: relative;
+    /* background-image: url(/CAPTURAS/fondohome.png); 
+    background-size: cover; 
+    background-position: center;  */
 }
 
 .main-menu-wrapper a {

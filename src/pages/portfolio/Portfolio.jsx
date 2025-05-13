@@ -6,15 +6,16 @@ function Portfolio() {
     const { t, getRoute } = useLanguage();
     return (
         <div className='portfolio-wrapper'>
-            {/* <h1>{t('art')}</h1> */}
             <div className='portfolio-options'>
                 <div className='option-art'>
                     <Link to={getRoute('art')}>
+                        <h1>{t('art')}</h1>
                         <img src="/CAPTURAS/MANOSATRAS.png" alt="" />
                     </Link>
                 </div>
                 <div className='option-web'>
                     <Link to={getRoute('code')}>
+                        <h1>{t('code')}</h1>
                         <img src="/CAPTURAS/prueba.jpg" alt="" />
                     </Link>
                 </div>
