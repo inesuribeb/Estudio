@@ -223,32 +223,7 @@ function Header2({ onContactClick }) {
                                 {t('about')}
                             </Link>
                         </li>
-                        {/* <li>
-                            <Link
-                                to="/art"
-                                onClick={handleNavClick}
-                                className={isActive('/art') ? 'active' : ''}
-                            >
-                                Art
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to="/code"
-                                onClick={handleNavClick}
-                                className={isActive('/code') ? 'active' : ''}
-                            >
-                                Code
-                            </Link>
-                        </li>
-                        <li>
-                            <button
-                                onClick={handleContactToggle}
-                                className="contact-button"
-                            >
-                                Contact
-                            </button>
-                        </li> */}
+                       
                     </ul>
                 </nav>
             </div>

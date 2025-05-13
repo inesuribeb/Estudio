@@ -11,6 +11,7 @@ const translations = {
       services: "Services",
       portfolio: "Portfolio",
       about: "About",
+      menu: "Menu", 
       ...headerTranslations.en
     },
     es: {
@@ -20,6 +21,7 @@ const translations = {
       services: "Servicios",
       portfolio: "Portafolio",
       about: "Sobre mí",
+      menu: "Menú",
       ...headerTranslations.es
     }
   };
@@ -33,7 +35,8 @@ const translations = {
       contact: "/contact",
       services: "/services",
       portfolio: "/portfolio",
-      about: "/about"
+      about: "/about",
+      menu: "/main-menu",
     },
     es: {
       home: "/",
@@ -42,7 +45,8 @@ const translations = {
       contact: "/contacto",
       services: "/servicios",
       portfolio: "/portafolio",
-      about: "/sobre-mi"
+      about: "/sobre-mi",
+      menu: "/menu",
     }
   };
   
@@ -55,6 +59,7 @@ const translations = {
     "/servicios": "/services",
     "/portafolio": "/portfolio",
     "/sobre-mi": "/about",
+    "/menu" : "/main-menu",
   
     // Inglés a español
     "/art": "/arte",
@@ -62,7 +67,8 @@ const translations = {
     "/contact": "/contacto",
     "/services": "/servicios",
     "/portfolio": "/portafolio",
-    "/about": "/sobre-mi"
+    "/about": "/sobre-mi",
+    "/main-menu" : "/menu",
   };
 
 // Función para detectar el idioma desde la URL

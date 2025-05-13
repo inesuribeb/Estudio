@@ -3,5 +3,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 100vh;
+    width: 100%;
+    background-color: var(--light-color);
+    z-index: 2000;
+    color: black;
+}
+
+.main-menu-wrapper a {
+    text-decoration: none;
+    color: black;
+    /* font-family: 'Work Sans', sans-serif; */
+    font-family: 'Argesta';
+    letter-spacing: 0.1em;
+    font-size: 10rem;
+    transition: font-style 0.1s ease;
+}
+
+.main-menu-wrapper a:hover {
+    font-style: italic;
+
 }

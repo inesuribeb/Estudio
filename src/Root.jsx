@@ -14,6 +14,7 @@ function Root() {
     const [isUserScrolling, setIsUserScrolling] = useState(false);
     const location = useLocation();
 
+    const isMenuRoute = location.pathname === '/menu' || location.pathname === '/main-menu';
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
@@ -77,8 +78,13 @@ function Root() {
                 </main>
             </div> */}
 
-                <div className={`main-content ${isContactOpen ? 'shifted' : ''}`}>
-                    <Header2 onContactClick={handleContactClick} />
+                {/* <div className={`main-content ${isContactOpen ? 'shifted' : ''}`}>
+                    <Header2 onContactClick={handleContactClick} /> */}
+                <div className={`main-content ${isContactOpen && !isMenuRoute ? 'shifted' : ''}`}>
+                    {/* Mostrar Header solo si no estamos en una ruta de menú */}
+                    {!isMenuRoute && (
+                        <Header2 onContactClick={handleContactClick} />
+                    )}
                     <main className='outlet-desktop' key={location.pathname}>
                         <Outlet context={{
                             isModalOpen,
