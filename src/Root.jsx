@@ -3,11 +3,12 @@
 import { Outlet } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { LanguageProvider } from './components/contexts/LanguageContext';
-import Header2 from './components/header/Header2';
+import Header3 from './components/header/Header3';
 import React, { useState, useEffect } from 'react';
 import Contact from './pages/contact/Contact';
 import Modal from './pages/art/Modal';
 import Footer from './components/footer/Footer';
+import About from './pages/about/About';
 import './Root.css'
 
 function Root() {
@@ -16,14 +17,16 @@ function Root() {
     const [isUserScrolling, setIsUserScrolling] = useState(false);
     const location = useLocation();
 
-    // Verificar si estamos en una ruta de menú
+    const [isAboutOpen, setIsAboutOpen] = useState(false);
+    const handleAboutClick = () => {
+        setIsAboutOpen(true);
+    };
+
+
     const isMenuRoute = location.pathname === '/menu' || location.pathname === '/main-menu';
-    
-    // Verificar si estamos en una ruta de portafolio
+    const isHomeRoute = location.pathname === '/' || location.pathname === '/home' || location.pathname === '/inicio';
     const isPortfolioRoute = location.pathname === '/portfolio' || location.pathname === '/portafolio';
-    
-    // Verificar si debemos ocultar el footer (en rutas de menú o portafolio)
-    const hideFooter = isMenuRoute || isPortfolioRoute;
+    const hideFooter = isMenuRoute || isPortfolioRoute || isHomeRoute;
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
@@ -83,7 +86,10 @@ function Root() {
 
                 <div className={`main-content ${isContactOpen && !isMenuRoute ? 'shifted' : ''}`}>
                     {!isMenuRoute && (
-                        <Header2 onContactClick={handleContactClick} />
+                        <Header3
+                            onContactClick={handleContactClick}
+                            onAboutClick={handleAboutClick}
+                        />
                     )}
                     <main className='outlet-desktop' key={location.pathname}>
                         <Outlet context={{
@@ -91,17 +97,22 @@ function Root() {
                             setIsModalOpen,
                             selectedImage,
                             setSelectedImage,
-                            setNavigationHandlers
+                            setNavigationHandlers,
+                            openAbout: () => setIsAboutOpen(true)
                         }} />
                     </main>
                 </div>
-                
-                {/* Mostrar Footer solo si no estamos en una ruta de menú o portafolio */}
+
                 {!hideFooter && (
                     <div className="fade-in" key={location.pathname}>
                         <Footer />
                     </div>
                 )}
+
+                <About
+                    isOpen={isAboutOpen}
+                    onClose={() => setIsAboutOpen(false)}
+                />
 
                 <Modal
                     isOpen={isModalOpen}

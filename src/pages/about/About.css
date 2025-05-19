@@ -1,0 +1,129 @@
+.about-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-color: rgba(221, 221, 221, 0.6);
+}
+
+.about-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.contact-links-to{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    /* backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-color: rgba(221, 221, 221, 0.6); */
+}
+
+.contact-links-to button {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-color: rgba(221, 221, 221, 0.475);
+    border: 1px solid #71717162;
+    border-radius: 6px;
+    /* padding: 20px 25px; */
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #717171;
+    font-family: 'Pragmatica';
+    overflow: hidden;
+}
+
+.contact-links-to button.instagram-c,
+.contact-links-to button.linkedin-c {
+    border-radius: 36px;
+}
+
+
+/* .about-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 1rem 3rem;
+    width: 100%;
+
+    overflow: hidden;
+    position: relative;
+    color: black;
+    font-family: 'Pragmatica';
+    font-size: 0.8rem;
+    background-color:  #f4f4f4;
+
+
+}
+
+
+@keyframes zoomBackground {
+    0% {
+        background-size: 100%;
+    }
+    100% {
+        background-size: 160%;
+    }
+}
+
+.first-line-about,
+.second-line,
+.third-line {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem; 
+}
+
+.second-line {
+    justify-content: center;
+    align-items: center;
+}
+
+.second-line h1 {
+    font-size: 9rem;
+
+}
+
+
+.first-line-about > div {
+    flex: 1;
+    display: flex;
+}
+
+.third-line > div {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.second-line {
+    justify-content: center;
+    align-items: center;
+} */

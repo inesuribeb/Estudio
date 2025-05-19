@@ -23,6 +23,7 @@ html, body {
   /* background-color: #F6EAD3; */
   /* flex-direction: column;
   display: flex; */
+  overscroll-behavior-y: none;
 }
 
 a {
@@ -37,7 +38,6 @@ ul {
 }
 
 h1 {
-  /* font-family: 'Times New Roman';  */
   font-family: 'Pragmatica';
   font-size: 15px; 
   text-transform: uppercase; 

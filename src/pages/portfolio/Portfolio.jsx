@@ -10,13 +10,14 @@ function Portfolio() {
                 <div className='option-art'>
                     <Link to={getRoute('art')}>
                         <h1>{t('art')}</h1>
-                        <img src="/CAPTURAS/MANOSATRAS.png" alt="" />
+                        <img src="/CAPTURAS/alazne.png" alt="" />
+                        {/* <img src="/CAPTURAS/2.2.2.png" alt="" /> */}
                     </Link>
                 </div>
                 <div className='option-web'>
                     <Link to={getRoute('code')}>
                         <h1>{t('code')}</h1>
-                        <img src="/CAPTURAS/prueba.jpg" alt="" />
+                        <img src="/CAPTURAS/gif.gif" alt="" />
                     </Link>
                 </div>
             </div>

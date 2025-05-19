@@ -48,17 +48,32 @@ const RootWrapper = () => {
 };
 
 const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <ResponsiveComponent 
-      MobileVersion={HomePhone} 
-      DesktopVersion={Home} 
-    />,
-  },
+  // {
+  //   path: '/',
+  //   element: <ResponsiveComponent 
+  //     MobileVersion={HomePhone} 
+  //     DesktopVersion={Home} 
+  //   />,
+  // },
+  // {
+  //   path: '/',
+  //   element: <RootWrapper />,
+  //   children: [
+
   {
     path: '/',
     element: <RootWrapper />,
     children: [
+      // Home como índice dentro de Root
+      {
+        index: true, // Usa index:true en lugar de path:'/'
+        element: <ResponsiveComponent 
+          MobileVersion={HomePhone} 
+          DesktopVersion={Home} 
+        />,
+      },
+
+
       // Redirecciones
       {
         path: '/inicio',

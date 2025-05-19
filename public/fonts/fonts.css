@@ -27,3 +27,8 @@
     font-family: 'LogoFont';
     src: url('/fonts/PlayFairDisplay-VariableFont_wght.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Ampersand';
+    src: url('/fonts/Ampersand.otf') format('opentype');
+}

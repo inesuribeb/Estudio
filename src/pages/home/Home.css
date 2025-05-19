@@ -30,7 +30,8 @@
 }
 
 .title-home-desktop-text {
-    color: rgb(208,45,28); 
+    /* color: rgb(208,45,28);  */
+    color: black; 
     background-color: transparent;
     text-decoration: none; 
     letter-spacing: 0.10em;

@@ -22,11 +22,14 @@
 
 .option-art img,
 .option-web img{
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
+    width: calc(100% + 20px); /* Ancho extra */
+    height: calc(100% + 20px); /* Alto extra */
+    margin: -10px; 
     object-fit: cover;
 
-    transition: filter 0.4s ease, transform 0.4s ease;
+    transition: all 0.4s ease, transform 0.4s ease;
 
 }
 
@@ -40,7 +43,7 @@
     text-decoration: none;
 }
 
-.option-art h1 {
+/* .option-art h1 {
     position: absolute;
     bottom: 17rem; 
     right: 0rem;       
@@ -66,19 +69,66 @@
     margin: 0;
     padding: 0;
     z-index: 100;
+} */
+
+/* .option-art h1,
+.option-web h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--light-color);
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+    text-align: center;
+    font-family: 'Argesta';
+
+}
+
+.option-web h1 {
+    color: black;
+} */
+
+.option-art h1,
+.option-web h1 {
+    position: absolute;
+    bottom: 30px; /* Ajusta esta distancia según necesites */
+    left: 50%;
+    transform: translateX(-50%); /* Solo trasladamos en el eje X */
+    /* color: var(--light-color); */
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+    text-align: center;
+    font-family: 'Argesta';
+    /* font-family: 'Pragmatica'; */
+
+}
+
+.option-web h1 {
+    color: black;
 }
 
 
 
-/* .portfolio-options:hover .option-art img:not(:hover) {
-    filter: blur(5px);
-}
 
+/* .portfolio-options:hover .option-art img:not(:hover),
 .portfolio-options:hover .option-web img:not(:hover) {
     filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.6);
 } */
-
-/* .option-art:hover img,
-.option-web:hover img {
-    filter: blur(18px) brightness(0.9);
-} */
+    .portfolio-options:hover .option-art:not(:hover) img {
+        filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    
+    .portfolio-options:hover .option-web:not(:hover) img {
+        filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.6);
+    }
