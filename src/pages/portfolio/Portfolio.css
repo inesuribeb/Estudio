@@ -100,13 +100,14 @@
     transform: translateX(-50%); /* Solo trasladamos en el eje X */
     /* color: var(--light-color); */
     color: red;
-    font-size: 1.5rem;
-    font-weight: 100;
+    font-size: 2rem;
+    font-weight: 700;
     margin: 0;
     padding: 0;
     z-index: 100;
     text-align: center;
-    font-family: 'Argesta';
+    /* font-family: 'Argesta'; */
+    font-family: var(--main-font);
     /* font-family: 'Pragmatica'; */
 
 }

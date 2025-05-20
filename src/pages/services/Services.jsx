@@ -1,30 +1,39 @@
+import { useLanguage } from '../../components/contexts/LanguageContext';
+import ServicesList from './components/ServicesList';
 import './Services.css'
 
 function Services() {
+    const { language, toggleLanguage, t } = useLanguage();
+
     return (
         <div className='services-wrapper'>
             <div className='statement'>
-            <h1>Agencia creativa para marcas con propósito.</h1>
-            <h2>Somos un estudio creativo que utiliza la tecnología para expandir la creatividad, guiado por una filosofía clara: Impacto + Intención.</h2>
-            <h3>Impacto significa crear experiencias visuales que dejan huella.<br />Intención significa diseñar con propósito, sensibilidad y coherencia.</h3>
+                {/* <h1 dangerouslySetInnerHTML={{ __html: t('agencyPhrase') }} /> */}
+                <h2 dangerouslySetInnerHTML={{ __html: t('description') }} />
+                <h3 dangerouslySetInnerHTML={{ __html: `${t('impact')}<br/>${t('intention')}` }} />
+
             </div>
 
-            <div className='services-list'>
+            {/* <div className='services-list'>
                 <div className='services-title'>
-                    <h1>Servicios</h1>
+                    <h1>{t('servicesTitle')}</h1>
                 </div>
                 <div className='services-display'>
                     <ul>
-                        <li>Diseño Web</li>
-                        <li>Desarrollo Full Stack</li>
-                        <li>Fotografía</li>
-                        <li>Dirección Creativa</li>
-                        <li>Branding</li>
-                        <li>Identidad de marca</li>
-                        <p></p>
+                        {t('servicesList').map((service, index) => (
+                            <div key={index} className="service-item">
+                                <span className="menu-number menu-number-right">[{(index + 1).toString().padStart(2, '0')}]</span>
+                                <li>{service}</li>
+                            </div>
+                        ))}
                     </ul>
-
                 </div>
+            </div> */}
+
+            <ServicesList t={t} />
+
+            <div className='statement'>
+                <h2 dangerouslySetInnerHTML={{ __html: t('personality') }} />
             </div>
         </div>
     )

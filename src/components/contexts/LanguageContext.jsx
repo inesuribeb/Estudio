@@ -1,6 +1,7 @@
 import { createContext, useState, useContext, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { headerTranslations } from './headerTranslations';
+import { ServicesTranslations } from './ServicesContext';
 
 // Definimos las traducciones
 const translations = {
@@ -12,7 +13,8 @@ const translations = {
       portfolio: "Portfolio",
       about: "About",
       menu: "Menu", 
-      ...headerTranslations.en
+      ...headerTranslations.en,
+      ...ServicesTranslations.en
     },
     es: {
       art: "Arte",
@@ -22,7 +24,8 @@ const translations = {
       portfolio: "Portafolio",
       about: "Sobre mí",
       menu: "Menú",
-      ...headerTranslations.es
+      ...headerTranslations.es,
+      ...ServicesTranslations.es
     }
   };
   

@@ -65,4 +65,27 @@ main {
 :root {
   --corporative-color: red;
   --light-color: #f4f4f4;
+  --pink-color: #FFD2D2;
+  --yellow-color: #FFF503;
+
+  --main-font: "freight-big-pro", serif;
+
+}
+
+/* Añade esto a tu archivo index.css */
+::selection {
+  background-color: var(--pink-color); /* Usa tu variable de color rosa */
+  color: black; /* Color del texto cuando está seleccionado, puedes cambiarlo si quieres */
+}
+
+/* Para navegadores Webkit como Safari */
+::-webkit-selection {
+  background-color: var(--pink-color);
+  color: black;
+}
+
+/* Para Firefox */
+::-moz-selection {
+  background-color: var(--pink-color);
+  color: black;
 }

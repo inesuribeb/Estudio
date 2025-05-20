@@ -22,7 +22,7 @@
     right: 10px;
     background: transparent;
     border: none;
-    color: black;
+    color: red;
     font-size: 2rem;
     cursor: pointer;
     z-index: 1001;
@@ -46,21 +46,26 @@
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     background-color: rgba(221, 221, 221, 0.475);
-    border: 1px solid #71717162;
+    border: 1px solid #2c2c2ca6;
     border-radius: 6px;
     /* padding: 20px 25px; */
     padding-top: 18px;
     padding-bottom: 18px;
     padding-left: 30px;
     padding-right: 30px;
-    color: #717171;
+    color: #2c2c2cd1;
     font-family: 'Pragmatica';
     overflow: hidden;
+    cursor: pointer;
 }
 
 .contact-links-to button.instagram-c,
 .contact-links-to button.linkedin-c {
     border-radius: 36px;
+}
+
+.contact-links-to button:hover {
+    color: black;
 }
 
 

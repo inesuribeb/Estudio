@@ -8,6 +8,8 @@ function Header3({ onContactClick, onAboutClick }) {
     const titleRef = useRef(null);
     const { language, toggleLanguage, t, getRoute } = useLanguage();
 
+    const isHomePage = location.pathname === '/';
+
     const isActive = (route) => {
         return location.pathname === route;
     };
@@ -71,7 +73,7 @@ function Header3({ onContactClick, onAboutClick }) {
                     </nav>
                 </div>
 
-                <div className="language-toggle">
+                {/* <div className="language-toggle">
                     <span
                         className={`lang-option ${language === 'es' ? 'lang-active' : ''}`}
                         onClick={() => language !== 'es' && handleLanguageChange()}
@@ -85,7 +87,26 @@ function Header3({ onContactClick, onAboutClick }) {
                     >
                         EN
                     </span>
-                </div>
+                </div> */}
+
+                {/* Renderizar el language toggle solo si NO estamos en la página de inicio */}
+                {!isHomePage && (
+                    <div className="language-toggle">
+                        <span
+                            className={`lang-option ${language === 'es' ? 'lang-active' : ''}`}
+                            onClick={() => language !== 'es' && handleLanguageChange()}
+                        >
+                            ES
+                        </span>
+                        <span className="lang-divider">|</span>
+                        <span
+                            className={`lang-option ${language === 'en' ? 'lang-active' : ''}`}
+                            onClick={() => language !== 'en' && handleLanguageChange()}
+                        >
+                            EN
+                        </span>
+                    </div>
+                )}
             </div>
         </div>
     );

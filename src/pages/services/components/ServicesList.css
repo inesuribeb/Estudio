@@ -1,56 +1,4 @@
-.services-wrapper {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    padding-top: 30vh;
-    gap: 5rem;
-    padding-bottom: 3rem;
-    /* align-items: center;  */
-    margin-bottom: 12rem;
-
-}
-
-.statement {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.statement h1 {
-    width: 70%;
-    text-align: center;
-    text-transform: none;
-    /* font-family: 'Argesta'; */
-    font-family: var(--main-font);
-    text-transform: uppercase;
-    font-weight: 700;
-    /* No necesitas display: flex aquí a menos que quieras elementos en línea */
-}
-
-.statement h2 {
-    width: 75%;
-    text-align: center;
-    text-transform: none;
-    /* font-family: 'Argesta'; */
-    font-family: var(--main-font);
-    font-weight: 300;
-    font-size: 2.8rem;
-    line-height: 3rem;
-    /* No necesitas display: flex aquí a menos que quieras elementos en línea */
-}
-
-.statement h3 {
-    width: 70%;
-    text-align: center;
-    text-transform: none;
-    font-family: 'Pragmatica';
-    font-weight: 300;
-    letter-spacing: 0.10em;
-    /* No necesitas display: flex aquí a menos que quieras elementos en línea */
-}
-
-
-/* .services-list {
+.services-list {
     display: flex;
     flex-direction: row;
     gap: 3rem;
@@ -82,14 +30,15 @@
     border-bottom: 1px solid #e0e0e0;
     font-family: 'Pragmatica';
     text-decoration: none;
-    color: black;
+    color: black; /* Color negro por defecto */
+    /* font-family: 'Argesta'; */
     font-family: var(--main-font);
     letter-spacing: 0.1em;
     font-size: 5rem;
     position: relative;
     padding-left: 3rem;
     margin-right: 3rem;
-    transition: color 0.3s ease, font-style 0.3s ease; 
+    transition: color 0.3s ease, font-style 0.3s ease; /* Transición suave */
 }
 
 .services-display li:hover {
@@ -97,12 +46,14 @@
 }
 
 .services-display ul:hover li {
-    color: #7a7a7a; 
-    transition: color 0.3s ease; 
+    /* Esta regla se aplica a todos los li cuando hay hover en la ul */
+    color: #7a7a7a; /* Color gris para todos los elementos cuando hay hover en alguno */
+    transition: color 0.3s ease; /* Transición suave */
 }
 
 .services-display ul:hover li:hover {
-    color: black; 
+    /* Esta regla se aplica solo al li que tiene hover */
+    color: black; /* Mantiene el elemento con hover en negro */
     font-style: italic;
 }
 
@@ -146,7 +97,3 @@
 .services-display li {
     padding: 0;
 }
-
-.statement {
-    margin-bottom: 0rem;
-} */

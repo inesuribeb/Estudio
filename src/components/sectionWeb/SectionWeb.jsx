@@ -3,7 +3,7 @@ import './SectionWeb.css';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-function SectionWeb({ title, web, description, method, link, images, className }) {
+function SectionWeb({ title, web, description, method, link, images, className, language }) {
     return (
         <section className={`web-section ${className}`}>
         
@@ -13,7 +13,8 @@ function SectionWeb({ title, web, description, method, link, images, className }
                         # {title} <ArrowOutwardIcon />
                     </a>
                 </h3>
-                <p className="description">{description}</p>
+                {/* <p className="description">{description}</p> */}
+                <p className="description">{description[language]}</p>
                 <p>{method}</p>
                 <p>
                     <a href={link} target="_blank" rel="noopener noreferrer">

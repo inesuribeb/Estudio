@@ -6,15 +6,22 @@ function Footer() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
-    return (
-        <div className="footer-content">
-        {/* <div className={`footer-content ${className || ''}`}> */}
+    const currentYear = new Date().getFullYear();
 
-            <div className="footer-text">
-                {/* <h1 className='my-name'>INES URIBE</h1> */}
-                <h1>Copyright © 2024 Ines Uribe. All Rights Reserved.</h1>
+    return (
+        <div className='footer-wrapper'>
+            <div className="footer-content">
+                {/* <div className={`footer-content ${className || ''}`}> */}
+
+                <div className="footer-text">
+                    {/* <h1 className='my-name'>INES URIBE</h1> */}
+                    <h1>Copyright © {currentYear} Ines Uribe. All Rights Reserved.</h1>
+                </div>
+                <NorthIcon onClick={scrollToTop} style={{ cursor: 'pointer' }} />
             </div>
-            <NorthIcon onClick={scrollToTop} style={{ cursor: 'pointer' }} />
+            <div className='titulo-cortado'>
+                <h1>ESTUDIO INES URIBE</h1>
+            </div>
         </div>
     )
 }

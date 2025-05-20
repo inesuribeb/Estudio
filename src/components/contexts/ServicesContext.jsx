@@ -1,0 +1,36 @@
+export const ServicesTranslations = {
+    en: {
+      agencyPhrase: "Creative agency for aspirational brands.",
+      // description: "We are a creative studio using technology to expand creativity, guided by a clear philosophy: Impact + Intention.",
+      description: "<em>We are an independent</em> STUDIO <em> using</em> TECHNOLOGY <em>to expand</em> CREATIVITY, <em>guided by a</em> CLEAR <em>philosophy:</em> IMPACT + INTENTION.",
+      impact: "IMPACT means creating visual experiences that leave a mark.",
+      intention: "INTENTION means designing with purpose, sensitivity, and coherence.",
+      servicesTitle: "Services",
+      servicesList: [
+        "Web Design",
+        "Full Stack Development",
+        "Photography",
+        "Creative Direction",
+        "Branding",
+        "Brand Identity",
+      ],
+      personality: "<em>Showing your</em> PERSONALITY <em>is a</em><br />POWERFUL <em>skill</em> <em>to</em> STAND OUT.",
+    },
+    es: {
+      agencyPhrase: "ESTUDIO Ines Uribe",
+      description: "<em>Somos un</em> ESTUDIO <em>independiente que utiliza la</em> TECNOLOGÍA <em>para expandir la</em> CREATIVIDAD, <em>guiado por una</em> FILOSOFÍA <em>clara</em> : IMPACTO + INTENCIÓN.",
+      impact: "IMPACTO significa crear experiencias visuales que dejan huella.",
+      intention: "INTENCIÓN significa diseñar con propósito, sensibilidad y coherencia.",
+      servicesTitle: "Servicios",
+      servicesList: [
+        "Diseño Web",
+        "Desarrollo Full Stack",
+        "Fotografía",
+        "Dirección Creativa",
+        "Branding",
+        "Identidad de marca",
+      ],
+      personality: "<em>Mostrar tu</em> PERSONALIDAD <em>es una habilidad</em><br />PODEROSA <em>para</em> DIFERENCIARTE.",
+    },
+  };
+  
