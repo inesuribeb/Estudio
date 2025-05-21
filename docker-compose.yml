@@ -6,8 +6,8 @@ services:
     expose:
       - "80"
     environment:
-      - VIRTUAL_HOST=inesuribe.es
-      - LETSENCRYPT_HOST=inesuribe.es
+      - VIRTUAL_HOST=estudio.inesuribe.es
+      - LETSENCRYPT_HOST=estudio.inesuribe.es
       - LETSENCRYPT_EMAIL=email@inesuribe.es
     volumes:
       - ./web:/usr/share/nginx/html:ro

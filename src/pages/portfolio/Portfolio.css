@@ -1,4 +1,4 @@
-.portfolio-wrapper {
+/* .portfolio-wrapper {
     display: flex;
     flex-direction: column;
 }
@@ -7,32 +7,27 @@
     display: flex;
     flex-direction: row;
     position: relative;
-
-
+    height: 100vh;
+    width: 100%;
 }
 
 .option-art,
 .option-web {
-    flex: 1;
-    transition: filter 0.3s ease;
+    width: 50%;
     height: 100vh;
     overflow: hidden;
-    position: relative; 
+    position: relative;
+    transition: filter 0.3s ease;
 }
 
 .option-art img,
-.option-web img{
-    /* width: 100%;
-    height: 100%; */
-    width: calc(100% + 20px); /* Ancho extra */
-    height: calc(100% + 20px); /* Alto extra */
-    margin: -10px; 
+.option-web img {
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    margin: -10px;
     object-fit: cover;
-
     transition: all 0.4s ease, transform 0.4s ease;
-
 }
-
 
 .option-art a,
 .option-web a {
@@ -43,62 +38,12 @@
     text-decoration: none;
 }
 
-/* .option-art h1 {
-    position: absolute;
-    bottom: 17rem; 
-    right: 0rem;       
-    transform: rotate(-90deg);
-    transform-origin: right bottom;
-    color: var(--light-color);
-    font-size: 1.5rem;
-    font-weight: 100;
-    margin: 0;
-    padding: 0;
-    z-index: 100;
-}
-
-.option-web h1 {
-    position: absolute;
-    bottom: 5.5rem; 
-    right: 0rem;       
-    transform: rotate(-90deg);
-    transform-origin: right bottom;
-    color: var(--light-color);
-    font-size: 1.5rem;
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
-    z-index: 100;
-} */
-
-/* .option-art h1,
-.option-web h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--light-color);
-    font-size: 1.5rem;
-    font-weight: 100;
-    margin: 0;
-    padding: 0;
-    z-index: 100;
-    text-align: center;
-    font-family: 'Argesta';
-
-}
-
-.option-web h1 {
-    color: black;
-} */
-
 .option-art h1,
 .option-web h1 {
     position: absolute;
-    bottom: 30px; /* Ajusta esta distancia según necesites */
+    bottom: 30px;
     left: 50%;
-    transform: translateX(-50%); /* Solo trasladamos en el eje X */
-    /* color: var(--light-color); */
+    transform: translateX(-50%);
     color: red;
     font-size: 2rem;
     font-weight: 700;
@@ -106,30 +51,257 @@
     padding: 0;
     z-index: 100;
     text-align: center;
-    /* font-family: 'Argesta'; */
     font-family: var(--main-font);
-    /* font-family: 'Pragmatica'; */
-
 }
 
 .option-web h1 {
     color: black;
 }
 
-
-
-
-/* .portfolio-options:hover .option-art img:not(:hover),
-.portfolio-options:hover .option-web img:not(:hover) {
+.portfolio-options:hover .option-art:not(:hover) img {
     filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.6);
+}
+
+.portfolio-options:hover .option-web:not(:hover) img {
+    filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+.option-art.animating {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    animation: expand-art 2s forwards, stay 2s 2s forwards, fadeOut 0.5s 4s forwards;
+}
+
+.option-art.animating ~ .option-web {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    z-index: 1;
+}
+
+@keyframes expand-art {
+    0% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+.option-web.animating {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    animation: expand-web 2s forwards, stay 2s 2s forwards, fadeOut 0.5s 4s forwards;
+}
+
+.option-web.animating ~ .option-art {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    z-index: 1;
+}
+
+@keyframes expand-web {
+    0% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.option-art.animating h1,
+.option-web.animating h1 {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes stay {
+    0%, 100% {
+        width: 100%;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 } */
-    .portfolio-options:hover .option-art:not(:hover) img {
-        filter: blur(5px);
-        background-color: rgba(255, 255, 255, 0.6);
+
+.portfolio-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-options {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.option-art,
+.option-web {
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.3s ease;
+}
+
+.option-art img,
+.option-web img {
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    margin: -10px;
+    object-fit: cover;
+    transition: all 0.4s ease, transform 0.4s ease;
+}
+
+.option-art a,
+.option-web a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+}
+
+.option-art h1,
+.option-web h1 {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+    text-align: center;
+    font-family: var(--main-font);
+}
+
+.option-web h1 {
+    color: black;
+}
+
+.portfolio-options:hover .option-art:not(:hover) img {
+    filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.portfolio-options:hover .option-web:not(:hover) img {
+    filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* ---- ANIMACIONES PARA OPTION-ART (IZQUIERDA) ---- */
+
+/* Cuando option-art está animando */
+.option-art.animating {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    animation: expand-art 2s forwards, stay 2s 2s forwards, fadeOut 0.5s 4s forwards;
+}
+
+/* option-web permanece en su lugar cuando option-art se anima */
+.option-art.animating ~ .option-web {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    z-index: 1;
+}
+
+/* Animación para expandir option-art desde la izquierda */
+@keyframes expand-art {
+    0% {
+        width: 50%;
     }
-    
-    .portfolio-options:hover .option-web:not(:hover) img {
-        filter: blur(5px);
-        background-color: rgba(255, 255, 255, 0.6);
+    100% {
+        width: 100%;
     }
+}
+
+/* ---- ANIMACIONES PARA OPTION-WEB (DERECHA) ---- */
+
+/* Cuando option-web está animando */
+.option-web.animating {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    animation: expand-web 2s forwards, stay 2s 2s forwards, fadeOut 0.5s 4s forwards;
+}
+
+/* option-art permanece en su lugar cuando option-web se anima */
+.option-web.animating ~ .option-art {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    z-index: 1;
+}
+
+/* Animación para expandir option-web desde la derecha */
+@keyframes expand-web {
+    0% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* ---- ANIMACIONES COMPARTIDAS ---- */
+
+/* Desvanecimiento de títulos */
+.option-art.animating h1,
+.option-web.animating h1 {
+    animation: fadeOut 0.5s forwards;
+}
+
+/* Mantener el ancho completo */
+@keyframes stay {
+    0%, 100% {
+        width: 100%;
+    }
+}
+
+/* Desvanecer */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Desvanecer después de un retraso */
+@keyframes fadeOutAfterDelay {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden; /* Garantiza que el elemento desaparezca completamente */
+    }
+}
