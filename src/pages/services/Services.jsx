@@ -30,7 +30,7 @@ function Services() {
             <div className='statement'>
                 {/* <h1 dangerouslySetInnerHTML={{ __html: t('agencyPhrase') }} /> */}
                 <h2 dangerouslySetInnerHTML={{ __html: t('description') }} />
-                <h3 dangerouslySetInnerHTML={{ __html: `${t('impact')}<br/>${t('intention')}` }} />
+                {/* <h3 dangerouslySetInnerHTML={{ __html: `${t('impact')}<br/>${t('intention')}` }} /> */}
 
             </div>
 
@@ -39,25 +39,25 @@ function Services() {
                     onClick={() => setActiveComponent('Services')}
                     className={activeComponent === 'Services' ? 'active' : ''}
                 >
-                    Services
+                    {t('services')}
                 </button>
                 <button
                     onClick={() => setActiveComponent('Sectors')}
                     className={activeComponent === 'Sectors' ? 'active' : ''}
                 >
-                    Sectors
-                </button>
-                <button
-                    onClick={() => setActiveComponent('Featured')}
-                    className={activeComponent === 'Featured' ? 'active' : ''}
-                >
-                    Featured
+                    {t('sectors')}
                 </button>
                 <button
                     onClick={() => setActiveComponent('Clients')}
                     className={activeComponent === 'Clients' ? 'active' : ''}
                 >
-                    Clients
+                    {t('clients')}
+                </button>
+                <button
+                    onClick={() => setActiveComponent('Featured')}
+                    className={activeComponent === 'Featured' ? 'active' : ''}
+                >
+                    {t('featured')}
                 </button>
             </div>
             <div className="filter-render">

@@ -2,7 +2,7 @@ export const ServicesTranslations = {
     en: {
       agencyPhrase: "Creative agency for aspirational brands.",
       // description: "We are a creative studio using technology to expand creativity, guided by a clear philosophy: Impact + Intention.",
-      description: "<em>We are an </em> STUDIO <em> using</em> TECHNOLOGY <em>to expand</em> CREATIVITY, <em>guided by a</em> CLEAR <em>philosophy:</em> IMPACT + INTENTION.",
+      description: "<em>We are a </em> STUDIO <em> using</em> TECHNOLOGY <em>to expand</em> CREATIVITY, <em>guided by a</em> CLEAR <em>philosophy:</em> IMPACT + INTENTION.",
       impact: "IMPACT means creating visual experiences that leave a mark.",
       intention: "INTENTION means designing with purpose, sensitivity, and coherence.",
       servicesTitle: "Services",
@@ -15,6 +15,10 @@ export const ServicesTranslations = {
         "Brand Identity",
       ],
       personality: "<em>Showing your</em> PERSONALITY <em>is a</em><br />POWERFUL <em>skill</em> <em>to</em> STAND OUT.",
+      services: "Services",
+      sectors: "Sectors",
+      featured: "Featured",
+      clients: "Clients",
     },
     es: {
       agencyPhrase: "ESTUDIO Ines Uribe",
@@ -31,6 +35,11 @@ export const ServicesTranslations = {
         "Identidad de marca",
       ],
       personality: "<em>Mostrar tu</em> PERSONALIDAD <em>es una habilidad</em><br />PODEROSA <em>para</em> DIFERENCIARTE.",
+      services: "Servicios",
+      sectors: "Sectores",
+      featured: "Destacados",
+      clients: "Clientes",
     },
+    
   };
   

@@ -25,12 +25,14 @@
 .services-display li {
     padding-bottom: 0.5rem;
     /* border-bottom: 1px solid #e0e0e0; */
+    border-bottom: none;
     /* font-family: 'Pragmatica'; */
     text-decoration: none;
     color: black; 
     font-family: var(--main-font);
-    letter-spacing: 0.1em;
-    font-size: 2.1rem;
+    letter-spacing: 0.05em;
+    font-weight: 100;
+    font-size: 1.8rem;
     position: relative;
     padding-left: 3rem;
     margin-right: 3rem;
@@ -57,8 +59,8 @@
 
 .menu-number {
     font-family: 'Pragmatica', sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 0.3rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.15rem;
     z-index: 1;
     color: black;
     font-style: normal;
@@ -67,8 +69,8 @@
 .service-item {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 15px 0;
+    /* border-bottom: 1px solid #e0e0e0; */
+    padding: 0.3rem 0;
 }
 
 .service-item:last-child {

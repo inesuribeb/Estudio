@@ -19,7 +19,7 @@
 
 .statement:first-child {
     padding-top: 25vh;
-    height: 88vh;
+    height: 70vh;
 }
 
 .statement:last-child {
@@ -64,13 +64,14 @@
 
 .studio-filter {
     padding: 1rem 0rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    /* padding: 0.1rem 0.3rem; */
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
     border-bottom: 1px solid #e0e0e0;
-    height: 11vh;
+    /* height: 11vh; */
 
 }
 
@@ -95,7 +96,7 @@
 }
 
 .filter-render {
-    padding: 0rem 0rem;
+    padding: 1rem 0rem;
     margin-left: 2rem;
     margin-right: 2rem;
 }
