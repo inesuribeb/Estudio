@@ -3,9 +3,9 @@ import './ServicesList.css'
 function ServicesList({ t }) {
     return (
         <div className='services-list'>
-            <div className='services-title'>
+            {/* <div className='services-title'>
                 <h1>{t('servicesTitle')}</h1>
-            </div>
+            </div> */}
             <div className='services-display'>
                 <ul>
                     {t('servicesList').map((service, index) => (

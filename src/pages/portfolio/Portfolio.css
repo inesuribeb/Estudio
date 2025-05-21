@@ -197,7 +197,7 @@
 }
 
 .option-web h1 {
-    color: black;
+    color: var(--light-color);
 }
 
 .portfolio-options:hover .option-art:not(:hover) img {

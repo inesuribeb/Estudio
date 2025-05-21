@@ -18,7 +18,7 @@ function Portfolio() {
         // Navegar después de la animación (2s de expansión + 2s de espera + tiempo para desvanecerse)
         setTimeout(() => {
             navigate(route);
-        }, 4000);
+        }, 3000);
     };
     
     return (
@@ -33,7 +33,7 @@ function Portfolio() {
                 <div className={`option-web ${animatingDiv === 'code' ? 'animating' : ''}`}>
                     <Link to={getRoute('code')} onClick={(e) => handleClick(e, getRoute('code'))}>
                         <h1>{t('code')}</h1>
-                        <img src="/CAPTURAS/gif.gif" alt="" />
+                        <img src="/CAPTURAS/prueba.jpg" alt="" />
                     </Link>
                 </div>
             </div>

@@ -1,9 +1,29 @@
 import { useLanguage } from '../../components/contexts/LanguageContext';
+import { useState } from 'react';
 import ServicesList from './components/ServicesList';
+import Clients from './components/Clients';
+import Featured from './components/Featured';
+import Sectors from './components/Sectors';
 import './Services.css'
 
 function Services() {
     const { language, toggleLanguage, t } = useLanguage();
+    const [activeComponent, setActiveComponent] = useState('Services');
+
+    const renderActiveComponent = () => {
+        switch (activeComponent) {
+            case 'Services':
+                return <ServicesList t={t} />;
+            case 'Sectors':
+                return <Sectors t={t} />;
+            case 'Featured':
+                return <Featured t={t} />;
+            case 'Clients':
+                return <Clients t={t} />;
+            default:
+                return <ServicesList t={t} />;
+        }
+    };
 
     return (
         <div className='services-wrapper'>
@@ -14,23 +34,38 @@ function Services() {
 
             </div>
 
-            {/* <div className='services-list'>
-                <div className='services-title'>
-                    <h1>{t('servicesTitle')}</h1>
+            <div className='studio-filter'>
+                <button
+                    onClick={() => setActiveComponent('Services')}
+                    className={activeComponent === 'Services' ? 'active' : ''}
+                >
+                    Services
+                </button>
+                <button
+                    onClick={() => setActiveComponent('Sectors')}
+                    className={activeComponent === 'Sectors' ? 'active' : ''}
+                >
+                    Sectors
+                </button>
+                <button
+                    onClick={() => setActiveComponent('Featured')}
+                    className={activeComponent === 'Featured' ? 'active' : ''}
+                >
+                    Featured
+                </button>
+                <button
+                    onClick={() => setActiveComponent('Clients')}
+                    className={activeComponent === 'Clients' ? 'active' : ''}
+                >
+                    Clients
+                </button>
+            </div>
+            <div className="filter-render">
+                {/* {renderActiveComponent()} */}
+                <div className="animated-content" key={activeComponent}>
+                    {renderActiveComponent()}
                 </div>
-                <div className='services-display'>
-                    <ul>
-                        {t('servicesList').map((service, index) => (
-                            <div key={index} className="service-item">
-                                <span className="menu-number menu-number-right">[{(index + 1).toString().padStart(2, '0')}]</span>
-                                <li>{service}</li>
-                            </div>
-                        ))}
-                    </ul>
-                </div>
-            </div> */}
-
-            <ServicesList t={t} />
+            </div>
 
             <div className='statement'>
                 <h2 dangerouslySetInnerHTML={{ __html: t('personality') }} />

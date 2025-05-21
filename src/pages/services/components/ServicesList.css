@@ -1,21 +1,14 @@
 .services-list {
     display: flex;
     flex-direction: row;
-    gap: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 7rem;
+    /* margin-top: 0; */
 }
 
-.services-title {
-    flex: 0.15;
-    display: flex;
-    justify-content: right;
-    margin-top: 2rem;
-}
 .services-display {
-    flex: 0.85;
+    flex: 1;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .services-display ul {
@@ -23,22 +16,25 @@
     padding: 0;
     margin-top: 0rem;
 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
+    gap: 0rem; 
+
 }
 
 .services-display li {
     padding-bottom: 0.5rem;
-    border-bottom: 1px solid #e0e0e0;
-    font-family: 'Pragmatica';
+    /* border-bottom: 1px solid #e0e0e0; */
+    /* font-family: 'Pragmatica'; */
     text-decoration: none;
-    color: black; /* Color negro por defecto */
-    /* font-family: 'Argesta'; */
+    color: black; 
     font-family: var(--main-font);
     letter-spacing: 0.1em;
-    font-size: 5rem;
+    font-size: 2.1rem;
     position: relative;
     padding-left: 3rem;
     margin-right: 3rem;
-    transition: color 0.3s ease, font-style 0.3s ease; /* Transición suave */
+    transition: color 0.3s ease, font-style 0.3s ease; 
 }
 
 .services-display li:hover {
@@ -46,14 +42,12 @@
 }
 
 .services-display ul:hover li {
-    /* Esta regla se aplica a todos los li cuando hay hover en la ul */
-    color: #7a7a7a; /* Color gris para todos los elementos cuando hay hover en alguno */
-    transition: color 0.3s ease; /* Transición suave */
+    color: #7a7a7a;
+    transition: color 0.3s ease;
 }
 
 .services-display ul:hover li:hover {
-    /* Esta regla se aplica solo al li que tiene hover */
-    color: black; /* Mantiene el elemento con hover en negro */
+    color: black;
     font-style: italic;
 }
 

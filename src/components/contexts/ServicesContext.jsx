@@ -2,7 +2,7 @@ export const ServicesTranslations = {
     en: {
       agencyPhrase: "Creative agency for aspirational brands.",
       // description: "We are a creative studio using technology to expand creativity, guided by a clear philosophy: Impact + Intention.",
-      description: "<em>We are an independent</em> STUDIO <em> using</em> TECHNOLOGY <em>to expand</em> CREATIVITY, <em>guided by a</em> CLEAR <em>philosophy:</em> IMPACT + INTENTION.",
+      description: "<em>We are an </em> STUDIO <em> using</em> TECHNOLOGY <em>to expand</em> CREATIVITY, <em>guided by a</em> CLEAR <em>philosophy:</em> IMPACT + INTENTION.",
       impact: "IMPACT means creating visual experiences that leave a mark.",
       intention: "INTENTION means designing with purpose, sensitivity, and coherence.",
       servicesTitle: "Services",
@@ -18,7 +18,7 @@ export const ServicesTranslations = {
     },
     es: {
       agencyPhrase: "ESTUDIO Ines Uribe",
-      description: "<em>Somos un</em> ESTUDIO <em>independiente que utiliza la</em> TECNOLOGÍA <em>para expandir la</em> CREATIVIDAD, <em>guiado por una</em> FILOSOFÍA <em>clara</em> : IMPACTO + INTENCIÓN.",
+      description: "<em>Somos un</em> ESTUDIO <em> que utiliza la</em> TECNOLOGÍA <em>para expandir la</em> CREATIVIDAD, <em>guiado por una</em> FILOSOFÍA <em>clara</em> : IMPACTO + INTENCIÓN.",
       impact: "IMPACTO significa crear experiencias visuales que dejan huella.",
       intention: "INTENCIÓN significa diseñar con propósito, sensibilidad y coherencia.",
       servicesTitle: "Servicios",
