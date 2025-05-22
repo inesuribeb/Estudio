@@ -10,19 +10,29 @@
     left: 50%;
     z-index: 1000;
     transition: top 0.5s ease-out;
+
 }
 
 .animated-title.centered {
     top: 38vh;
     transform: translateX(-50%); 
+
+
 }
 
 .animated-title.moving {
     top: 25vh;
     transform: translateX(-50%); 
+
+
 }
 
-.animated-title.integrated {
+/* .animated-title.integrated {
     display: none;
+} */
+
+.animated-title.integrated {
+    opacity: 0;
+    pointer-events: none;
 }
 
