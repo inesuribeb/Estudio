@@ -1,11 +1,10 @@
 /* Header3.css */
-.header-container {
+/* .header-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    /* padding: 2px 5px; */
     padding: 0.1rem 0.3rem;
     display: flex;
     align-items: center;
@@ -25,11 +24,9 @@
     align-items: center;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    /* background-color: rgba(255, 255, 255, 0.6); */
     background-color: rgba(221, 221, 221, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 6px;
-    /* padding: 20px 25px; */
     padding-top: 35px;
     padding-bottom: 6px;
     padding-left: 10px;
@@ -59,7 +56,6 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 0;
-    /* font-family: 'Arial', sans-serif; */
 }
 
 .header-nav {
@@ -90,7 +86,6 @@
     background-color: rgba(221, 221, 221, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 6px;
-    /* padding: 20px 25px; */
     padding-top: 35px;
     padding-bottom: 6px;
     padding-left: 10px;
@@ -107,7 +102,6 @@
     position: relative;
     font-weight: 300;
     white-space: nowrap;
-
     font-family: 'Pragmatica';
 }
 
@@ -121,7 +115,7 @@
 }
 
 .link-indicator {
-    display: none; /* Eliminado según la referencia */
+    display: none; 
 }
 
 .language-toggle {
@@ -132,7 +126,6 @@
     background-color: rgba(221, 221, 221, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 6px;
-    /* padding: 10px 15px; */
     padding-top: 32px;
     padding-bottom: 6px;
     padding-right: 10px;
@@ -164,5 +157,251 @@
 .lang-divider {
     color: #ccc;
     margin: 0 5px;
+} */
+
+/* Header3.css */
+/* Header3.css */
+/* Header3.css */
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0.1rem 0.3rem;
+    display: flex;
+    align-items: flex-start;
+    background-color: transparent;
 }
 
+.header-wrapper {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0.3rem;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-color: rgba(221, 221, 221, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    padding-top: 35px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 50px;
+    flex-shrink: 0;
+}
+
+.logo-indicator {
+    display: none; 
+    display: flex;
+    width: 15px;
+    height: 15px;
+    background-color: var(--corporative-color);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.header-title-link {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.header-title-text {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.header-nav {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.main-nav {
+    display: flex;
+    align-items: flex-start;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.3rem;
+    align-items: flex-start;
+}
+
+.nav-list button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-item {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-color: rgba(221, 221, 221, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    padding-top: 35px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 50px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+/* Solo el portfolio se extiende */
+.nav-item-expandable {
+    transition: padding-bottom 0.3s ease;
+}
+
+.nav-item-expandable:hover {
+    padding-bottom: 50px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #999;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    position: relative;
+    font-weight: 300;
+    white-space: nowrap;
+    font-family: 'Pragmatica';
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.nav-active {
+    font-weight: 500;
+    color: #000;
+}
+
+.link-indicator {
+    display: none;
+}
+
+/* Submenu dentro de la caja expandida */
+.portfolio-submenu {
+    position: absolute;
+    bottom: 6px;
+    left: 10px;
+    right: 50px;
+    background-color: transparent;
+    animation: slideDown 0.3s ease;
+}
+
+.submenu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #999;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Pragmatica';
+    transition: color 0.3s ease;
+    gap: 8px;
+}
+
+.submenu-link:hover {
+    color: #000;
+}
+
+.submenu-icon {
+    font-size: 14px !important;
+    width: 14px !important;
+    height: 14px !important;
+    position: relative;
+    /* Animación inicial: volver a la izquierda */
+    animation: moveLeft 0.6s forwards;
+}
+
+/* Animación al hacer hover en el submenu-link */
+.submenu-link:hover .submenu-icon {
+    animation: moveRight 0.6s forwards;
+}
+
+/* Keyframes para el movimiento de la flecha */
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.language-toggle {
+    margin-left: auto;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-color: rgba(221, 221, 221, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    padding-top: 32px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    font-family: 'Pragmatica';
+    flex-shrink: 0;
+}
+
+.lang-option {
+    font-size: 0.7rem;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.lang-option:hover {
+    color: #000;
+}
+
+.lang-active {
+    color: #000;
+    font-weight: 500;
+}
+
+.lang-divider {
+    color: #ccc;
+    margin: 0 5px;
+}

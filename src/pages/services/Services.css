@@ -80,7 +80,6 @@
     gap: 0.5rem;
     border-bottom: 1px solid #e0e0e0;
     /* height: 11vh; */
-
 }
 
 .studio-filter button {
@@ -90,7 +89,9 @@
     background-color: transparent;
     cursor: pointer;
     border-radius: 6px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    font-family: 'Pragmatica';
+    font-weight: 700;
 }
 
 .studio-filter button.active {

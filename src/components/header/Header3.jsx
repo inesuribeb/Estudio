@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import EastIcon from '@mui/icons-material/East';
 import { useLanguage } from '../contexts/LanguageContext';
 import './Header3.css'; 
 
@@ -7,8 +8,14 @@ function Header3({ onContactClick, onAboutClick }) {
     const location = useLocation();
     const titleRef = useRef(null);
     const { language, toggleLanguage, t, getRoute } = useLanguage();
+    const [showSubmenu, setShowSubmenu] = useState(false);
 
     const isHomePage = location.pathname === '/';
+    const isOnArtPage = location.pathname === getRoute('art');
+    const isOnCodePage = location.pathname === getRoute('code');
+    const shouldShowSubmenu = isOnArtPage || isOnCodePage;
+
+    // const isHomePage = location.pathname === '/';
 
     const isActive = (route) => {
         return location.pathname === route;
@@ -17,6 +24,17 @@ function Header3({ onContactClick, onAboutClick }) {
     const handleLanguageChange = () => {
         toggleLanguage();
     };
+
+    const getOtherRoute = () => {
+        if (isOnArtPage) {
+            return { route: getRoute('code'), label: 'Web', icon: true };
+        } else if (isOnCodePage) {
+            return { route: getRoute('art'), label: 'Art', icon: true };
+        }
+        return null;
+    };
+
+    const otherRoute = getOtherRoute();
 
     return (
         <div className="header-container">
@@ -43,7 +61,7 @@ function Header3({ onContactClick, onAboutClick }) {
                                     [ESTUDIO]
                                 </Link>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link
                                     to={getRoute('portfolio')}
                                     className={`nav-link ${isActive(getRoute('portfolio')) ? 'nav-active' : ''}`}
@@ -51,16 +69,33 @@ function Header3({ onContactClick, onAboutClick }) {
                                     {isActive(getRoute('portfolio')) && <span className="link-indicator"></span>}
                                     [{t('portfolio')}]
                                 </Link>
-                            </li>
-                            {/* <li className="nav-item">
-                                <Link
-                                    to={getRoute('about')}
-                                    className={`nav-link ${isActive(getRoute('about')) ? 'nav-active' : ''}`}
-                                >
-                                    {isActive(getRoute('about')) && <span className="link-indicator"></span>}
-                                    [{t('about')}]
-                                </Link>
                             </li> */}
+                            <li 
+                                className={`nav-item ${shouldShowSubmenu ? 'nav-item-expandable' : ''}`}
+                                onMouseEnter={() => shouldShowSubmenu && setShowSubmenu(true)}
+                                onMouseLeave={() => setShowSubmenu(false)}
+                            >
+                                <Link
+                                    to={getRoute('portfolio')}
+                                    className={`nav-link ${isActive(getRoute('portfolio')) ? 'nav-active' : ''}`}
+                                >
+                                    {isActive(getRoute('portfolio')) && <span className="link-indicator"></span>}
+                                    [{t('portfolio')}]
+                                </Link>
+                                
+                                {shouldShowSubmenu && showSubmenu && otherRoute && (
+                                    <div className="portfolio-submenu">
+                                        <Link 
+                                            to={otherRoute.route}
+                                            className="submenu-link"
+                                        >
+                                            <EastIcon className="submenu-icon" />
+                                            <span>{otherRoute.label}</span>
+                                        </Link>
+                                    </div>
+                                )}
+                            </li>
+                        
                             <li className="nav-item">
                             <button 
                                 className="nav-link" 
@@ -73,23 +108,6 @@ function Header3({ onContactClick, onAboutClick }) {
                     </nav>
                 </div>
 
-                {/* <div className="language-toggle">
-                    <span
-                        className={`lang-option ${language === 'es' ? 'lang-active' : ''}`}
-                        onClick={() => language !== 'es' && handleLanguageChange()}
-                    >
-                        ES
-                    </span>
-                    <span className="lang-divider">|</span>
-                    <span
-                        className={`lang-option ${language === 'en' ? 'lang-active' : ''}`}
-                        onClick={() => language !== 'en' && handleLanguageChange()}
-                    >
-                        EN
-                    </span>
-                </div> */}
-
-                {/* Renderizar el language toggle solo si NO estamos en la página de inicio */}
                 {!isHomePage && (
                     <div className="language-toggle">
                         <span
