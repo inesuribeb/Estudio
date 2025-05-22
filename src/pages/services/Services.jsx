@@ -167,7 +167,7 @@ import './Services.css'
 
 function Services({ showTitle = false }) {
     const { language, toggleLanguage, t } = useLanguage();
-    const [activeComponent, setActiveComponent] = useState('Services');
+    const [activeComponent, setActiveComponent] = useState('Featured');
 
     const renderActiveComponent = () => {
         switch (activeComponent) {
