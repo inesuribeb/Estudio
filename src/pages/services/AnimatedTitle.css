@@ -1,0 +1,28 @@
+.animated-title {
+    width: 75%;
+    text-align: center;
+    text-transform: none;
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: 2.8rem;
+    line-height: 3rem;
+    position: fixed;
+    left: 50%;
+    z-index: 1000;
+    transition: top 0.5s ease-out;
+}
+
+.animated-title.centered {
+    top: 38vh;
+    transform: translateX(-50%); 
+}
+
+.animated-title.moving {
+    top: 25vh;
+    transform: translateX(-50%); 
+}
+
+.animated-title.integrated {
+    display: none;
+}
+

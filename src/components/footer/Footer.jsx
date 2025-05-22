@@ -20,7 +20,7 @@ function Footer() {
                 <NorthIcon onClick={scrollToTop} style={{ cursor: 'pointer' }} />
             </div>
             <div className='titulo-cortado'>
-                <h1>ESTUDIO INES URIBE</h1>
+                <h1>ESTUDIø INES URIBE</h1>
             </div>
         </div>
     )

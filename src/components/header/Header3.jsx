@@ -25,7 +25,7 @@ function Header3({ onContactClick, onAboutClick }) {
                     <div className='logo-indicator'></div>
                     <Link to={getRoute('home')} className="header-title-link">
                         <h1 ref={titleRef} className="header-title-text">
-                            ESTUDIO INES URIBE
+                            ESTUDIØ INES URIBE
                         </h1>
                     </Link>
                 </div>

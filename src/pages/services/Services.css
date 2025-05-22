@@ -14,7 +14,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
 }
 
 .statement:first-child {
@@ -23,7 +22,6 @@
 }
 
 .statement:last-child {
-    /* padding-bottom: 10vh; */
     justify-content: center;
     height: 80vh;
 }
@@ -36,7 +34,17 @@
     font-family: var(--main-font);
     text-transform: uppercase;
     font-weight: 700;
-    /* No necesitas display: flex aquí a menos que quieras elementos en línea */
+}
+
+
+.services-title-hidden {
+    opacity: 0;
+    /* Ocupa espacio pero no se ve */
+}
+
+.services-title-visible {
+    opacity: 1;
+    /* transition: opacity 0.3s ease-in; */
 }
 
 .statement h2 {

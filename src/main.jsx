@@ -20,7 +20,10 @@ const PortfolioProjectSection = React.lazy(() => import('./pages/code/PortfolioP
 const Contact = React.lazy(() => import('./pages/contact/Contact.jsx'));
 const ContactPhone = React.lazy(() => import('./pages/contact/ContactPhone.jsx'));
 
-const Services = React.lazy(() => import('./pages/services/Services.jsx'));
+// const Services = React.lazy(() => import('./pages/services/Services.jsx'));
+// const ServicesPhone = React.lazy(() => import('./pages/services/ServicesPhone.jsx'));
+
+const ParentContainer = React.lazy(() => import('./pages/services/ParentContainer.jsx'));
 const ServicesPhone = React.lazy(() => import('./pages/services/ServicesPhone.jsx'));
 
 const Portfolio = React.lazy(() => import('./pages/portfolio/Portfolio.jsx'));
@@ -110,7 +113,8 @@ const router = createBrowserRouter([
         path: 'servicios',
         element: <ResponsiveComponent 
           MobileVersion={ServicesPhone} 
-          DesktopVersion={Services} 
+          // DesktopVersion={Services} 
+          DesktopVersion={ParentContainer} 
         />
       },
       {
@@ -161,7 +165,8 @@ const router = createBrowserRouter([
         path: 'services',
         element: <ResponsiveComponent 
           MobileVersion={ServicesPhone} 
-          DesktopVersion={Services} 
+          // DesktopVersion={Services} 
+          DesktopVersion={ParentContainer} 
         />
       },
       {

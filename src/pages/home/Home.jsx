@@ -126,7 +126,7 @@ const Home = () => {
     >
 
       <div className='header-main'>
-                <h1>ESTUDIO INES URIBE</h1>
+                <h1>ESTUDIø INES URIBE</h1>
       </div>
       {/* <Header3 /> */}
     </div>
