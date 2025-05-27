@@ -3,7 +3,7 @@
 const professionalProjects = [
     {
         id: "001",
-        client: "INMO ARTAZA",
+        client: "Inmobiliaria Artaza",
         sector: {
             es: ["Inmobiliario"],
             en: ["Real Estate"]
@@ -16,7 +16,11 @@ const professionalProjects = [
         image: [
             { src: "/Artaza/1.png", alt: "INMO ARTAZA" },
         ],
-        year: 2024,
+        year: 2025,
+        slogan: {
+            es: ["Habitando Getxo"],
+            en: ["Living Getxo"]
+        },
     },
     {
         id: "002",
@@ -34,6 +38,10 @@ const professionalProjects = [
             { src: "/ProfessionalProjects/gloverall1.png", alt: "Fotografía Gloverall" },
         ],
         year: 2025,
+        slogan: {
+            es: ["Tradición moderna"],
+            en: ["Modern tradition"]
+        },
     },
     {
         id: "003",
@@ -51,6 +59,10 @@ const professionalProjects = [
             { src: "/ProfessionalProjects/MachimPP.png", alt: "Detalle bolso marca Rocio Marchimbarrena" },
         ],
         year: 2024,
+        slogan: {
+            es: ["Bolsos únicos y ediciones limitadas"],
+            en: ["Unique bags and limited editions"]
+        },
     },
 ];
 

@@ -2,12 +2,7 @@
     display: flex;
     width: 100%;
     flex-direction: column;
-    /* padding-top: 30vh; */
-    /* gap: 5rem; */
     padding-bottom: 3rem;
-    /* align-items: center;  */
-    /* margin-bottom: 12rem; */
-
 }
 
 .statement {
@@ -30,7 +25,6 @@
     width: 70%;
     text-align: center;
     text-transform: none;
-    /* font-family: 'Argesta'; */
     font-family: var(--main-font);
     text-transform: uppercase;
     font-weight: 700;
@@ -39,24 +33,20 @@
 
 .services-title-hidden {
     opacity: 0;
-    /* Ocupa espacio pero no se ve */
 }
 
 .services-title-visible {
     opacity: 1;
-    /* transition: opacity 0.3s ease-in; */
 }
 
 .statement h2 {
     width: 75%;
     text-align: center;
     text-transform: none;
-    /* font-family: 'Argesta'; */
     font-family: var(--main-font);
     font-weight: 300;
     font-size: 2.8rem;
     line-height: 3rem;
-    /* No necesitas display: flex aquí a menos que quieras elementos en línea */
 }
 
 .statement h3 {
@@ -74,12 +64,10 @@
     padding: 1rem 0rem;
     margin-left: 0.6rem;
     margin-right: 0.6rem;
-    /* padding: 0.1rem 0.3rem; */
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
     border-bottom: 1px solid #e0e0e0;
-    /* height: 11vh; */
 }
 
 .studio-filter button {
@@ -96,7 +84,6 @@
 
 .studio-filter button.active {
     color: #000;
-    /* Color más oscuro para el botón activo */
     background-color: rgba(221, 221, 221, 0.53);
 }
 
@@ -117,10 +104,46 @@
   @keyframes fadeInUp {
     from {
       opacity: 0;
-      /* transform: translateY(-10px); */
     }
     to {
       opacity: 1;
-      /* transform: translateY(0); */
     }
   }
+
+
+
+
+.button-with-filter {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.filter-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.studio-filter button {
+    white-space: nowrap;
+    min-width: fit-content;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1.5rem;
+}
