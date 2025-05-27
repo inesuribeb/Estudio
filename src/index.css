@@ -73,6 +73,9 @@ main {
 
   --main-font: "freight-big-pro", serif;
   --main-italic-font: "freight-big-pro", serif;
+  --mono-font: "mono45-headline", monospace;
+  --mono-font-weight: 500;
+  --mono-font-style: normal;
 
 }
 

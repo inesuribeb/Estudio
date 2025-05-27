@@ -187,13 +187,16 @@
     left: 50%;
     transform: translateX(-50%);
     color: red;
+    /* color: var(--cherry-red); */
     font-size: 2rem;
     font-weight: 700;
     margin: 0;
     padding: 0;
     z-index: 100;
     text-align: center;
-    font-family: var(--main-font);
+    /* font-family: var(--main-font); */
+    font-family: var(--mono-font);
+
 }
 
 .option-web h1 {
