@@ -14,7 +14,7 @@ const professionalProjects = [
         },
         web: "https://artaza.inesuribe.es/",
         image: [
-            { src: "/Artaza/1.png", alt: "INMO ARTAZA" },
+            { src: "/ProfessionalProjects/7.webp", alt: "INMO ARTAZA" },
         ],
         year: 2025,
         slogan: {
