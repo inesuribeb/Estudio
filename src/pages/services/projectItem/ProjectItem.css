@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease;
-    cursor: pointer;
 }
 
 .project-info {
@@ -17,6 +16,10 @@
     object-fit: cover; 
     object-position: center; 
     margin-bottom: 0.2rem;
+}
+
+.project-info img.clickable-image {
+    cursor: pointer;
 }
 
 .project-info h4 {

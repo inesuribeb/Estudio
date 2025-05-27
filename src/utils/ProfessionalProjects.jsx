@@ -64,6 +64,27 @@ const professionalProjects = [
             en: ["Unique bags and limited editions"]
         },
     },
+    {
+        id: "004",
+        client: "Lishom",
+        sector: {
+            es: ["E-commerce", "Moda"],
+            en: ["E-commerce", "Fashion"]
+        },
+        services: {
+            es: ["Dirección Creativa", "Fotografía"],
+            en: ["Creative Direction", "Photography"]
+        },
+        web: "",
+        image: [
+            { src: "/ProfessionalProjects/lishomPP.png", alt: "Detalle bolso marca Rocio Marchimbarrena" },
+        ],
+        year: 2025,
+        slogan: {
+            es: ["Hecho a mano con calma"],
+            en: ["Slowly handmade"]
+        },
+    },
 ];
 
 export default professionalProjects;
