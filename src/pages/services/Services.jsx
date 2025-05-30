@@ -10,7 +10,7 @@ import './Services.css'
 function Services({ showTitle = false }) {
     const { language, toggleLanguage, t } = useLanguage();
     const [activeComponent, setActiveComponent] = useState('Featured');
-    
+
     const [activeService, setActiveService] = useState(null);
     const [activeSector, setActiveSector] = useState(null);
     const [activeClient, setActiveClient] = useState(null);
@@ -45,17 +45,17 @@ function Services({ showTitle = false }) {
 
     const getFilteredProjects = () => {
         if (activeService) {
-            return professionalProjects.filter(project => 
+            return professionalProjects.filter(project =>
                 project.services[language].includes(activeService)
             );
         }
         if (activeSector) {
-            return professionalProjects.filter(project => 
+            return professionalProjects.filter(project =>
                 project.sector[language].includes(activeSector)
             );
         }
         if (activeClient) {
-            return professionalProjects.filter(project => 
+            return professionalProjects.filter(project =>
                 project.client === activeClient
             );
         }
@@ -64,13 +64,13 @@ function Services({ showTitle = false }) {
 
     const getSectorsWithCount = () => {
         const sectorCount = {};
-        
+
         professionalProjects.forEach(project => {
             project.sector[language].forEach(sector => {
                 sectorCount[sector] = (sectorCount[sector] || 0) + 1;
             });
         });
-        
+
         return Object.entries(sectorCount).map(([sector, count]) => ({
             name: sector,
             count: count
@@ -79,11 +79,11 @@ function Services({ showTitle = false }) {
 
     const getClientsWithCount = () => {
         const clientCount = {};
-        
+
         professionalProjects.forEach(project => {
             clientCount[project.client] = (clientCount[project.client] || 0) + 1;
         });
-        
+
         return Object.entries(clientCount).map(([client, count]) => ({
             name: client,
             count: count
@@ -92,12 +92,12 @@ function Services({ showTitle = false }) {
 
     const renderActiveComponent = () => {
         const filteredProjects = getFilteredProjects();
-        
+
         switch (activeComponent) {
             case 'Services':
                 return (
-                    <ServicesList 
-                        t={t} 
+                    <ServicesList
+                        t={t}
                         language={language}
                         onServiceClick={applyServiceFilter}
                         filteredProjects={filteredProjects}
@@ -106,8 +106,8 @@ function Services({ showTitle = false }) {
                 );
             case 'Sectors':
                 return (
-                    <Sectors 
-                        t={t} 
+                    <Sectors
+                        t={t}
                         language={language}
                         sectors={getSectorsWithCount()}
                         onSectorClick={applySectorFilter}
@@ -116,11 +116,11 @@ function Services({ showTitle = false }) {
                     />
                 );
             case 'Featured':
-                return <Featured t={t} />;
+                return <Featured t={t} projects={professionalProjects} language={language} />;
             case 'Clients':
                 return (
-                    <Clients 
-                        t={t} 
+                    <Clients
+                        t={t}
                         language={language}
                         clients={getClientsWithCount()}
                         onClientClick={applyClientFilter}
@@ -153,13 +153,20 @@ function Services({ showTitle = false }) {
     return (
         <div className='services-wrapper'>
             <div className='statement'>
-                <h2 
+                <h2
                     className={showTitle ? 'services-title-visible' : 'services-title-hidden'}
-                    dangerouslySetInnerHTML={{ __html: t('description') }} 
+                    dangerouslySetInnerHTML={{ __html: t('description') }}
                 />
             </div>
 
             <div className='studio-filter'>
+            <button
+                    onClick={() => clearFilters()}
+                    className={activeComponent === 'Featured' ? 'active' : ''}
+                >
+                    {t('featured')}
+                </button>
+
                 <button
                     onClick={() => {
                         setActiveService(null);
@@ -171,7 +178,7 @@ function Services({ showTitle = false }) {
                 >
                     {renderButtonText(t('services'), activeService)}
                 </button>
-                
+
                 <button
                     onClick={() => {
                         setActiveService(null);
@@ -183,7 +190,7 @@ function Services({ showTitle = false }) {
                 >
                     {renderButtonText(t('sectors'), activeSector)}
                 </button>
-                
+
                 <button
                     onClick={() => {
                         setActiveService(null);
@@ -195,15 +202,9 @@ function Services({ showTitle = false }) {
                 >
                     {renderButtonText(t('clients'), activeClient)}
                 </button>
-                
-                <button
-                    onClick={() => clearFilters()}
-                    className={activeComponent === 'Featured' ? 'active' : ''}
-                >
-                    {t('featured')}
-                </button>
+
             </div>
-            
+
             <div className="filter-render">
                 <div className="animated-content" key={activeComponent}>
                     {renderActiveComponent()}

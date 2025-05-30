@@ -12,13 +12,13 @@
 }
 
 .statement:first-child {
-    padding-top: 25vh;
-    height: 70vh;
+    padding-top: 27vh;
+    height: 75vh;
 }
 
 .statement:last-child {
     justify-content: center;
-    height: 80vh;
+    height: 90vh;
 }
 
 .statement h1 {

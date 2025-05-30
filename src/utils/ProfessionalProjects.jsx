@@ -15,6 +15,7 @@ const professionalProjects = [
         web: "https://artaza.inesuribe.es/",
         image: [
             { src: "/ProfessionalProjects/7.webp", alt: "Detalle interior de una esquina de un salon, con un sofa chaiselongue e iluminacion calida" },
+            { src: "/ProfessionalProjects/9.webp", alt: "Detalle interior de una esquina de un salon, con un sofa chaiselongue e iluminacion calida" },
         ],
         year: 2025,
         slogan: {
