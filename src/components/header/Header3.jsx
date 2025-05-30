@@ -58,7 +58,8 @@ function Header3({ onContactClick, onAboutClick }) {
                                 >
                                     {isActive(getRoute('services')) && <span className="link-indicator"></span>}
                                     {/* [{t('services')}] */}
-                                    [ESTUDIO]
+                                    {/* [ESTUDIO] */}
+                                    [{t('studio')}]
                                 </Link>
                             </li>
                             {/* <li className="nav-item">
@@ -101,7 +102,8 @@ function Header3({ onContactClick, onAboutClick }) {
                                 className="nav-link" 
                                 onClick={onAboutClick}
                             >
-                                [Contact]
+                                {/* [Contact] */}
+                                [{t('about')}]
                             </button>
                         </li>
                         </ul>

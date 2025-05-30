@@ -4,13 +4,15 @@ export const headerTranslations = {
         code: "Web",
         portfolio: "Portfolio",
         services: "Services",
-        about: "About",
+        about: "Contact",
+        studio: "Studio",
     },
     es: {
         art: "Arte y Diseño",
         code: "Web",
         portfolio: "Portfolio",
         services: "Servicios",
-        about: "About",
+        about: "Contacto",
+        studio: "Estudio",
     }
 };

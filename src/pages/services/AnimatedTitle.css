@@ -18,7 +18,7 @@
 }
 
 .animated-title.moving {
-    top: 25vh;
+    top: 27vh;
     transform: translateX(-50%); 
 }
 

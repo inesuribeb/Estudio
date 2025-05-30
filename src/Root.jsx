@@ -59,6 +59,10 @@ function Root() {
         }
     }, [isContactOpen]);
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location.pathname]);
+
     const handleContactClick = () => {
         if (isContactOpen) {
             setHeaderClosing(true);

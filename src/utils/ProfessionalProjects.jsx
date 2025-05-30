@@ -14,7 +14,8 @@ const professionalProjects = [
         },
         web: "https://artaza.inesuribe.es/",
         image: [
-            { src: "/ProfessionalProjects/7.webp", alt: "INMO ARTAZA" },
+            { src: "/ProfessionalProjects/7.webp", alt: "Detalle interior de una esquina de un salon, con un sofa chaiselongue e iluminacion calida" },
+            { src: "/ProfessionalProjects/9.webp", alt: "Detalle interior de una esquina de un salon, con un sofa chaiselongue e iluminacion calida" },
         ],
         year: 2025,
         slogan: {
@@ -35,7 +36,8 @@ const professionalProjects = [
         },
         web: "https://swipeagency.es/",
         image: [
-            { src: "/ProfessionalProjects/gloverall1.png", alt: "Fotografía Gloverall" },
+            { src: "/ProfessionalProjects/gloverall1.png", alt: "Fotografía lookbook de moda de modelo en exterior con una prenda Gloverall" },
+            { src: "/ProfessionalProjects/810studioPP.jpg", alt: "Fotografía lookbook de moda de modelo en exterior con una prenda Gloverall" },
         ],
         year: 2025,
         slogan: {
@@ -56,7 +58,9 @@ const professionalProjects = [
         },
         web: "https://machimba.inesuribe.es/home",
         image: [
-            { src: "/ProfessionalProjects/MachimPP.png", alt: "Detalle bolso marca Rocio Marchimbarrena" },
+            { src: "/ProfessionalProjects/MachimPP.png", alt: "Detalle bolso artesanal marca Rocio Marchimbarrena" },
+            { src: "/ProfessionalProjects/Machim2PP.jpg", alt: "Detalle bolso estampado artesanal marca Rocio Marchimbarrena en una silla vintage" },
+
         ],
         year: 2024,
         slogan: {
@@ -75,14 +79,78 @@ const professionalProjects = [
             es: ["Dirección Creativa", "Fotografía"],
             en: ["Creative Direction", "Photography"]
         },
-        web: "",
+        web: "https://lishom.com/",
         image: [
-            { src: "/ProfessionalProjects/lishomPP.png", alt: "Detalle bolso marca Rocio Marchimbarrena" },
+            { src: "/ProfessionalProjects/lishomPP.png", alt: "Foto de modelo con un gran bolso de lino blanco con los remates en cuero negro" },
         ],
         year: 2025,
         slogan: {
-            es: ["Hecho a mano con calma"],
+            es: ["A mano & con calma"],
             en: ["Slowly handmade"]
+        },
+    },
+    {
+        id: "005",
+        client: "NWHR",
+        sector: {
+            es: ["E-commerce", "Moda"],
+            en: ["E-commerce", "Fashion"]
+        },
+        services: {
+            es: ["Dirección Creativa", "Fotografía"],
+            en: ["Creative Direction", "Photography"]
+        },
+        web: "https://nwhr.eu/",
+        image: [
+            { src: "/ProfessionalProjects/nwhrPP.jpg", alt: "Pescador del puesto de Caion con pescado en mano llevando camiseta de la marca NWHR Clothing" },
+        ],
+        year: 2025,
+        slogan: {
+            es: ["Moda sin ruido"],
+            en: ["Quiet clothing"]
+        },
+    },
+    {
+        id: "006",
+        client: "Flabelus",
+        sector: {
+            es: ["E-commerce", "Moda"],
+            en: ["E-commerce", "Fashion"]
+        },
+        services: {
+            es: ["Dirección Creativa", "Fotografía"],
+            en: ["Creative Direction", "Photography"]
+        },
+        web: "https://flabelus.com/",
+        image: [
+            { src: "/ProfessionalProjects/FlabelusPP.jpg", alt: "Mujer sentada en una terraza de un castillo medieval llevando unos zapatos coloridos Flabelus" },
+        ],
+        year: 2025,
+        slogan: {
+            es: ["Tradición reinterpretada"],
+            en: ["A new take on tradition"]
+        },
+    },
+    {
+        id: "007",
+        client: "The Bike Country",
+        sector: {
+            es: ["Turismo", "Deportes"],
+            en: ["Tourism", "Sports"]
+        },
+        services: {
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding", "Identidad de marca"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding", "Brand Identity"]
+        },
+        web: "https://bikecountry.inesuribe.es/",
+        image: [
+            { src: "/ProfessionalProjects/tbcPP.avif", alt: "Foto zoom de mujer ciclista de carretera" },
+            { src: "/ProfessionalProjects/tbc2PP.jpg", alt: "Foto zoom de mujer ciclista de carretera" },
+        ],
+        year: 2025,
+        slogan: {
+            es: ["Ciclismo de élite"],
+            en: ["Elite cycling experiences"]
         },
     },
 ];

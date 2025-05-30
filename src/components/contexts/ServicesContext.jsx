@@ -19,6 +19,7 @@ export const ServicesTranslations = {
       sectors: "Sectors",
       featured: "Featured",
       clients: "Clients",
+      viewPortfolio: "View Portfolio",
     },
     es: {
       agencyPhrase: "ESTUDIO Ines Uribe",
@@ -39,6 +40,7 @@ export const ServicesTranslations = {
       sectors: "Sectores",
       featured: "Destacados",
       clients: "Clientes",
+      viewPortfolio: "Ver Portfolio",
     },
     
   };
