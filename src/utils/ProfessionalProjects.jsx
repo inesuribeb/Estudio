@@ -37,6 +37,7 @@ const professionalProjects = [
         web: "https://swipeagency.es/",
         image: [
             { src: "/ProfessionalProjects/gloverall1.png", alt: "Fotografía lookbook de moda de modelo en exterior con una prenda Gloverall" },
+            { src: "/ProfessionalProjects/810studioPP.jpg", alt: "Fotografía lookbook de moda de modelo en exterior con una prenda Gloverall" },
         ],
         year: 2025,
         slogan: {
@@ -58,6 +59,8 @@ const professionalProjects = [
         web: "https://machimba.inesuribe.es/home",
         image: [
             { src: "/ProfessionalProjects/MachimPP.png", alt: "Detalle bolso artesanal marca Rocio Marchimbarrena" },
+            { src: "/ProfessionalProjects/Machim2PP.jpg", alt: "Detalle bolso estampado artesanal marca Rocio Marchimbarrena en una silla vintage" },
+
         ],
         year: 2024,
         slogan: {
@@ -82,7 +85,7 @@ const professionalProjects = [
         ],
         year: 2025,
         slogan: {
-            es: ["Hecho a mano con calma"],
+            es: ["A mano & con calma"],
             en: ["Slowly handmade"]
         },
     },
@@ -136,12 +139,13 @@ const professionalProjects = [
             en: ["Tourism", "Sports"]
         },
         services: {
-            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding", "Fotografía", "Identidad de marca"],
-            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding", "Photography", "Brand Identity"]
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding", "Identidad de marca"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding", "Brand Identity"]
         },
         web: "https://bikecountry.inesuribe.es/",
         image: [
             { src: "/ProfessionalProjects/tbcPP.avif", alt: "Foto zoom de mujer ciclista de carretera" },
+            { src: "/ProfessionalProjects/tbc2PP.jpg", alt: "Foto zoom de mujer ciclista de carretera" },
         ],
         year: 2025,
         slogan: {

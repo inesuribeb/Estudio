@@ -61,5 +61,6 @@
 }
 
 .contact-links-to button:hover {
-    color: black;
+    color: red;
+    border-color: red;
 }
