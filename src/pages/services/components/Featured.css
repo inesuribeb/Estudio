@@ -61,6 +61,8 @@
     flex-direction: column;
     width: 100%;
     gap: 4rem;
+    border-bottom: 1px solid #e0e0e0;
+
 }
 
 .first-line-ft,
@@ -133,7 +135,7 @@
 .third-line-ft {
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 20vh;
 }
 
 .third-line-ft h1 {

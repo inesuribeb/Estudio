@@ -8,7 +8,7 @@ import professionalProjects from '../../utils/ProfessionalProjects';
 import './Services.css'
 
 function Services({ showTitle = false }) {
-    const { language, toggleLanguage, t } = useLanguage();
+    const { language, toggleLanguage, t, getRoute} = useLanguage();
     const [activeComponent, setActiveComponent] = useState('Featured');
 
     const [activeService, setActiveService] = useState(null);
@@ -116,7 +116,7 @@ function Services({ showTitle = false }) {
                     />
                 );
             case 'Featured':
-                return <Featured t={t} projects={professionalProjects} language={language} />;
+                return <Featured t={t} projects={professionalProjects} language={language} getRoute={getRoute} />;
             case 'Clients':
                 return (
                     <Clients
@@ -129,8 +129,8 @@ function Services({ showTitle = false }) {
                     />
                 );
             default:
-                return <Featured t={t} />;
-        }
+                return <Featured t={t} projects={professionalProjects} language={language} getRoute={getRoute} />;
+            }
     };
 
     const renderButtonText = (baseText, activeFilter) => {

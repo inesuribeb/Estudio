@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
 import ProjectItem from '../projectItem/ProjectItem';
 import './Featured.css'
 
-function Featured({ t, projects = [], language }) {
+function Featured({ t, projects = [], language, getRoute }) {
     // Seleccionar proyectos específicos por ID
     const getProjectById = (id) => projects.find(project => project.id === id);
 
@@ -81,8 +82,9 @@ function Featured({ t, projects = [], language }) {
                 </div>
             </div>
             <div className='third-line-ft'>
-                {/* Tercera línea - por implementar */}
-                <h1>{t('viewPortfolio')}</h1>
+                <Link to={getRoute('portfolio')} className="nav-link">
+                    <h1>{t('viewPortfolio')}</h1>
+                </Link>
             </div>
         </div>
     )
