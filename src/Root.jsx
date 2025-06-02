@@ -9,6 +9,7 @@ import Contact from './pages/contact/Contact';
 import Modal from './pages/art/Modal';
 import Footer from './components/footer/Footer';
 import About from './pages/about/About';
+import Curtain from './components/curtain/Curtain';
 import './Root.css'
 
 function Root() {
@@ -126,6 +127,7 @@ function Root() {
                     onPrevious={navigationHandlers.handlePrevious}
                 />
             </div>
+            <Curtain />
         </LanguageProvider>
     );
 }
