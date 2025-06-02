@@ -507,7 +507,7 @@ function PhotoDesign() {
           {categories.design[language]}
         </span>
       </div>
-      <section className="contentContainer">
+      <section className="contentContainer" key={selectedCategory}>
         {renderContent()}
       </section>
     </div>

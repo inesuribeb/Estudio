@@ -16,17 +16,6 @@
     background-color: rgba(221, 221, 221, 0.6);
 }
 
-.about-close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: transparent;
-    border: none;
-    color: red;
-    font-size: 2rem;
-    cursor: pointer;
-    z-index: 1001;
-}
 
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -63,4 +52,55 @@
 .contact-links-to button:hover {
     color: red;
     border-color: red;
+}
+
+
+
+
+
+.about-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    z-index: 1001;
+}
+
+.about-close-btn:hover {
+    transform: scale(1.1);
+}
+
+.about-close-btn::before,
+.about-close-btn::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 0.8px;
+    background: #888;
+    /* background: #ff4444; */
+    transition: all 0.3s ease;
+}
+
+.about-close-btn::before {
+    transform: rotate(45deg);
+}
+
+.about-close-btn::after {
+    transform: rotate(-45deg);
+}
+
+.about-close-btn:hover::before,
+.about-close-btn:hover::after {
+    background: #ff4444;
+    background: red;
+    box-shadow: 0 0 8px rgba(255, 68, 68, 0.3);
 }

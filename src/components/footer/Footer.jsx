@@ -1,22 +1,42 @@
+import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 import NorthIcon from '@mui/icons-material/North';
 import './Footer.css'
 
 function Footer() {
+    const { t } = useLanguage();
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
+    const [time, setTime] = useState(new Date());
+
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setTime(new Date());
+        }, 1000);
+
+        return () => clearInterval(timer);
+    }, []);
 
     const currentYear = new Date().getFullYear();
 
     return (
         <div className='footer-wrapper'>
+            {/* <div className='first-line-footer'>
+                <h5>Bilbao, {t('basqueCountry')}<br />
+                    {`${time.getHours() % 12 || 12}:${String(time.getMinutes()).padStart(2, '0')} ${time.getHours() >= 12 ? 'PM' : 'AM'}`}
+                </h5>
+            </div> */}
             <div className="footer-content">
-                {/* <div className={`footer-content ${className || ''}`}> */}
-
-                <div className="footer-text">
-                    {/* <h1 className='my-name'>INES URIBE</h1> */}
-                    <h1>Copyright © {currentYear} Ines Uribe. All Rights Reserved.</h1>
+                <div className='first-line-footer'>
+                    <h5>Bilbao, {t('basqueCountry')}<br />
+                        {`${time.getHours() % 12 || 12}:${String(time.getMinutes()).padStart(2, '0')} ${time.getHours() >= 12 ? 'PM' : 'AM'}`}
+                    </h5>
                 </div>
+                {/* <div className="footer-text">
+                    <h1>Copyright © {currentYear} Ines Uribe. All Rights Reserved.</h1>
+                </div> */}
                 <NorthIcon onClick={scrollToTop} style={{ cursor: 'pointer' }} />
             </div>
             <div className='titulo-cortado'>

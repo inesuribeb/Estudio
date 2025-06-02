@@ -6,13 +6,15 @@ export const headerTranslations = {
         services: "Services",
         about: "Contact",
         studio: "Studio",
+        basqueCountry: "Basque Country",
     },
     es: {
-        art: "Arte y Diseño",
+        art: "Arte & Diseño",
         code: "Web",
         portfolio: "Portfolio",
         services: "Servicios",
         about: "Contacto",
         studio: "Estudio",
+        basqueCountry: "País Vasco",
     }
 };
