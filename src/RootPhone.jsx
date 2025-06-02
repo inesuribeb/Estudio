@@ -1,10 +1,10 @@
 import { Outlet } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import HeaderPhone from './components/header/HeaderPhone';
+import { LanguageProvider } from './components/contexts/LanguageContext'; // ← Importar esto
+// import HeaderPhone from './components/header/HeaderPhone';
+import Header3Phone from './components/header/Header3Phone';
 import { useState, useEffect } from 'react';
 import './RootPhone.css'
-
-
 
 function RootPhone() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,12 +17,10 @@ function RootPhone() {
 
       const handleScroll = () => {
         clearTimeout(scrollTimeout);
-
         setIsUserScrolling(true);
 
         scrollTimeout = setTimeout(() => {
           setIsUserScrolling(false);
-
           if (window.scrollY > 0) {
             setIsMenuOpen(false);
           }
@@ -49,23 +47,21 @@ function RootPhone() {
   };
 
   return (
-    <>
-      <HeaderPhone 
+    <LanguageProvider> {/* ← Envolver todo con LanguageProvider */}
+      {/* <HeaderPhone 
         isMenuOpen={isMenuOpen} 
         setIsMenuOpen={setIsMenuOpen}
         onMenuClick={handleMenuClick}
         className={location.pathname === '/contact' ? 'header-special-bg' : ''}
-      />
-      {/* <div className={`root-phone__content ${isMenuOpen ? 'shifted' : ''}`}>
-        <Outlet context={{ isMenuOpen, setIsMenuOpen }} />
-      </div> */}
+      /> */}
+      <Header3Phone />
       <div 
         className={`root-phone__content ${isMenuOpen ? 'shifted' : ''}`}
         key={location.pathname} 
       >
         <Outlet context={{ isMenuOpen, setIsMenuOpen }} />
       </div>
-    </>
+    </LanguageProvider> 
   );
 }
 
