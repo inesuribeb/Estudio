@@ -1,7 +1,17 @@
 .root-phone__content {
   /* margin-top: 100px; */
+  min-height: 100svh;
   animation: fadeInRoutes 0.5s ease-in forwards;
+  padding: 0; /* Elimina padding que pueda causar scroll */
+  margin: 0;
+  background-color:  #f4f4f4;
+
 }
+
+/* .root-phone__content {
+  background-color:  #f4f4f4;
+  min-height: 100dvh;
+} */
 
 @keyframes fadeInRoutes {
   from {

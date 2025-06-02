@@ -13,24 +13,30 @@
 }
 
 .title-home-phone {
-    position: absolute;
+    /* position: absolute;
     top: 50%; 
     left: 10%; 
     cursor: pointer;
     text-align: center;
-    background-color: transparent;
+    background-color: transparent; */
+    text-align: center;
+    height: 100dvh; 
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    color: var(--light-color); 
+    /* color: var(--pink-color);  */
+    position: relative;
+    overflow: hidden;
+    background-image: url('/CAPTURAS/FONDOMOVIL.png');
+    background-size: cover;
+    background-position: center;
+    font-size: 2.3rem;
+    font-family: var(--main-font);
 }
 
-.title-home-phone-text {
-    color: rgb(208,45,28); 
-    text-decoration: none; 
-    letter-spacing: 0.10em;
-    font-size: 120%;
-    font-family: 'BLUE OCEAN';
-    transition: color 0.3s ease; 
-    animation: fadeInHome 2s ease-in-out infinite;
-    background-color: transparent;
-}
+
 
 .title-home-phone-text:hover {
     color: black;

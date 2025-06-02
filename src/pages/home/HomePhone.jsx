@@ -33,9 +33,9 @@ const HomePhone = () => {
     >
       <h1 
         className="title-home-phone"
-        onClick={handleTitleClick}
+        // onClick={handleTitleClick}
       >
-        <span className="title-home-phone-text">INES URIBE</span>
+        ESTUDIø<br/>INES URIBE
       </h1>
     </div>
   );

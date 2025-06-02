@@ -5,16 +5,18 @@
   box-sizing: border-box;
 }
 
-.root-phone__content {
+/* .root-phone__content {
   background-color:  #f4f4f4;
-  min-height: 100vh;
-}
+  min-height: 100dvh;
+} */
 
 html, body {
   margin: 0; 
   height: 100%; 
   background-color: #f4f4f4;
   overscroll-behavior-y: none;
+
+  height: 100svh;
 }
 
 a {
@@ -39,6 +41,7 @@ h1 {
 
 #root {
   min-height: 100vh;
+  min-height: 100svh; 
   background-color: #f4f4f4;
   /* background-color: #F6EAD3; */
 
