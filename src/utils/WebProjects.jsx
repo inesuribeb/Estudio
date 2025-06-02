@@ -8,7 +8,7 @@ const projectsData = [
             es: "Plataforma web moderna para Inmobiliaria Artaza, diseñada para mostrar propiedades en Getxo y alrededores con una experiencia visual sofisticada.",
             en: "A modern web platform for Inmobiliaria Artaza, crafted to showcase properties in Getxo and nearby areas with a refined and visually engaging experience."
         },
-        category: "Front-end",
+        category: "Full-stack",
         method: "React • JavaScript • CSS3",
         link: "https://github.com/inesuribeb/Artaza/tree/main/mi-aplicacion",
         images: [
