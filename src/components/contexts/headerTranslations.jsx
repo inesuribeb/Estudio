@@ -8,7 +8,7 @@ export const headerTranslations = {
         studio: "Studio",
     },
     es: {
-        art: "Arte y Diseño",
+        art: "Arte & Diseño",
         code: "Web",
         portfolio: "Portfolio",
         services: "Servicios",

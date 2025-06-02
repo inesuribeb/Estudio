@@ -1,5 +1,7 @@
 .home-container {
-    background-image: url(/CAPTURAS/fondohome.png); 
+    /* background-image: url(/CAPTURAS/fondohome.png);  */
+    background-image: url(/artOpt/fondohomeJPG.jpg); 
+
     background-size: cover; 
     background-position: center; 
     height: 100vh; 

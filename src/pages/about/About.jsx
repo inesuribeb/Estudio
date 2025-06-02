@@ -4,14 +4,12 @@ function About({ isOpen, onClose }) {
     if (!isOpen) return null;
     
     const handleBackgroundClick = (e) => {
-        // Solo cerrar si se hace clic en el fondo, no en los elementos hijos
         if (e.target === e.currentTarget) {
             onClose();
         }
     };
 
     const handleButtonAreaClick = (e) => {
-        // Evitar que el clic se propague al fondo
         e.stopPropagation();
     };
 
@@ -33,7 +31,8 @@ function About({ isOpen, onClose }) {
     
     return (
         <div className='about-modal' onClick={handleBackgroundClick}>
-            <button className='about-close-btn' onClick={onClose}>×</button>
+            {/* <button className='about-close-btn' onClick={onClose}>×</button> */}
+            <button className='about-close-btn' onClick={onClose}></button>
 
             <div className='contact-links-to' onClick={handleButtonAreaClick}>
                 <button className='email-c' onClick={handleEmailClick}>estudio@inesuribe.es</button>

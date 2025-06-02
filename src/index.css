@@ -1,10 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300&display=swap');
 
-/* * {
-  box-sizing: border-box;
-  background-color: #f4f4f4;
-} */
 
 * {
   box-sizing: border-box;
@@ -12,7 +7,6 @@
 
 .root-phone__content {
   background-color:  #f4f4f4;
-  /* background-color: #F6EAD3; */
   min-height: 100vh;
 }
 
@@ -20,9 +14,6 @@ html, body {
   margin: 0; 
   height: 100%; 
   background-color: #f4f4f4;
-  /* background-color: #F6EAD3; */
-  /* flex-direction: column;
-  display: flex; */
   overscroll-behavior-y: none;
 }
 
@@ -66,6 +57,7 @@ main {
   --corporative-color: red;
   --light-color: #f4f4f4;
   --pink-color: #FFD2D2;
+  --nice-color: #ff4444;
   --yellow-color: #FFF503;
   --tuscan-red: #891D1A;
   --cherry-red: #A7292F;

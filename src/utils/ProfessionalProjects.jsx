@@ -36,7 +36,7 @@ const professionalProjects = [
         },
         web: "https://swipeagency.es/",
         image: [
-            { src: "/ProfessionalProjects/gloverall1.png", alt: "Fotografía lookbook de moda de modelo en exterior con una prenda Gloverall" },
+            { src: "/ProfessionalProjects/gloverall1PP.jpg", alt: "Fotografía lookbook de moda de modelo en exterior con una prenda Gloverall" },
             { src: "/ProfessionalProjects/810studioPP.jpg", alt: "Fotografía lookbook de moda de modelo en exterior con una prenda Gloverall" },
         ],
         year: 2025,
@@ -58,7 +58,7 @@ const professionalProjects = [
         },
         web: "https://machimba.inesuribe.es/home",
         image: [
-            { src: "/ProfessionalProjects/MachimPP.png", alt: "Detalle bolso artesanal marca Rocio Marchimbarrena" },
+            { src: "/ProfessionalProjects/MachimPP2.jpg", alt: "Detalle bolso artesanal marca Rocio Marchimbarrena" },
             { src: "/ProfessionalProjects/Machim2PP.jpg", alt: "Detalle bolso estampado artesanal marca Rocio Marchimbarrena en una silla vintage" },
 
         ],
@@ -81,7 +81,7 @@ const professionalProjects = [
         },
         web: "https://lishom.com/",
         image: [
-            { src: "/ProfessionalProjects/lishomPP.png", alt: "Foto de modelo con un gran bolso de lino blanco con los remates en cuero negro" },
+            { src: "/ProfessionalProjects/lishomPP2.jpg", alt: "Foto de modelo con un gran bolso de lino blanco con los remates en cuero negro" },
         ],
         year: 2025,
         slogan: {
