@@ -86,4 +86,13 @@
     letter-spacing: 0;
     /* font-weight: 700; */
     font-style: italic;
+    color: black;
+}
+
+
+.portfolio-icon {
+    width: 35px;
+    height: 35px;
+    margin-left: 0.2rem;
+    vertical-align: middle;
 }
