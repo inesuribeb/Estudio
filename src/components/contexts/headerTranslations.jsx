@@ -6,6 +6,7 @@ export const headerTranslations = {
         services: "Services",
         about: "Contact",
         studio: "Studio",
+        basqueCountry: "Basque Country",
     },
     es: {
         art: "Arte & Diseño",
@@ -14,5 +15,6 @@ export const headerTranslations = {
         services: "Servicios",
         about: "Contacto",
         studio: "Estudio",
+        basqueCountry: "País Vasco",
     }
 };

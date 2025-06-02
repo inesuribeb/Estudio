@@ -26,6 +26,7 @@ function Contact({ isOpen, onClose, headerClosing }) {
         }, 600);
     };
 
+    
     const className = `contact-page ${isOpen ? 'open' : ''} ${isClosing ? 'closing' : ''}`;
 
     return (
