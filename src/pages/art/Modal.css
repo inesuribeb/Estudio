@@ -89,6 +89,9 @@
 }
 
 @media (max-width: 767px) {
+  .modal-overlay {
+    z-index: 99999; /* Aumentar el z-index en móvil */
+  }
 
   .modal-content {
     width: 100%;
@@ -114,31 +117,32 @@
     width: 25px;
     height: 25px;
     top: auto;
-    bottom: 30px;
+    bottom: 55px;
     transform: none;
 
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 1;
+    display: none;
   }
 
   .nav-button.prev {
-    left: 30px;
+    left: 165px;
   }
 
   .nav-button.next {
-    right: 30px;
+    right: 165px;
   }
 
   .nav-button.prev:before {
-    content: "<";
+    content: "";
     color: black;
     font-size: 15px;
   }
  
   .nav-button.next:before {
-    content: ">";
+    content: "";
     color: black;
     font-size: 15px;
   }

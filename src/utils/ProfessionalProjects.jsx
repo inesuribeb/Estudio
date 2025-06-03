@@ -19,8 +19,8 @@ const professionalProjects = [
         ],
         year: 2025,
         slogan: {
-            es: ["Habitando Getxo"],
-            en: ["Living Getxo"]
+            es: ["Espacios con alma"],
+            en: ["Homes with soul"]
         },
     },
     {

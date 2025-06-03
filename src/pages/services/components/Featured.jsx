@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import ProjectItem from '../projectItem/ProjectItem';
+import PortfolioIcon from '/flechasLaura/FLECHA WEB-02.svg'; // ← Cambio aquí
 import './Featured.css'
 
 function Featured({ t, projects = [], language, getRoute }) {
@@ -83,7 +84,7 @@ function Featured({ t, projects = [], language, getRoute }) {
             </div>
             <div className='third-line-ft'>
                 <Link to={getRoute('portfolio')} className="nav-link">
-                    <h1>{t('viewPortfolio')}</h1>
+                    <h1>{t('viewPortfolio')} <img src={PortfolioIcon} alt="portfolio icon" className="portfolio-icon" /></h1>
                 </Link>
             </div>
         </div>

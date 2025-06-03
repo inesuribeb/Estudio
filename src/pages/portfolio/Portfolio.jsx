@@ -11,11 +11,9 @@ function Portfolio() {
     const handleClick = (e, route) => {
         e.preventDefault();
         
-        // Identificar qué div estamos animando
         const isArt = route === getRoute('art');
         setAnimatingDiv(isArt ? 'art' : 'code');
         
-        // Navegar después de la animación (2s de expansión + 2s de espera + tiempo para desvanecerse)
         setTimeout(() => {
             navigate(route);
         }, 3000);

@@ -16,6 +16,7 @@ const PhotoDesignPhone = React.lazy(() => import('./pages/art/PhotoDesignPhone.j
 
 const WebProjects = React.lazy(() => import('./pages/code/WebProjects.jsx'));
 const PortfolioProjectSection = React.lazy(() => import('./pages/code/PortfolioProjectSection.jsx'));
+// const PortfolioProjectSection = React.lazy(() => import('./pages/code/WebProjects.jsx'));
 
 const Contact = React.lazy(() => import('./pages/contact/Contact.jsx'));
 const ContactPhone = React.lazy(() => import('./pages/contact/ContactPhone.jsx'));
@@ -30,7 +31,7 @@ const Portfolio = React.lazy(() => import('./pages/portfolio/Portfolio.jsx'));
 const PortfolioPhone = React.lazy(() => import('./pages/portfolio/PortfolioPhone.jsx'));
 
 const About = React.lazy(() => import('./pages/about/About.jsx'));
-const AboutPhone = React.lazy(() => import('./pages/about/AboutPhone.jsx'));
+const AboutPhone = React.lazy(() => import('./pages/about/About.jsx'));
 
 const MainMenu2 = React.lazy(() => import('./pages/mainMenu/MainMenu2.jsx'));
 const MainMenuPhone = React.lazy(() => import('./pages/mainMenu/MainMenuPhone.jsx'));
