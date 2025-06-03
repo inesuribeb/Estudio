@@ -27,10 +27,10 @@ const ParentContainer = React.lazy(() => import('./pages/services/ParentContaine
 const ServicesPhone = React.lazy(() => import('./pages/services/ServicesPhone.jsx'));
 
 const Portfolio = React.lazy(() => import('./pages/portfolio/Portfolio.jsx'));
-const PortfolioPhone = React.lazy(() => import('./pages/portfolio/PortfolioPhone.jsx'));
+const PortfolioPhone = React.lazy(() => import('./pages/portfolio/Portfolio.jsx'));
 
 const About = React.lazy(() => import('./pages/about/About.jsx'));
-const AboutPhone = React.lazy(() => import('./pages/about/AboutPhone.jsx'));
+const AboutPhone = React.lazy(() => import('./pages/about/About.jsx'));
 
 const MainMenu2 = React.lazy(() => import('./pages/mainMenu/MainMenu2.jsx'));
 const MainMenuPhone = React.lazy(() => import('./pages/mainMenu/MainMenuPhone.jsx'));

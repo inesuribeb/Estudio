@@ -1,9 +1,9 @@
 .root-phone__content {
-  /* margin-top: 100px; */
+  /* margin-top: 4rem; */
   min-height: 100svh;
   animation: fadeInRoutes 0.5s ease-in forwards;
-  padding: 0; /* Elimina padding que pueda causar scroll */
-  margin: 0;
+  /* padding: 0;  */
+  /* margin: 0; */
   background-color:  #f4f4f4;
 
 }
