@@ -132,13 +132,13 @@ const router = createBrowserRouter([
           DesktopVersion={About} 
         />
       },
-      {
-        path: 'menu',
-        element: <ResponsiveComponent 
-          MobileVersion={MainMenuPhone} 
-          DesktopVersion={MainMenu2} 
-        />
-      },
+      // {
+      //   path: 'menu',
+      //   element: <ResponsiveComponent 
+      //     MobileVersion={MainMenuPhone} 
+      //     DesktopVersion={MainMenu2} 
+      //   />
+      // },
       
       // Rutas en inglés (mismos componentes, diferentes URLs)
       {
@@ -187,13 +187,13 @@ const router = createBrowserRouter([
           DesktopVersion={About} 
         />
       },
-      {
-        path: 'main-menu',
-        element: <ResponsiveComponent 
-          MobileVersion={MainMenuPhone} 
-          DesktopVersion={MainMenu2} 
-        />
-      },
+      // {
+      //   path: 'main-menu',
+      //   element: <ResponsiveComponent 
+      //     MobileVersion={MainMenuPhone} 
+      //     DesktopVersion={MainMenu2} 
+      //   />
+      // },
     ]
   }
 ]);
