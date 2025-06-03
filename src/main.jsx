@@ -33,8 +33,8 @@ const PortfolioPhone = React.lazy(() => import('./pages/portfolio/PortfolioPhone
 const About = React.lazy(() => import('./pages/about/About.jsx'));
 const AboutPhone = React.lazy(() => import('./pages/about/About.jsx'));
 
-const MainMenu2 = React.lazy(() => import('./pages/mainMenu/MainMenu2.jsx'));
-const MainMenuPhone = React.lazy(() => import('./pages/mainMenu/MainMenuPhone.jsx'));
+// const MainMenu2 = React.lazy(() => import('./pages/mainMenu/MainMenu2.jsx'));
+// const MainMenuPhone = React.lazy(() => import('./pages/mainMenu/MainMenuPhone.jsx'));
 
 const ResponsiveComponent = ({ MobileVersion, DesktopVersion }) => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
