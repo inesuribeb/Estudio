@@ -1,10 +1,9 @@
 /* Estilos específicos para Header3Phone - Solo móvil */
-.phone-header-container {
+/* .phone-header-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100dvh;
     z-index: 1000;
     padding: 0.3rem;
     display: flex;
@@ -12,6 +11,7 @@
     align-items: flex-start;
     background-color: transparent;
     justify-content: space-between;
+    pointer-events: none;
 }
 
 .phone-header-wrapper {
@@ -19,11 +19,12 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    height: 100%;
+    min-height: 100svh; 
     justify-content: space-between;
+    pointer-events: none;
+    padding-bottom: 0.5rem;
 }
 
-/* Logo arriba */
 .phone-header-logo {
     display: flex;
     align-items: center;
@@ -35,6 +36,7 @@
     padding: 23px 20px 6px 10px;
     flex-shrink: 0;
     width: fit-content;
+    pointer-events: auto;
 }
 
 .phone-logo-indicator {
@@ -48,6 +50,7 @@
 .phone-header-title-link {
     text-decoration: none;
     color: inherit;
+    pointer-events: auto;
 }
 
 .phone-header-title-text {
@@ -59,7 +62,6 @@
     font-family: 'Pragmatica', sans-serif;
 }
 
-/* Barra inferior */
 .phone-header-bottom {
     display: flex;
     flex-direction: row;
@@ -68,12 +70,14 @@
     justify-content: space-between;
     gap: 0.3rem;
     padding-bottom: 0;
+    pointer-events: auto;
 }
 
 .phone-header-nav {
     display: flex;
     flex-shrink: 0;
     width: auto;
+    pointer-events: auto;
 }
 
 .phone-main-nav {
@@ -103,6 +107,7 @@
     position: relative;
     flex-shrink: 0;
     width: fit-content;
+    pointer-events: auto;
 }
 
 .phone-nav-link {
@@ -125,16 +130,228 @@
     color: black;
 }
 
-/* .phone-link-indicator {
+.phone-nav-item-expandable {
+    transition: all 0.3s ease;
+}
+
+.phone-portfolio-submenu {
     position: absolute;
-    left: -8px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 4px;
-    height: 4px;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(221, 221, 221, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 0.3rem;
+    animation: slideUp 0.3s ease;
+    z-index: 1002;
+    pointer-events: auto;
+}
+
+.phone-submenu-link {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Pragmatica', sans-serif;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.phone-submenu-icon {
+    font-size: 0.8rem !important;
+}
+
+.phone-language-toggle {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-color: rgba(221, 221, 221, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    padding: 20px 10px 6px 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Pragmatica', sans-serif;
+    flex-shrink: 0;
+    gap: 8px;
+    pointer-events: auto;
+}
+
+.phone-lang-option {
+    font-size: 0.6rem;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.phone-lang-active {
+    color: var(--corporative-color);
+}
+
+.phone-lang-divider {
+    font-size: 0.6rem;
+    color: #999;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+/* Estilos específicos para Header3Phone - Solo móvil */
+.phone-header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0.3rem;
+    background-color: transparent;
+    /* PERMITIR que los clicks pasen por las áreas vacías */
+    pointer-events: none;
+}
+
+.phone-header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    /* ELIMINAR min-height y justify-content para permitir flujo natural */
+    /* min-height: 100svh; */
+    /* justify-content: space-between; */
+    /* IMPORTANTE: Esto sigue siendo pointer-events: none */
+    pointer-events: none;
+}
+
+/* Logo arriba - mantiene su posición fija */
+.phone-header-logo {
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-color: rgba(221, 221, 221, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    padding: 23px 20px 6px 10px;
+    flex-shrink: 0;
+    width: fit-content;
+    /* PERMITIR clicks en el logo */
+    pointer-events: auto;
+    margin-bottom: 1rem; /* Espacio entre logo y contenido */
+}
+
+.phone-logo-indicator {
+    width: 12px;
+    height: 12px;
     background-color: var(--corporative-color);
     border-radius: 50%;
-} */
+    margin-right: 0.8rem;
+}
+
+.phone-header-title-link {
+    text-decoration: none;
+    color: inherit;
+    /* PERMITIR clicks en el título */
+    pointer-events: auto;
+}
+
+.phone-header-title-text {
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    font-family: 'Pragmatica', sans-serif;
+}
+
+/* Barra inferior - ahora en posición fija independiente */
+.phone-header-bottom {
+    position: fixed;
+    bottom: 0.3rem;
+    left: 0.3rem;
+    right: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3rem;
+    z-index: 1001;
+    /* PERMITIR clicks en la barra inferior */
+    pointer-events: auto;
+}
+
+.phone-header-nav {
+    display: flex;
+    flex-shrink: 0;
+    width: auto;
+    /* PERMITIR clicks en la navegación */
+    pointer-events: auto;
+}
+
+.phone-main-nav {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.phone-nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.3rem;
+    align-items: center;
+    width: auto;
+}
+
+.phone-nav-item {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-color: rgba(221, 221, 221, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    padding: 15px 10px 6px 10px;
+    position: relative;
+    flex-shrink: 0;
+    width: fit-content;
+    /* PERMITIR clicks en los items del nav */
+    pointer-events: auto;
+}
+
+.phone-nav-link {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    position: relative;
+    font-weight: 300;
+    white-space: nowrap;
+    font-family: 'Pragmatica', sans-serif;
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.phone-nav-active {
+    color: black;
+}
 
 /* Submenu para portfolio */
 .phone-nav-item-expandable {
@@ -155,6 +372,8 @@
     margin-bottom: 0.3rem;
     animation: slideUp 0.3s ease;
     z-index: 1002;
+    /* PERMITIR clicks en el submenu */
+    pointer-events: auto;
 }
 
 .phone-submenu-link {
@@ -182,13 +401,13 @@
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 6px;
     padding: 20px 10px 6px 10px;
-    /* padding: 15px 10px 6px 10px; */
-
     display: flex;
     align-items: center;
     font-family: 'Pragmatica', sans-serif;
     flex-shrink: 0;
     gap: 8px;
+    /* PERMITIR clicks en el language toggle */
+    pointer-events: auto;
 }
 
 .phone-lang-option {
@@ -220,68 +439,3 @@
         transform: translateY(0);
     }
 }
-
-/* Media queries específicas para diferentes tamaños de móvil */
-/* @media (max-width: 480px) {
-    .phone-header-container {
-        padding: 0.2rem;
-    }
-
-    .phone-nav-list {
-        gap: 0.2rem;
-    }
-
-    .phone-header-title-text {
-        font-size: 0.6rem;
-    }
-
-    .phone-nav-link {
-        font-size: 0.55rem;
-    }
-
-    .phone-submenu-link {
-        font-size: 0.55rem;
-    }
-
-    .phone-lang-option {
-        font-size: 0.55rem;
-    }
-
-    .phone-header-logo,
-    .phone-nav-item,
-    .phone-language-toggle {
-        padding: 15px 8px 4px 8px;
-    }
-
-    .phone-header-bottom {
-        gap: 0.2rem;
-    }
-}
-
-@media (max-width: 375px) {
-    .phone-header-container {
-        padding: 0.15rem;
-    }
-
-    .phone-header-title-text {
-        font-size: 0.55rem;
-    }
-
-    .phone-nav-link {
-        font-size: 0.5rem;
-    }
-
-    .phone-submenu-link {
-        font-size: 0.5rem;
-    }
-
-    .phone-lang-option {
-        font-size: 0.5rem;
-    }
-
-    .phone-header-logo,
-    .phone-nav-item,
-    .phone-language-toggle {
-        padding: 12px 6px 3px 6px;
-    }
-} */
