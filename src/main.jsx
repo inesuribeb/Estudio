@@ -25,7 +25,7 @@ const ContactPhone = React.lazy(() => import('./pages/contact/ContactPhone.jsx')
 // const ServicesPhone = React.lazy(() => import('./pages/services/ServicesPhone.jsx'));
 
 const ParentContainer = React.lazy(() => import('./pages/services/ParentContainer.jsx'));
-const ServicesPhone = React.lazy(() => import('./pages/services/ServicesPhone.jsx'));
+// const ServicesPhone = React.lazy(() => import('./pages/services/ParentContainer.jsx'));
 
 const Portfolio = React.lazy(() => import('./pages/portfolio/Portfolio.jsx'));
 const PortfolioPhone = React.lazy(() => import('./pages/portfolio/PortfolioPhone.jsx'));
@@ -112,11 +112,11 @@ const router = createBrowserRouter([
       },
       {
         path: 'servicios',
-        element: <ResponsiveComponent 
-          MobileVersion={ServicesPhone} 
-          // DesktopVersion={Services} 
-          DesktopVersion={ParentContainer} 
-        />
+        // element: <ResponsiveComponent 
+        //   MobileVersion={ParentContainer} 
+        //   DesktopVersion={ParentContainer} 
+        // />
+        element: <ParentContainer />
       },
       {
         path: 'portafolio',
@@ -164,11 +164,14 @@ const router = createBrowserRouter([
       },
       {
         path: 'services',
-        element: <ResponsiveComponent 
-          MobileVersion={ServicesPhone} 
-          // DesktopVersion={Services} 
-          DesktopVersion={ParentContainer} 
-        />
+        // element: <ResponsiveComponent 
+        //   MobileVersion={ParentContainer} 
+        //   DesktopVersion={ParentContainer} 
+        // />
+        element: <Navigate to="/servicios" replace />
+        // element: <ParentContainer />
+        
+
       },
       {
         path: 'portfolio',

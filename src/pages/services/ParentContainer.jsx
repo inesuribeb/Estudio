@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import { useLanguage } from '../../components/contexts/LanguageContext';
 import Curtain from './Curtain';
 import AnimatedTitle from './AnimatedTitle';
 import Services from './Services';
+import ServicesPhone from './ServicesPhone';
 
 function ParentContainer() {
     const { t } = useLanguage();
@@ -10,6 +12,8 @@ function ParentContainer() {
     const [startCurtainFade, setStartCurtainFade] = useState(false);
     const [showServicesTitle, setShowServicesTitle] = useState(false);
     const [isAnimating, setIsAnimating] = useState(true);
+    
+    const isMobile = useMediaQuery({ maxWidth: 768 });
 
     useEffect(() => {
         if (isAnimating) {
@@ -34,7 +38,6 @@ function ParentContainer() {
         setTimeout(() => {
             setIsAnimating(false);
         }, 1000);
-
     };
 
     return (
@@ -50,9 +53,14 @@ function ParentContainer() {
                 onReachedPosition={handleTitleReachedPosition}
             />
             
-            <Services showTitle={showServicesTitle} />
+            {isMobile ? (
+                <ServicesPhone showTitle={showServicesTitle} />
+            ) : (
+                <Services showTitle={showServicesTitle} />
+            )}
         </div>
     );
 }
 
 export default ParentContainer;
+

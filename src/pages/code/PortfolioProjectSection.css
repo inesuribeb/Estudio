@@ -1,10 +1,18 @@
 .webproject-container-mobile {
     padding: 0 16px;
     margin-top: 6rem;
-    /* margin-bottom: 6rem; */
+    margin-bottom: 6rem;
 }
 .web-section-mobile {
     /* margin-bottom: 4rem; */
     margin-top: 3rem;
     /* padding-bottom: 4rem; */
 }
+
+.titulo-principal-p {
+    padding-top: 4rem;
+    padding-bottom: 2.5rem;
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: 2.3rem;
+  }

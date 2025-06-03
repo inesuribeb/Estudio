@@ -251,29 +251,7 @@ function PortfolioProjectSection() {
       e.stopPropagation();
       setIsMenuOpen(false);
     }}>
-      {/* Añadir categorías como en WebProjects */}
-      {/* <div className="categories-mobile">
-        <span
-          className={selectedCategory === 'All' ? 'active' : ''}
-          onClick={() => setSelectedCategory('All')}
-        >
-          {categories.all[language]}
-        </span>
-        <span className="separator">, </span>
-        <span
-          className={selectedCategory === 'Front-end' ? 'active' : ''}
-          onClick={() => setSelectedCategory('Front-end')}
-        >
-          {categories.frontend[language]}
-        </span>
-        <span className="separator">, </span>
-        <span
-          className={selectedCategory === 'Full-stack' ? 'active' : ''}
-          onClick={() => setSelectedCategory('Full-stack')}
-        >
-          {categories.fullstack[language]}
-        </span>
-      </div> */}
+      <h2 className='titulo-principal-p'>{t('code')}</h2>
       <CategoriesPhone
         categories={categories}
         selectedCategory={selectedCategory}

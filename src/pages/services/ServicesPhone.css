@@ -1,0 +1,176 @@
+.phone-services-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    padding-top: 0rem;
+}
+
+.phone-statement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.phone-statement:first-child {
+    padding-top: 20vh;
+    min-height: 50vh;
+    justify-content: center;
+}
+
+.phone-statement:last-child {
+    justify-content: center;
+    min-height: 60vh;
+    padding-top: 3rem;
+}
+
+.phone-statement h1 {
+    width: 90%;
+    text-align: center;
+    text-transform: none;
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+
+    /* width: 90%;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        z-index: 1000; */
+}
+
+.phone-services-title-hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.phone-services-title-visible {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.phone-statement h2 {
+    width: 95%;
+    text-align: center;
+    text-transform: none;
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-bottom: 4rem;
+}
+
+.phone-statement h3 {
+    width: 85%;
+    text-align: center;
+    text-transform: none;
+    font-family: 'Pragmatica';
+    font-weight: 300;
+    letter-spacing: 0.10em;
+    font-size: 0.9rem;
+}
+
+.phone-studio-filter {
+    padding: 1rem 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    /* border-bottom: 1px solid #e0e0e0; */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.phone-studio-filter button {
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    color: #7a7a7a;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-family: 'Pragmatica', sans-serif;
+    font-weight: 300;
+    white-space: nowrap;
+    min-width: fit-content;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.phone-studio-filter button.active {
+    color: #000;
+    background-color: rgba(221, 221, 221, 0.53);
+}
+
+.phone-studio-filter button:hover {
+    background-color: rgba(221, 221, 221, 0.53);
+}
+
+.phone-filter-render {
+    padding: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.phone-animated-content {
+    animation: phone-fadeInUp 0.5s ease forwards;
+}
+
+@keyframes phone-fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.phone-button-with-filter {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.phone-filter-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+}
+
+.phone-filter-close:hover {
+    background-color: transparent;
+}
+
+/* Grid específico para móvil */
+.phone-projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    animation: phone-fadeInUp 0.5s ease forwards;
+}
+
+/* Para tablets pequeñas */
+@media (min-width: 480px) and (max-width: 768px) {
+    .phone-projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+    
+    .phone-statement h2 {
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+    }
+}

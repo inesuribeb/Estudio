@@ -2,6 +2,8 @@
     padding: 0 16px;
     margin-top: 6rem;
     /* margin-bottom: 6rem; */
+    margin-bottom: 6rem;
+
   }
   
   .photo-grid-phone {
@@ -29,3 +31,11 @@
     font-family: 'Pragmatica', sans-serif;
     letter-spacing: 0.3em;
   }
+
+.titulo-principal-p {
+  padding-top: 4rem;
+  padding-bottom: 2.5rem;
+  font-family: var(--main-font);
+  font-weight: 300;
+  font-size: 2.3rem;
+}

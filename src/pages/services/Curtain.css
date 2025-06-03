@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     background-color: var(--pink-color);
     z-index: 999;
     transition: opacity 0.5s ease-out;
@@ -11,4 +11,32 @@
 
 .curtain.fade-out {
     opacity: 0;
+}
+
+
+/* Adaptación para móvil */
+@media (max-width: 768px) {
+    .curtain {
+        height: 100dvh; /* Ya está usando dvh, perfecto para móvil */
+        z-index: 999; /* Mantener por debajo del header (1000) */
+    }
+}
+
+/* Para dispositivos con viewport dinámico */
+@media (max-width: 768px) and (orientation: portrait) {
+    .curtain {
+        /* Asegurar que cubra toda la pantalla incluso con barras de navegación */
+        height: 100dvh;
+        width: 100vw;
+        /* Prevenir scroll durante la animación */
+        overflow: hidden;
+    }
+}
+
+/* Para dispositivos muy pequeños */
+@media (max-width: 480px) {
+    .curtain {
+        /* Optimización para pantallas pequeñas */
+        will-change: opacity; /* Optimizar animación */
+    }
 }

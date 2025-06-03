@@ -3,6 +3,7 @@
 const projectsData = [
     {
         title: "INMO ARTAZA",
+        mobileWebReady: true,
         web: "https://artaza.inesuribe.es/",
         description: {
             es: "Plataforma web moderna para Inmobiliaria Artaza, diseñada para mostrar propiedades en Getxo y alrededores con una experiencia visual sofisticada.",
@@ -27,6 +28,7 @@ const projectsData = [
     },
     {
         title: "KAZOKU",
+        mobileWebReady: false,
         description: {
             es: "Kazoku es una red social para desarrolladores, que permite a los usuarios crear perfiles, mostrar proyectos web y vincular cuentas de redes sociales. Cuenta con un sistema de likes, seguidores/seguidos y un chat interno. Para los no usuarios, también sirve como un sitio web inspirador para ideas de desarrollo web. Desarrollado con Saúl Mora, Ekaitz Guerra y Jon Latxiondo.",
             en: "Kazoku is a social network for developers, allowing users to create profiles, showcase web projects, and link social media accounts. It features a like system, followers/following, and an internal chat. For non-users, it also serves as an inspiring website for web development ideas. Developed with Saúl Mora, Ekaitz Guerra and Jon Latxiondo."
@@ -49,6 +51,7 @@ const projectsData = [
     },
     {
         title: "SWIPE AGENCY",
+        mobileWebReady: true,
         web: "https://swipeagency.es/",
         description: {
             es: "SWIPE AGENCY es una agencia de representación de moda con sede en Bilbao. Sus marcas combinan diseño y tradición. La plataforma es un catálogo digital basado en React con diseño responsive, layouts exclusivos para escritorio y móvil, y navegación dinámica.",
@@ -68,9 +71,7 @@ const projectsData = [
             { src: "/portfolioWebs/8.Gloverall2Movil.jpg", alt: "descripción2" },
             { src: "/portfolioWebs/9.810s.jpg", alt: "descripción2" },
             { src: "/portfolioWebs/10.810sMovil.jpg", alt: "descripción2" },
-            // { src: "https://i.ibb.co/y4PbtNS/Captura-de-Pantalla-2025-01-05-a-las-14-39-04.png", alt: "descripción2" },
-            // { src: "https://i.ibb.co/0hKVKy7/IMG-6459.jpg", alt: "descripción2" },
-            // { src: "https://i.ibb.co/WgKJpSx/IMG-6460.jpg", alt: "descripción2" },
+
         ],
         sector: {
             es: ["Moda"],
@@ -79,6 +80,7 @@ const projectsData = [
     },
     {
         title: "MACHIMBAG",
+        mobileWebReady: false,
         web: "https://machimba.inesuribe.es/home",
         description: {
             es: "MACHIMBA es una plataforma de comercio electrónico que ofrece bolsos únicos y de edición limitada diseñados y elaborados por Rocío Machimbarrena. Combina un diseño elegante con una experiencia de compra fluida. Desarrollado en colaboración con Samuel Correia y Ekaitz Guerra.",
@@ -95,7 +97,6 @@ const projectsData = [
             { src: "/portfolioWebs/Machimba5.jpg", alt: "descripción2" },
             { src: "/portfolioWebs/Machimba6.jpg", alt: "descripción2" },
             { src: "/portfolioWebs/Machimba7.jpg", alt: "descripción2" },
-            // { src: "https://i.ibb.co/CvY7hck/Captura-de-Pantalla-2025-01-05-a-las-13-26-42.png", alt: "descripción2" },
         ],
         sector: {
             es: ["E-commerce", "Moda"],
@@ -104,6 +105,7 @@ const projectsData = [
     },
     {
         title: "The Bike Country",
+        mobileWebReady: false,
         web: "https://bikecountry.inesuribe.es/",
         description: {
             es: "TBC es una empresa de turismo premium especializada en ciclismo en el País Vasco (Euskadi). Su plataforma de comercio electrónico permite a los usuarios explorar paquetes, reservar experiencias y gestionar sus viajes sin problemas. Desarrollado en colaboración con Yeray Moreno y Estefania Mendes.",
@@ -128,6 +130,7 @@ const projectsData = [
     },
     {
         title: "KHROMA",
+        mobileWebReady: false,
         web: "https://khroma.inesuribe.es/",
         description: {
             es: "KHROMA es un proyecto que permite a los usuarios explorar y generar esquemas de colores personalizados, identificar y convertir colores, y crear paletas versátiles para diversas aplicaciones.",
@@ -152,6 +155,7 @@ const projectsData = [
     },
     {
         title: "BYTE BITES",
+        mobileWebReady: false,
         web: "https://byte-bites.inesuribe.es/",
         description: {
             es: "BYTE BITES es una plataforma web diseñada para facilitar la exploración y descubrimiento de recetas, ofreciendo a los usuarios búsquedas personalizadas, recomendaciones y búsquedas basadas en consultas. Desarrollado en colaboración con Jon Latxiondo.",
@@ -165,7 +169,6 @@ const projectsData = [
             { src: "/portfolioWebs/bb2.jpg", alt: "descripción2" },
             { src: "/portfolioWebs/bb3.jpg", alt: "descripción2" },
             { src: "/portfolioWebs/bb4.jpg", alt: "descripción2" },
-            // { src: "https://i.ibb.co/nnZZdQh/Captura-de-Pantalla-2025-01-05-a-las-10-40-04.png", alt: "descripción2" },
         ],
         sector: {
             es: ["Tecnología", "Alimentación"],
