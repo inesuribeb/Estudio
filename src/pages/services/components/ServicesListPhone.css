@@ -1,0 +1,93 @@
+.phone-services-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.phone-services-display {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+/* Botón para abrir modal de servicios */
+.phone-services-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    background-color: rgba(221, 221, 221, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 1rem 0;
+}
+
+.phone-services-button:hover {
+    background-color: rgba(221, 221, 221, 0.5);
+    transform: translateY(-2px);
+}
+
+.phone-services-text {
+    font-family: var(--main-font);
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: black;
+    text-transform: capitalize;
+}
+
+.phone-services-arrow {
+    font-size: 1.5rem;
+    color: var(--corporative-color);
+    transition: transform 0.3s ease;
+}
+
+.phone-services-button:hover .phone-services-arrow {
+    transform: translateX(5px);
+}
+
+.phone-services-description {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.phone-services-description p {
+    font-family: 'Pragmatica';
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Estilos para cuando se muestran proyectos filtrados */
+.phone-filtered-projects {
+    width: 100%;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.phone-projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.phone-project-item {
+    width: 100%;
+}
+
+/* Para tablets pequeñas */
+@media (min-width: 480px) and (max-width: 768px) {
+    .phone-projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+    
+    .phone-services-text {
+        font-size: 1.6rem;
+    }
+}
