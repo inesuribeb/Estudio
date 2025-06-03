@@ -45,10 +45,9 @@
     pointer-events: auto;
 }
 
-.phone-option-art h1,
-.phone-option-web h1 {
+.phone-option-art h1 {
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     color: red;
@@ -64,8 +63,25 @@
 }
 
 .phone-option-web h1 {
-    color: var(--light-color);
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+    text-align: center;
+    font-family: var(--main-font);
+    font-style: italic;
+    pointer-events: none;
 }
+
+/* .phone-option-web h1 {
+    color: var(--light-color);
+} */
 
 /* ---- ANIMACIONES PARA OPTION-ART (ARRIBA) ---- */
 .phone-option-art.phone-animating {
