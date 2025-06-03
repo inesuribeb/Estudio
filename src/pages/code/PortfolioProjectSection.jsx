@@ -61,7 +61,7 @@
 //         { src: "https://i.ibb.co/YTLtSLNq/4k.png", alt: "descripción2" },
 //         { src: "https://i.ibb.co/84bNmZn6/1k.png", alt: "descripción2" },
 //         { src: "https://i.ibb.co/HDmvLmtZ/9k.png", alt: "descripción2" },
-        
+
 //       ]
 //     },
 //     {
@@ -187,6 +187,7 @@ import { useSearchParams } from 'react-router-dom';
 import { useOutletContext } from 'react-router-dom';
 import { useLanguage } from '../../components/contexts/LanguageContext';
 import projectsData, { getProjectsByCategory } from '../../utils/WebProjects';
+import CategoriesPhone from '../../components/categoriesPhone/CategoriesPhone';
 
 import './PortfolioProjectSection.css'
 
@@ -194,7 +195,7 @@ function PortfolioProjectSection() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [selectedCategory, setSelectedCategory] = useState('All');
-  
+
   const { language, t } = useLanguage();
   const { isMenuOpen, setIsMenuOpen } = useOutletContext();
   const [searchParams] = useSearchParams();
@@ -205,7 +206,7 @@ function PortfolioProjectSection() {
       en: "All"
     },
     frontend: {
-      es: "Front-end", 
+      es: "Front-end",
       en: "Front-end"
     },
     fullstack: {
@@ -273,6 +274,12 @@ function PortfolioProjectSection() {
           {categories.fullstack[language]}
         </span>
       </div> */}
+      <CategoriesPhone
+        categories={categories}
+        selectedCategory={selectedCategory}
+        onCategoryChange={setSelectedCategory}
+        type="code"
+      />
 
       <div className="web-projects-mobile" style={{ marginBottom: `${marginBottom}px` }}>
         {filteredProjects.map((project, index) => (

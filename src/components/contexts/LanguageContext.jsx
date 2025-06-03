@@ -13,6 +13,7 @@ const translations = {
       portfolio: "Portfolio",
       about: "About",
       menu: "Menu", 
+      categories: "Categories",
       ...headerTranslations.en,
       ...ServicesTranslations.en
     },
@@ -24,6 +25,7 @@ const translations = {
       portfolio: "Portafolio",
       about: "Sobre mí",
       menu: "Menú",
+      categories: "Categorías",
       ...headerTranslations.es,
       ...ServicesTranslations.es
     }

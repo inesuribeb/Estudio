@@ -89,6 +89,9 @@
 }
 
 @media (max-width: 767px) {
+  .modal-overlay {
+    z-index: 99999; /* Aumentar el z-index en móvil */
+  }
 
   .modal-content {
     width: 100%;
