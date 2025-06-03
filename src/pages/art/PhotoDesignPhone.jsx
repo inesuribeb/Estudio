@@ -202,6 +202,7 @@ function PhotoDesignPhone() {
       e.stopPropagation();
       setIsMenuOpen(false);
     }}>
+      <h2 className='titulo-principal-p'>{t('art')}</h2>
       <CategoriesPhone
         categories={categories}
         selectedCategory={selectedCategory}

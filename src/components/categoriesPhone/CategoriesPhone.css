@@ -27,13 +27,13 @@
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.categories-hamburger {
+/* .categories-hamburger {
     font-size: 1.2rem !important;
     color: black;
-}
+} */
 
 .categories-label {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: 500;
     text-transform: uppercase;
     color: black;
@@ -45,11 +45,11 @@
 }
 
 .selected-category {
-    font-size: 0.85rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: black;
     font-style: italic;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 
