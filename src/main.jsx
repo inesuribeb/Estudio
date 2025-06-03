@@ -25,7 +25,7 @@ const ContactPhone = React.lazy(() => import('./pages/contact/ContactPhone.jsx')
 // const ServicesPhone = React.lazy(() => import('./pages/services/ServicesPhone.jsx'));
 
 const ParentContainer = React.lazy(() => import('./pages/services/ParentContainer.jsx'));
-const ServicesPhone = React.lazy(() => import('./pages/services/ServicesPhone.jsx'));
+const ServicesPhone = React.lazy(() => import('./pages/services/ParentContainer.jsx'));
 
 const Portfolio = React.lazy(() => import('./pages/portfolio/Portfolio.jsx'));
 const PortfolioPhone = React.lazy(() => import('./pages/portfolio/PortfolioPhone.jsx'));

@@ -96,3 +96,76 @@
     margin-left: 0.2rem;
     vertical-align: middle;
 }
+
+
+
+/* ---- MEDIA QUERIES PARA MÓVIL ---- */
+@media (max-width: 768px) {
+    .featured {
+        gap: 2rem;
+    }
+
+    .first-line-ft,
+    .second-line-ft {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /* Reorganizar columnas para móvil */
+    .first-line-ft .column1,
+    .second-line-ft .column1 {
+        flex-direction: column;
+        gap: 2rem;
+        order: initial; /* Resetear orden */
+    }
+
+    .first-line-ft .column2,
+    .second-line-ft .column2 {
+        order: initial; /* Resetear orden */
+    }
+
+    /* Cada contenedor de proyecto ocupa toda la fila */
+    .column1 .project-item-container,
+    .column2 .project-item-container {
+        height: 40vh; /* Altura fija para móvil */
+        flex: none;
+        width: 100%;
+    }
+
+    /* Ajustar tercera línea para móvil */
+    .third-line-ft {
+        height: 15vh;
+        margin-top: 2rem;
+    }
+
+    .third-line-ft h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .portfolio-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .featured {
+        gap: 1.5rem;
+    }
+
+    .first-line-ft,
+    .second-line-ft {
+        gap: 1.5rem;
+    }
+
+    .column1 .project-item-container,
+    .column2 .project-item-container {
+        height: 100%;
+    }
+
+    .third-line-ft h1 {
+        font-size: 1.6rem;
+    }
+}

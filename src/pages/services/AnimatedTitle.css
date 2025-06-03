@@ -26,3 +26,39 @@
     opacity: 0;
     pointer-events: none;
 }
+
+
+/* Adaptación para móvil */
+@media (max-width: 768px) {
+    .animated-title {
+        width: 90%;
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+        z-index: 1000; /* Asegurar que esté por debajo del header (1000) */
+    }
+
+    .animated-title.centered {
+        top: 35vh; /* Ajustar para móvil */
+    }
+
+    .animated-title.moving {
+        top: 22vh; /* Posición final más alta para evitar el header */
+    }
+}
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .animated-title {
+        width: 95%;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    .animated-title.centered {
+        top: 32vh;
+    }
+
+    .animated-title.moving {
+        top: 20vh;
+    }
+}
