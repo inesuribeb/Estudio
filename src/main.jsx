@@ -12,7 +12,7 @@ const Home = React.lazy(() => import('./pages/home/Home.jsx'));
 const HomePhone = React.lazy(() => import('./pages/home/HomePhone.jsx'));
 
 const PhotoDesign = React.lazy(() => import('./pages/art/PhotoDesign.jsx'));
-const PhotoDesignPhone = React.lazy(() => import('./pages/art/PhotoDesign.jsx'));
+const PhotoDesignPhone = React.lazy(() => import('./pages/art/PhotoDesignPhone.jsx'));
 
 const WebProjects = React.lazy(() => import('./pages/code/WebProjects.jsx'));
 const PortfolioProjectSection = React.lazy(() => import('./pages/code/PortfolioProjectSection.jsx'));
