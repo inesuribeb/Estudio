@@ -14,6 +14,8 @@ const translations = {
       about: "About",
       menu: "Menu", 
       categories: "Categories",
+      warning: "Desktop only",
+      seeOn: "See on",
       ...headerTranslations.en,
       ...ServicesTranslations.en
     },
@@ -26,6 +28,8 @@ const translations = {
       about: "Sobre mí",
       menu: "Menú",
       categories: "Categorías",
+      warning: "Solo Desktop",
+      seeOn: "Ver en",
       ...headerTranslations.es,
       ...ServicesTranslations.es
     }

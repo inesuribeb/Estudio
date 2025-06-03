@@ -4,6 +4,7 @@ const professionalProjects = [
     {
         id: "001",
         client: "Inmobiliaria Artaza",
+        mobileWebReady: true,
         sector: {
             es: ["Inmobiliario"],
             en: ["Real Estate"]
@@ -12,7 +13,7 @@ const professionalProjects = [
             es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding", "Fotografía", "Identidad de marca"],
             en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding", "Photography", "Brand Identity"]
         },
-        web: "https://artaza.inesuribe.es/",
+        web: "https://inmoartaza.es/inicio",
         image: [
             { src: "/ProfessionalProjects/7.webp", alt: "Detalle interior de una esquina de un salon, con un sofa chaiselongue e iluminacion calida" },
             { src: "/ProfessionalProjects/9.webp", alt: "Detalle interior de una esquina de un salon, con un sofa chaiselongue e iluminacion calida" },
@@ -26,6 +27,7 @@ const professionalProjects = [
     {
         id: "002",
         client: "Swipe Agency",
+        mobileWebReady: true,
         sector: {
             es: ["Moda"],
             en: ["Fashion"]
@@ -48,6 +50,7 @@ const professionalProjects = [
     {
         id: "003",
         client: "Rocio Machimbarrena",
+        mobileWebReady: false,
         sector: {
             es: ["E-commerce", "Moda"],
             en: ["E-commerce", "Fashion"]
@@ -71,6 +74,7 @@ const professionalProjects = [
     {
         id: "004",
         client: "Lishom",
+        mobileWebReady: true,
         sector: {
             es: ["E-commerce", "Moda"],
             en: ["E-commerce", "Fashion"]
@@ -92,6 +96,7 @@ const professionalProjects = [
     {
         id: "005",
         client: "NWHR",
+        mobileWebReady: true,
         sector: {
             es: ["E-commerce", "Moda"],
             en: ["E-commerce", "Fashion"]
@@ -112,6 +117,7 @@ const professionalProjects = [
     },
     {
         id: "006",
+        mobileWebReady: true,
         client: "Flabelus",
         sector: {
             es: ["E-commerce", "Moda"],
@@ -133,6 +139,7 @@ const professionalProjects = [
     },
     {
         id: "007",
+        mobileWebReady: false,
         client: "The Bike Country",
         sector: {
             es: ["Turismo", "Deportes"],
