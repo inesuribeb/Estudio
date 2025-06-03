@@ -169,12 +169,18 @@ export const LanguageProvider = ({ children }) => {
   };
 
   // Efecto para mantener sincronizado el idioma con la URL
+  // useEffect(() => {
+  //   const detectedLanguage = detectLanguageFromPath(location.pathname);
+  //   if (detectedLanguage !== language) {
+  //     setLanguage(detectedLanguage);
+  //   }
+  // }, [location.pathname, language]);
   useEffect(() => {
     const detectedLanguage = detectLanguageFromPath(location.pathname);
     if (detectedLanguage !== language) {
       setLanguage(detectedLanguage);
     }
-  }, [location.pathname, language]);
+  }, [location.pathname]);
 
   return (
     <LanguageContext.Provider value={{

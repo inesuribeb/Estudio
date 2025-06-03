@@ -174,7 +174,6 @@ function RootPhone() {
     type: 'art'
   });
 
-  // Lógica para ocultar footer en las mismas rutas que desktop
   const isMenuRoute = location.pathname === '/menu' || location.pathname === '/main-menu';
   const isHomeRoute = location.pathname === '/' || location.pathname === '/home' || location.pathname === '/inicio';
   const isPortfolioRoute = location.pathname === '/portfolio' || location.pathname === '/portafolio';
@@ -250,7 +249,7 @@ function RootPhone() {
       
       <div 
         className={`root-phone__content ${isMenuOpen ? 'shifted' : ''}`}
-        key={location.pathname} 
+        key={`content-${location.pathname}`}
       >
         <Outlet context={{ 
           isMenuOpen, 
@@ -267,7 +266,7 @@ function RootPhone() {
       </div>
 
       {!hideFooter && (
-        <div className="fade-in" key={location.pathname}>
+        <div className="fade-in" key={`footer-${location.pathname}`}>
           <Footer />
         </div>
       )}
