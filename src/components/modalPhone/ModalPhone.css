@@ -108,10 +108,10 @@
     width: fit-content; 
     
 }
-
+/* 
 .modal-category-item:hover {
     background-color: rgba(0, 0, 0, 0.05);
-}
+} */
 
 .modal-category-item.active {
     color: #a1a1a1;
@@ -138,3 +138,26 @@
         opacity: 1;
     }
 }
+
+
+/* .menu-number {
+    margin-right: 20px;
+    font-size: 0.8rem;
+    color: #999;
+    font-family: monospace;
+} */
+
+.modal-category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* otros estilos del modal item */
+}
+
+.phone-menu-number {
+    font-size: 0.8rem;
+    color: #999;
+    font-family: monospace;
+    margin-bottom: 4px;
+}
+
