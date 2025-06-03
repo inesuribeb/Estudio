@@ -17,7 +17,7 @@
             
 //             return categories.services.map((service, index) => (
 //                 <div
-//                     key={service}
+//                     key={`service-${index}`}
 //                     className={`modal-category-item ${selectedCategory === service ? 'active' : ''}`}
 //                     onClick={() => handleCategoryClick(service)}
 //                 >
@@ -32,12 +32,12 @@
             
 //             return categories.sectors.map((sector, index) => (
 //                 <div
-//                     key={sector}
-//                     className={`modal-category-item ${selectedCategory === sector ? 'active' : ''}`}
-//                     onClick={() => handleCategoryClick(sector)}
+//                     key={`sector-${index}`}
+//                     className={`modal-category-item ${selectedCategory === sector.name ? 'active' : ''}`}
+//                     onClick={() => handleCategoryClick(sector.name)}
 //                 >
 //                     <span className="phone-menu-number">[{(index + 1).toString().padStart(2, '0')}]</span>
-//                     <span className="phone-menu-text">{sector}</span>
+//                     <span className="phone-menu-text">{sector.name} ({sector.count})</span>
 //                 </div>
 //             ));
 //         }
@@ -47,12 +47,12 @@
             
 //             return categories.clients.map((client, index) => (
 //                 <div
-//                     key={client}
-//                     className={`modal-category-item ${selectedCategory === client ? 'active' : ''}`}
-//                     onClick={() => handleCategoryClick(client)}
+//                     key={`client-${index}`}
+//                     className={`modal-category-item ${selectedCategory === client.name ? 'active' : ''}`}
+//                     onClick={() => handleCategoryClick(client.name)}
 //                 >
 //                     <span className="phone-menu-number">[{(index + 1).toString().padStart(2, '0')}]</span>
-//                     <span className="phone-menu-text">{client}</span>
+//                     <span className="phone-menu-text">{client.name} ({client.count})</span>
 //                 </div>
 //             ));
 //         }
@@ -101,11 +101,40 @@
 // }
 
 // export default ModalPhone;
+
 import { useLanguage } from '../../components/contexts/LanguageContext';
+import { useEffect } from 'react';
 import './ModalPhone.css';
 
 function ModalPhone({ isOpen, onClose, categories, selectedCategory, onCategorySelect, type = 'art' }) {
     const { language } = useLanguage();
+
+    // Manejar el scroll cuando se abre/cierra el modal
+    useEffect(() => {
+        if (isOpen) {
+            // Guardar posición actual del scroll
+            const scrollY = window.scrollY;
+            document.body.style.position = 'fixed';
+            document.body.style.top = `-${scrollY}px`;
+            document.body.style.width = '100%';
+        } else {
+            // Restaurar posición del scroll
+            const scrollY = document.body.style.top;
+            document.body.style.position = '';
+            document.body.style.top = '';
+            document.body.style.width = '';
+            if (scrollY) {
+                window.scrollTo(0, parseInt(scrollY || '0') * -1);
+            }
+        }
+
+        return () => {
+            // Cleanup
+            document.body.style.position = '';
+            document.body.style.top = '';
+            document.body.style.width = '';
+        };
+    }, [isOpen]);
 
     if (!isOpen) return null;
 
@@ -196,7 +225,7 @@ function ModalPhone({ isOpen, onClose, categories, selectedCategory, onCategoryS
         <div className="modal-phone-overlay" onClick={onClose}>
             <div className="modal-phone-content" onClick={(e) => e.stopPropagation()}>
                 <button className="about-close-btn" onClick={onClose}>
-                    ×
+                    
                 </button>
                 
                 <div className="modal-categories-list">
