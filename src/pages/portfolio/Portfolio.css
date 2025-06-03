@@ -176,8 +176,7 @@
 
 
 /* ---- MEDIA QUERIES PARA MÓVIL ---- */
-@media (max-width: 768px) {
-
+/* @media (max-width: 768px) {
     .portfolio-options {
         height: 100svh;
         flex-direction: column;
@@ -187,12 +186,10 @@
     .option-web {
         width: 100%;
         height: 50vh;
-        /* IMPORTANTE: Asegurar que el contenedor sea clickeable */
         position: relative;
         z-index: 10;
     }
 
-    /* CLAVE: El elemento <a> debe recibir todos los clicks */
     .option-art a,
     .option-web a {
         touch-action: manipulation;
@@ -201,111 +198,84 @@
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
-        /* IMPORTANTE: Asegurar que sea clickeable */
         pointer-events: auto !important;
         position: relative;
         z-index: 20;
     }
 
-    /* Feedback visual en touch - aplicar al <a> en lugar del div */
     .option-art a:active,
     .option-web a:active {
         transform: scale(0.98);
         transition: transform 0.1s ease;
     }
 
-    /* Asegurar que las imágenes no interfieran con el touch */
     .option-art img,
     .option-web img {
         pointer-events: none;
         user-select: none;
         -webkit-user-select: none;
-        /* AÑADIR: evitar que la imagen capture eventos */
         touch-action: none;
     }
 
-    /* Asegurar que los títulos no interfieran */
     .option-art h1,
     .option-web h1 {
         pointer-events: none;
         user-select: none;
         -webkit-user-select: none;
-        /* AÑADIR: evitar que el título capture eventos */
         touch-action: none;
     }
 
-    /* ---- ANIMACIONES MÓVIL PARA OPTION-ART (ARRIBA) ---- */
     .option-art.animating {
         position: absolute;
-        top: 0;
+        top: 0; 
         left: 0;
         width: 100%;
-        z-index: 100;
-        animation: expand-art-mobile 2s forwards, stay-mobile 2s 2s forwards, fadeOut 0.5s 4s forwards;
+        z-index: 100; 
+        animation: expand-art-mobile 2s forwards, stay-mobile-art 2s 2s forwards, fadeOut 0.5s 4s forwards;
     }
 
-    /* option-web permanece abajo cuando option-art se anima */
-    .option-art.animating ~ .option-web {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 50vh;
-        z-index: 1;
-    }
-
-    /* Animación para expandir option-art hacia abajo */
     @keyframes expand-art-mobile {
         0% {
-            height: 50vh;
+            height: 50vh; 
         }
         100% {
-            height: 100vh;
+            height: 100vh; 
         }
     }
 
-    /* ---- ANIMACIONES MÓVIL PARA OPTION-WEB (ABAJO) ---- */
     .option-web.animating {
         position: absolute;
-        bottom: 0;
+        bottom: 0; 
         left: 0;
         width: 100%;
         z-index: 100;
-        animation: expand-web-mobile 2s forwards, stay-mobile 2s 2s forwards, fadeOut 0.5s 4s forwards;
+        animation: expand-web-mobile 2s forwards, stay-mobile-web 2s 2s forwards, fadeOut 0.5s 4s forwards;
     }
 
-    /* option-art permanece arriba cuando option-web se anima */
-    .option-web.animating ~ .option-art {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 50vh;
-        z-index: 1;
-    }
-
-    /* Animación para expandir option-web hacia arriba */
     @keyframes expand-web-mobile {
         0% {
             height: 50vh;
         }
         100% {
-            height: 100vh;
+            height: 100vh; 
         }
     }
 
-    /* Mantener la altura completa en móvil */
-    @keyframes stay-mobile {
+    @keyframes stay-mobile-art {
         0%, 100% {
             height: 100vh;
         }
     }
 
-    /* Ajustar posición de títulos en móvil */
+    @keyframes stay-mobile-web {
+        0%, 100% {
+            height: 100vh;
+        }
+    }
+
     .option-art h1,
     .option-web h1 {
         font-size: 2rem;
         bottom: 20px;
     }
-}
-
+} */
