@@ -41,9 +41,6 @@ const projectsData = [
             { src: "/portfolioWebs/kazoku3.jpg", alt: "descripción2" },
             { src: "/portfolioWebs/kazoku4.jpg", alt: "descripción2" },
             { src: "/portfolioWebs/kazoku5.jpg", alt: "descripción2" },
-            // { src: "https://i.ibb.co/YTLtSLNq/4k.png", alt: "descripción2" },
-            // { src: "https://i.ibb.co/84bNmZn6/1k.png", alt: "descripción2" },
-            // { src: "https://i.ibb.co/HDmvLmtZ/9k.png", alt: "descripción2" },
         ],
         sector: {
             es: ["Tecnología", "Redes Sociales"],
