@@ -52,25 +52,14 @@ const RootWrapper = () => {
 };
 
 const router = createBrowserRouter([
-  // {
-  //   path: '/',
-  //   element: <ResponsiveComponent 
-  //     MobileVersion={HomePhone} 
-  //     DesktopVersion={Home} 
-  //   />,
-  // },
-  // {
-  //   path: '/',
-  //   element: <RootWrapper />,
-  //   children: [
+
 
   {
     path: '/',
     element: <RootWrapper />,
     children: [
-      // Home como índice dentro de Root
       {
-        index: true, // Usa index:true en lugar de path:'/'
+        index: true, 
         element: <ResponsiveComponent 
           MobileVersion={HomePhone} 
           DesktopVersion={Home} 
@@ -112,10 +101,6 @@ const router = createBrowserRouter([
       },
       {
         path: 'servicios',
-        // element: <ResponsiveComponent 
-        //   MobileVersion={ParentContainer} 
-        //   DesktopVersion={ParentContainer} 
-        // />
         element: <ParentContainer />
       },
       {
@@ -164,12 +149,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'services',
-        // element: <ResponsiveComponent 
-        //   MobileVersion={ParentContainer} 
-        //   DesktopVersion={ParentContainer} 
-        // />
-        element: <Navigate to="/servicios" replace />
-        // element: <ParentContainer />
+        element: <ParentContainer />
         
 
       },

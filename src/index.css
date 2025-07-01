@@ -5,11 +5,6 @@
   box-sizing: border-box;
 }
 
-/* .root-phone__content {
-  background-color:  #f4f4f4;
-  min-height: 100dvh;
-} */
-
 html, body {
   margin: 0; 
   height: 100%; 
@@ -43,17 +38,11 @@ h1 {
   min-height: 100vh;
   min-height: 100svh; 
   background-color: #f4f4f4;
-  /* background-color: #F6EAD3; */
-
 }
 
 main {
   flex: 1;
-  /* padding: 20px; */
-  /* margin-top: 10vh; */
   background-color: #f4f4f4;
-  /* background-color: #F6EAD3; */
-
 }
 
 :root {
@@ -75,23 +64,17 @@ main {
 
 }
 
-/* Añade esto a tu archivo index.css */
 ::selection {
-  background-color: var(--pink-color); /* Usa tu variable de color rosa */
-  color: black; /* Color del texto cuando está seleccionado, puedes cambiarlo si quieres */
+  background-color: var(--pink-color); 
+  color: black;
 }
 
-/* Para navegadores Webkit como Safari */
 ::-webkit-selection {
   background-color: var(--pink-color);
   color: black;
 }
 
-/* Para Firefox */
 ::-moz-selection {
   background-color: var(--pink-color);
   color: black;
 }
-
-
-

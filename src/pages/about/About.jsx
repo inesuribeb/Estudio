@@ -31,7 +31,6 @@ function About({ isOpen, onClose }) {
     
     return (
         <div className='about-modal' onClick={handleBackgroundClick}>
-            {/* <button className='about-close-btn' onClick={onClose}>×</button> */}
             <button className='about-close-btn' onClick={onClose}></button>
 
             <div className='contact-links-to' onClick={handleButtonAreaClick}>

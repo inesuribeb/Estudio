@@ -32,10 +32,8 @@
     animation: pulse 2s infinite ease-in-out;
     justify-self: center;
     align-self: center;
-    /* box-shadow: 0 0 20px rgba(255, 68, 68, 0.5); */
 }
 
-/* Animación de aparición del overlay */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -45,7 +43,6 @@
     }
 }
 
-/* Animación de entrada del grid */
 @keyframes slideIn {
     from {
         transform: scale(0.8) translateY(50px);
@@ -57,7 +54,6 @@
     }
 }
 
-/* Animación de pulsación de los círculos */
 @keyframes pulse {
     0%, 100% {
         transform: scale(1);
@@ -69,7 +65,6 @@
     }
 }
 
-/* Variaciones en la animación para cada círculo */
 .curtain-circle:nth-child(2n) {
     animation-delay: 0.2s;
 }
@@ -86,7 +81,6 @@
     animation-delay: 0.8s;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .curtain-grid {
         gap: 15px;

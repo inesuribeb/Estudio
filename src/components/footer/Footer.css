@@ -61,27 +61,6 @@
     line-height: 0.8; 
 } 
 
-
-
-
-/* @media (max-width: 768px) {
-    .titulo-cortado.mobile-scroll {
-        position: relative;
-    }
-    
-    .titulo-cortado.mobile-scroll h1 {
-        animation: scrollLeft 15s linear infinite;
-    }
-    
-    @keyframes scrollLeft {
-        0% {
-            transform: translateX(100%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
-    }
-} */
 @media (max-width: 768px) {
     .titulo-cortado.mobile-scroll {
         position: relative;

@@ -49,7 +49,6 @@ function Contact({ isOpen, onClose, headerClosing }) {
                         <li>User Experience</li>
                         <li>Creative Direction</li>
                         <li>Content Production</li>
-                        {/* <li>Print & Editorial Design</li> */}
                         <li>Front-End & Back-End</li>
                     </ul>
                 </div>
@@ -57,7 +56,6 @@ function Contact({ isOpen, onClose, headerClosing }) {
 
             <div className='second-column-contact'>
                 <div className='first-line-contact'>
-                    {/* <h5>Welcome!</h5> */}
                     <img src="/CAPTURAS/iub.png" alt="" />
                 </div>
                 <div className='second-line-contact'>

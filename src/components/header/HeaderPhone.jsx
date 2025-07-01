@@ -55,7 +55,6 @@ function HeaderPhone({ isMenuOpen, setIsMenuOpen, className }) {
   return (
     <>
       <header className={"header-phone " + className}>
-      {/* <header className={`header-phone ${location.pathname === '/contact' && 'header-special-bg'}`}> */}
 
 
         <div className="header-phone__container">
@@ -69,11 +68,6 @@ function HeaderPhone({ isMenuOpen, setIsMenuOpen, className }) {
             <span className="hamburger-line bottom"></span>
           </button>
 
-          {/* {!isMenuOpen && (
-            <div className="header-phone__title">
-              INES URIBE
-            </div>
-          )} */}
           {!isMenuOpen && (
             <div
               className="header-phone__title"

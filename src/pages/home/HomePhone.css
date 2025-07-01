@@ -13,12 +13,6 @@
 }
 
 .title-home-phone {
-    /* position: absolute;
-    top: 50%; 
-    left: 10%; 
-    cursor: pointer;
-    text-align: center;
-    background-color: transparent; */
     text-align: center;
     height: 100dvh; 
     width: 100%;
@@ -26,7 +20,6 @@
     justify-content: center; 
     align-items: center;
     color: var(--light-color); 
-    /* color: var(--pink-color);  */
     position: relative;
     overflow: hidden;
     background-image: url('/CAPTURAS/FONDOMOVIL.png');

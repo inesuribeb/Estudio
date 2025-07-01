@@ -10,7 +10,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     background-color: rgba(221, 221, 221, 0.6);
@@ -54,10 +53,6 @@
     border-color: red;
 }
 
-
-
-
-
 .about-close-btn {
     position: absolute;
     top: 20px;
@@ -86,7 +81,6 @@
     width: 30px;
     height: 0.8px;
     background: #888;
-    /* background: #ff4444; */
     transition: all 0.3s ease;
 }
 
@@ -107,14 +101,12 @@
 
 
 
-/* Media Queries para móvil */
 @media (max-width: 768px) {
     .contact-links-to {
         flex-direction: column;
     }
 }
 
-/* Media query más específico para pantallas pequeñas */
 @media (max-width: 480px) {
     .contact-links-to {
         flex-direction: column;

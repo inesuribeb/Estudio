@@ -1,5 +1,3 @@
-/* CSS limpio sin duplicados */
-
 .header-container-mobile {
     width: 100%;
     background-color: transparent;
@@ -17,8 +15,6 @@
     display: flex;
     position: relative; 
     flex-direction: row;
-    /* gap: 2rem; */
-    /* height: 2.5rem; */
     z-index: 500;
 }
 
@@ -27,8 +23,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    width: auto; /* Permitir que tome el ancho natural */
-
+    width: auto; 
     margin-right: 2rem;
     transition: all 0.3s ease;
 }
@@ -66,25 +61,10 @@
     cursor: pointer;
 }
 
-/* MENÚ NAVEGACIÓN */
-/* .navigator-mobile {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 27%;
-    height: 100vh;
-    background-color: var(--light-color);
-    z-index: 150;
-    display: flex;
-    align-items: center;
-    transition: left 0.3s ease; 
-} */
 .navigator-mobile {
     position: fixed;
     top: 0;
     left: -100%;
-    /* top: -7rem;
-    left: 0; */
     width: 100%;
     height: 7rem;
     margin-bottom: 0rem;
@@ -105,11 +85,9 @@
 
 .navigator-mobile ul {
     display: flex;
-    /* flex-direction: column; */
     list-style: none;
     padding: 50px 0;
     margin: 0;
-
     flex-direction: row;
     justify-content: center;
 }
@@ -124,16 +102,12 @@
     font-family: 'Work Sans', sans-serif;
     letter-spacing: 0.30em;
     font-size: 15px;
-
-    position: relative; /* Necesario para el posicionamiento absoluto de los corchetes */
+    position: relative;
     display: inline-block; 
 }
 
-/* .navigator-mobile .active {
-    color: red;
-} */
 .navigator-mobile .active {
-    color: inherit; /* Mantiene el color original en lugar de rojo */
+    color: inherit; 
 }
 
 .navigator-mobile a .active-indicator {
@@ -193,27 +167,10 @@
     letter-spacing: 0.30em;
 }
 
-/* EFECTOS HOVER */
 .navigator-mobile.open ~ .header-top-section .header-hamburger svg {
     opacity: 0.5;
     transition: opacity 0.3s ease;
 }
-
-/* .navigator-mobile.open ~ .header-top-section .header-hamburger {
-    width: 0;
-    margin-right: 0;
-    opacity: 0;
-    transition: all 0.3s ease;
-    overflow: hidden;
-} */
-
-/* .navigator-mobile.open ~ .header-top-section .header-title-div {
-    margin-left: -30px; 
-    transition: margin-left 0.3s ease;
-} */
-
-
-
 
 .language-selector {
     display: flex;

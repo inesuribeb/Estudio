@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom';
 import ProjectItem from '../projectItem/ProjectItem';
-import PortfolioIcon from '/flechasLaura/FLECHA WEB-02.svg'; // ← Cambio aquí
+import PortfolioIcon from '/flechasLaura/FLECHA WEB-02.svg'; 
 import './Featured.css'
 
 function Featured({ t, projects = [], language, getRoute }) {
-    // Seleccionar proyectos específicos por ID
     const getProjectById = (id) => projects.find(project => project.id === id);
 
     const artazaProject = getProjectById("001");
@@ -63,13 +62,6 @@ function Featured({ t, projects = [], language, getRoute }) {
                 </div>
                 <div className='column1'>
                     <div className='project-item-container'>
-                        {/* {machimbaProject && (
-                            <ProjectItem 
-                                project={machimbaProject}
-                                language={language}
-                                className="project-half"
-                            />
-                        )} */}
                     </div>
                     <div className='project-item-container'>
                         {lishomProject && (

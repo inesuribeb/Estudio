@@ -1,4 +1,3 @@
-// Pictures.jsx
 const column1Images = [
     { src: "/artOpt/1.jpg", alt: "imagen de un niño", category: "Photography", order: 1 },
     { src: "/artOpt/chicocapucharoja.jpg", alt: "RETRATO DE CHUCO CON CAPUCHA ROJA", category: "Photography", order: 2 },
@@ -45,13 +44,10 @@ const column1Images = [
     { src: "/artOpt/swipe.jpg", alt: "swipe", category: "Design", order: 37 }
   ];
   
-  // Agregamos una función que combine todas las imágenes para facilitar su uso
   const allImages = [...column1Images, ...column2Images, ...column3Images];
   
-  // Exportamos las imágenes individualmente y también todas juntas
   export { column1Images, column2Images, column3Images, allImages };
   
-  // Exportamos una función que devuelve todas las imágenes filtradas por categoría
   export const getImagesByCategory = (category) => {
     if (category === 'All') {
       return allImages;

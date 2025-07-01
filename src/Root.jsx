@@ -1,5 +1,3 @@
-// Root.jsx modificado para ocultar footer en rutas de menú y portafolio
-
 import { Outlet } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { LanguageProvider } from './components/contexts/LanguageContext';
@@ -133,4 +131,3 @@ function Root() {
 }
 
 export default Root;
-
