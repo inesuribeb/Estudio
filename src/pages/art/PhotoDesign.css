@@ -10,7 +10,6 @@
     margin-bottom: 0; 
     font-size: 2.3rem;
     font-family: var(--main-font);
-
     color: #ccc;
     border-bottom: 1.5px solid black;
     padding: 1rem 0rem;
@@ -25,12 +24,10 @@
 }
 
 .categories span:hover {
-    /* opacity: 0.4; */
     color: black;
 }
 
 .categories span.active {
-    /* opacity: 0.4; */
     color: black;
     font-style: italic;
     font-size: 2.5rem;
@@ -47,7 +44,6 @@
 }
 
 .contentContainer {
-    /* padding: 20px; */
     animation: fadeInUp 0.5s ease forwards;
     padding: 1rem 0rem;
     margin-left: 0.6rem;
@@ -56,19 +52,14 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding-top: 30px;
-    /* border-top: 2px solid black; */
-    /* border-top: 1px solid #e0e0e0; */
     margin: 1.875rem;
 }
 
 .contentContainer img {
     width: 100%;
     height: auto;
-    /* background: #DBDED5; */
     transition: opacity 0.3s ease;
     opacity: 1;
-    /* padding: 10px; */
-
 }
 
 .contentContainer img:hover {

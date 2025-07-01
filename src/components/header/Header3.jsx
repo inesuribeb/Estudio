@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import EastIcon from '@mui/icons-material/East';
 import { useLanguage } from '../contexts/LanguageContext';
 import './Header3.css'; 
-// import './Header3Phone.css';
 
 function Header3({ onContactClick, onAboutClick }) {
     const location = useLocation();
@@ -15,8 +14,6 @@ function Header3({ onContactClick, onAboutClick }) {
     const isOnArtPage = location.pathname === getRoute('art');
     const isOnCodePage = location.pathname === getRoute('code');
     const shouldShowSubmenu = isOnArtPage || isOnCodePage;
-
-    // const isHomePage = location.pathname === '/';
 
     const isActive = (route) => {
         return location.pathname === route;
@@ -58,20 +55,10 @@ function Header3({ onContactClick, onAboutClick }) {
                                     className={`nav-link ${isActive(getRoute('services')) ? 'nav-active' : ''}`}
                                 >
                                     {isActive(getRoute('services')) && <span className="link-indicator"></span>}
-                                    {/* [{t('services')}] */}
-                                    {/* [ESTUDIO] */}
                                     [{t('studio')}]
                                 </Link>
                             </li>
-                            {/* <li className="nav-item">
-                                <Link
-                                    to={getRoute('portfolio')}
-                                    className={`nav-link ${isActive(getRoute('portfolio')) ? 'nav-active' : ''}`}
-                                >
-                                    {isActive(getRoute('portfolio')) && <span className="link-indicator"></span>}
-                                    [{t('portfolio')}]
-                                </Link>
-                            </li> */}
+                            
                             <li 
                                 className={`nav-item ${shouldShowSubmenu ? 'nav-item-expandable' : ''}`}
                                 onMouseEnter={() => shouldShowSubmenu && setShowSubmenu(true)}
@@ -103,7 +90,6 @@ function Header3({ onContactClick, onAboutClick }) {
                                 className="nav-link" 
                                 onClick={onAboutClick}
                             >
-                                {/* [Contact] */}
                                 [{t('about')}]
                             </button>
                         </li>

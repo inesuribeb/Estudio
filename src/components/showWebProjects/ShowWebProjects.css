@@ -7,7 +7,6 @@
 
 .web-section-mobile .first-line-intro h3,
 .web-section-mobile .first-line-intro p {
-    /* font-family: 'Pragmatica'; */
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -60,7 +59,6 @@
     display: block;
     font-size: 12px;
     padding-bottom: 15px;
-    /* font-family: 'Pragmatica'; */
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -70,7 +68,6 @@
     display: block;
     font-size: 12px;
     padding-bottom: 25px;
-    /* font-family: 'Pragmatica'; */
     font-family: 'Work Sans', sans-serif;
 }
 

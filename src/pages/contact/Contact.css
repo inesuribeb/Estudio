@@ -1,9 +1,7 @@
 .contact-page {
     width: 100%;
     height: 0;
-    /* background-color: #E4B5C2; */
     padding: 0;
-    /* transition: all 0.7s ease-out; */
     overflow: hidden;
     display: grid;
     grid-template-columns: calc(16% - 4rem) calc(16% - 4rem) calc(68% - 4rem);
@@ -79,13 +77,10 @@
 .second-column-contact h5,
 .third-column-contact h5 {
     background-color: transparent;
-    /* font-family: 'Pragmatica'; */
     font-family: 'Work Sans', sans-serif;
-
     font-weight: 800;
     box-sizing: border-box;
     font-size: clamp(0.8rem, 1vw, 1rem);
-    /* color: #D50429; */
     color: wheat;
 }
 
@@ -93,11 +88,8 @@
     background-color: transparent;
     font-size: clamp(2rem, 2.25vw, 1.65rem);
     box-sizing: border-box;
-    /* color: #D50429; */
     color: wheat;
-    /* font-family: 'Pragmatica'; */
     font-family: 'Work Sans', sans-serif;
-
 }
 
 .third-column-contact p i {
@@ -116,12 +108,9 @@
 .second-column-contact li {
     background-color: transparent;
     font-size: clamp(0.8rem, 1vw, 1rem);
-    /* font-family: 'Pragmatica'; */
     font-family: 'Work Sans', sans-serif;
-
     font-weight: 800;
     width: 80%;
-    /* color: #D50429; */
     color: wheat;
 }
 
@@ -155,19 +144,12 @@
     top: 0.5rem;
     left: -1.7rem;
     width: 80%;
-    /* filter: brightness(0) 
-            saturate(100%)    
-            invert(49%)                      
-            sepia(75%)                      
-            hue-rotate(310deg)              
-            saturate(565%)                 
-            brightness(77%)   */
         filter: 
-            brightness(1.3)     /* Aumentamos el brillo */
+            brightness(1.3)     
             invert(69%)                      
-            saturate(40%)      /* Reducimos la saturación para hacerlo más pastel */
-            sepia(40%)         /* Mantenemos algo de sepia para el tono cálido */
-            hue-rotate(30deg)  /* Rotamos hacia tonos más amarillentos */
+            saturate(40%)      
+            sepia(40%)         
+            hue-rotate(30deg) 
             brightness(96%); 
 }
 
@@ -185,10 +167,7 @@
     background-color: transparent;
     border: none;
     font-size: 30px;
-    /* font-family: 'Pragmatica'; */
     font-family: 'Work Sans', sans-serif;
-
-    /* color: #D50429; */
     color: wheat;
     cursor: pointer;
     font-size: 0.83em;
@@ -204,7 +183,6 @@
 .contact-page .close-button:hover {
     opacity: 0.7;
 }
-
 
 .contact-page.closing {
     transform: translateY(-100%);

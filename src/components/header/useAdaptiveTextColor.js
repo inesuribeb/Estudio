@@ -23,7 +23,6 @@ const useAdaptiveTextColor = (targetRef, offset = 2, options = {}) => {
     const probeRef = useRef(null);
     
     useEffect(() => {
-        // Crear una sonda para detectar el color
         const probe = document.createElement('div');
         probe.className = 'color-probe';
         probe.style.position = 'absolute';
@@ -34,32 +33,25 @@ const useAdaptiveTextColor = (targetRef, offset = 2, options = {}) => {
         probe.style.backgroundColor = 'transparent';
         document.body.appendChild(probe);
         
-        // Guardar referencia
         probeRef.current = probe;
         
-        // Función para determinar si usar texto claro basado en luminosidad
         const shouldUseLightText = (r, g, b) => {
-            // Fórmula estándar para calcular luminosidad perceptual
             const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
             return luminance < 0.5;
         };
         
-        // Función principal para actualizar el color de texto
         const updateTextColor = () => {
             const element = targetRef.current;
             const probe = probeRef.current;
             
             if (!element || !probe) return;
             
-            // Obtener la posición del elemento objetivo
             const rect = element.getBoundingClientRect();
             
-            // Posicionar la sonda justo debajo del elemento
             probe.style.top = `${rect.bottom + window.scrollY + offset}px`;
             probe.style.left = `${rect.left + window.scrollX}px`;
             probe.style.width = `${rect.width}px`;
             
-            // Obtener múltiples puntos de muestra a lo ancho del elemento
             const samplePoints = 5;
             let darkBackgroundCount = 0;
             
@@ -67,7 +59,6 @@ const useAdaptiveTextColor = (targetRef, offset = 2, options = {}) => {
                 const x = rect.left + (rect.width / samplePoints) * i;
                 const y = rect.bottom + offset;
                 
-                // Obtener el elemento en esta posición
                 const elementAtPoint = document.elementFromPoint(x, y);
                 
                 if (elementAtPoint) {
@@ -79,13 +70,11 @@ const useAdaptiveTextColor = (targetRef, offset = 2, options = {}) => {
                         console.log(`Punto ${i}: elemento=${elementAtPoint.tagName}, bgColor=${bgColor}, bgImage=${bgImage}`);
                     }
                     
-                    // Si tiene imagen de fondo, asumir que es oscuro
                     if (bgImage && bgImage !== 'none' && !bgImage.includes('gradient')) {
                         darkBackgroundCount++;
                         continue;
                     }
                     
-                    // Analizar el color de fondo
                     if (bgColor && bgColor !== 'rgba(0, 0, 0, 0)' && bgColor !== 'transparent') {
                         const match = bgColor.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/i);
                         
@@ -102,7 +91,6 @@ const useAdaptiveTextColor = (targetRef, offset = 2, options = {}) => {
                 }
             }
             
-            // Determinar el color basado en la mayoría de los puntos muestreados
             if (darkBackgroundCount > samplePoints / 2) {
                 if (textColor !== lightColor) {
                     setTextColor(lightColor);
@@ -116,7 +104,6 @@ const useAdaptiveTextColor = (targetRef, offset = 2, options = {}) => {
             }
         };
         
-        // Actualizar inicialmente y en cada scroll/resize
         updateTextColor();
         
         const handleScroll = () => {
@@ -126,7 +113,6 @@ const useAdaptiveTextColor = (targetRef, offset = 2, options = {}) => {
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', updateTextColor);
         
-        // Limpiar al desmontar
         return () => {
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', updateTextColor);

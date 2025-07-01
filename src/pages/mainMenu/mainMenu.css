@@ -9,11 +9,7 @@
     background-color: var(--light-color);
     z-index: 2000;
     color: black;
-
     position: relative;
-    /* background-image: url(/CAPTURAS/fondohome.png); 
-    background-size: cover; 
-    background-position: center;  */
 }
 
 .main-menu-wrapper a {
@@ -37,7 +33,6 @@
 
 .main-menu-wrapper a:hover .text-content {
     font-style: italic;
-    /* transform: skewX(-15deg); */
 }
 
 .menu-number {
@@ -60,8 +55,6 @@
     left: -3rem;
 }
 
-
-
 .red-mini-circle-menu {
     position: absolute;
     display: flex;
@@ -69,7 +62,7 @@
     height: 15px;
     background-color: var(--corporative-color);
     border-radius: 50%;
-    top: 40px; /* Ajusta según necesites */
-    left: 50px; /* Ajusta según necesites */
-    z-index: 2001; /* Valor superior al de main-menu-wrapper para asegurar que está por encima */
+    top: 40px; 
+    left: 50px; 
+    z-index: 2001; 
 }

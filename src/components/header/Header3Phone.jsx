@@ -37,7 +37,6 @@ function Header3Phone({ onContactClick, onAboutClick }) {
     return (
         <div className="phone-header-container">
             <div className="phone-header-wrapper">
-                {/* Logo arriba */}
                 <div className="phone-header-logo">
                     <div className='phone-logo-indicator'></div>
                     <Link to={getRoute('home')} className="phone-header-title-link">
@@ -47,7 +46,6 @@ function Header3Phone({ onContactClick, onAboutClick }) {
                     </Link>
                 </div>
 
-                {/* Barra inferior con navegación y language toggle */}
                 <div className="phone-header-bottom">
                     <div className="phone-header-nav">
                         <nav className="phone-main-nav">
@@ -99,7 +97,6 @@ function Header3Phone({ onContactClick, onAboutClick }) {
                         </nav>
                     </div>
 
-                    {/* Language toggle solo visible cuando NO estamos en home */}
                     {!isHomePage && (
                         <div className="phone-language-toggle">
                             <span

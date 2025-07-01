@@ -33,7 +33,6 @@ const HomePhone = () => {
     >
       <h1 
         className="title-home-phone"
-        // onClick={handleTitleClick}
       >
         ESTUDIø<br/>INES URIBE
       </h1>

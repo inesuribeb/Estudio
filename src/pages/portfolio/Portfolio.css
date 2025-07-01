@@ -45,7 +45,6 @@
     left: 50%;
     transform: translateX(-50%);
     color: red;
-    /* color: var(--cherry-red); */
     font-size: 2.5rem;
     font-weight: 700;
     margin: 0;
@@ -70,9 +69,6 @@
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-/* ---- ANIMACIONES PARA OPTION-ART (IZQUIERDA) ---- */
-
-/* Cuando option-art está animando */
 .option-art.animating {
     position: absolute;
     top: 0;
@@ -81,7 +77,6 @@
     animation: expand-art 2s forwards, stay 2s 2s forwards, fadeOut 0.5s 4s forwards;
 }
 
-/* option-web permanece en su lugar cuando option-art se anima */
 .option-art.animating ~ .option-web {
     position: absolute;
     top: 0;
@@ -90,7 +85,6 @@
     z-index: 1;
 }
 
-/* Animación para expandir option-art desde la izquierda */
 @keyframes expand-art {
     0% {
         width: 50%;
@@ -100,9 +94,6 @@
     }
 }
 
-/* ---- ANIMACIONES PARA OPTION-WEB (DERECHA) ---- */
-
-/* Cuando option-web está animando */
 .option-web.animating {
     position: absolute;
     top: 0;
@@ -111,7 +102,6 @@
     animation: expand-web 2s forwards, stay 2s 2s forwards, fadeOut 0.5s 4s forwards;
 }
 
-/* option-art permanece en su lugar cuando option-web se anima */
 .option-web.animating ~ .option-art {
     position: absolute;
     top: 0;
@@ -120,7 +110,6 @@
     z-index: 1;
 }
 
-/* Animación para expandir option-web desde la derecha */
 @keyframes expand-web {
     0% {
         width: 50%;
@@ -130,22 +119,17 @@
     }
 }
 
-/* ---- ANIMACIONES COMPARTIDAS ---- */
-
-/* Desvanecimiento de títulos */
 .option-art.animating h1,
 .option-web.animating h1 {
     animation: fadeOut 0.5s forwards;
 }
 
-/* Mantener el ancho completo */
 @keyframes stay {
     0%, 100% {
         width: 100%;
     }
 }
 
-/* Desvanecer */
 @keyframes fadeOut {
     0% {
         opacity: 1;
@@ -155,127 +139,12 @@
     }
 }
 
-/* Desvanecer después de un retraso */
 @keyframes fadeOutAfterDelay {
     0% {
         opacity: 1;
     }
     100% {
         opacity: 0;
-        visibility: hidden; /* Garantiza que el elemento desaparezca completamente */
+        visibility: hidden; 
     }
 }
-
-
-
-
-
-
-
-
-
-
-/* ---- MEDIA QUERIES PARA MÓVIL ---- */
-/* @media (max-width: 768px) {
-    .portfolio-options {
-        height: 100svh;
-        flex-direction: column;
-    }
-
-    .option-art,
-    .option-web {
-        width: 100%;
-        height: 50vh;
-        position: relative;
-        z-index: 10;
-    }
-
-    .option-art a,
-    .option-web a {
-        touch-action: manipulation;
-        -webkit-tap-highlight-color: transparent;
-        user-select: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        pointer-events: auto !important;
-        position: relative;
-        z-index: 20;
-    }
-
-    .option-art a:active,
-    .option-web a:active {
-        transform: scale(0.98);
-        transition: transform 0.1s ease;
-    }
-
-    .option-art img,
-    .option-web img {
-        pointer-events: none;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: none;
-    }
-
-    .option-art h1,
-    .option-web h1 {
-        pointer-events: none;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: none;
-    }
-
-    .option-art.animating {
-        position: absolute;
-        top: 0; 
-        left: 0;
-        width: 100%;
-        z-index: 100; 
-        animation: expand-art-mobile 2s forwards, stay-mobile-art 2s 2s forwards, fadeOut 0.5s 4s forwards;
-    }
-
-    @keyframes expand-art-mobile {
-        0% {
-            height: 50vh; 
-        }
-        100% {
-            height: 100vh; 
-        }
-    }
-
-    .option-web.animating {
-        position: absolute;
-        bottom: 0; 
-        left: 0;
-        width: 100%;
-        z-index: 100;
-        animation: expand-web-mobile 2s forwards, stay-mobile-web 2s 2s forwards, fadeOut 0.5s 4s forwards;
-    }
-
-    @keyframes expand-web-mobile {
-        0% {
-            height: 50vh;
-        }
-        100% {
-            height: 100vh; 
-        }
-    }
-
-    @keyframes stay-mobile-art {
-        0%, 100% {
-            height: 100vh;
-        }
-    }
-
-    @keyframes stay-mobile-web {
-        0%, 100% {
-            height: 100vh;
-        }
-    }
-
-    .option-art h1,
-    .option-web h1 {
-        font-size: 2rem;
-        bottom: 20px;
-    }
-} */

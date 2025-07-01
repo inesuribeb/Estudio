@@ -79,11 +79,6 @@
     pointer-events: none;
 }
 
-/* .phone-option-web h1 {
-    color: var(--light-color);
-} */
-
-/* ---- ANIMACIONES PARA OPTION-ART (ARRIBA) ---- */
 .phone-option-art.phone-animating {
     position: absolute;
     top: 0;
@@ -93,7 +88,6 @@
     animation: phone-expand-art 2s forwards, phone-stay 2s 2s forwards, phone-fadeOut 0.5s 4s forwards;
 }
 
-/* Cuando art se anima, forzar que web mantenga su posición */
 .phone-option-art.phone-animating ~ .phone-option-web {
     position: absolute;
     bottom: 0;
@@ -103,7 +97,6 @@
     z-index: 1;
 }
 
-/* Animación para expandir desde arriba hacia abajo */
 @keyframes phone-expand-art {
     0% {
         height: 50vh;
@@ -113,7 +106,6 @@
     }
 }
 
-/* ---- ANIMACIONES PARA OPTION-WEB (ABAJO) ---- */
 .phone-option-web.phone-animating {
     position: absolute;
     bottom: 0;
@@ -123,7 +115,6 @@
     animation: phone-expand-web 2s forwards, phone-stay 2s 2s forwards, phone-fadeOut 0.5s 4s forwards;
 }
 
-/* Animación para expandir desde abajo hacia arriba */
 @keyframes phone-expand-web {
     0% {
         height: 50vh;
@@ -133,22 +124,18 @@
     }
 }
 
-/* ---- ANIMACIONES COMPARTIDAS ---- */
 
-/* Desvanecimiento de títulos */
 .phone-option-art.phone-animating h1,
 .phone-option-web.phone-animating h1 {
     animation: phone-fadeOut 0.5s forwards;
 }
 
-/* Mantener tamaño completo */
 @keyframes phone-stay {
     0%, 100% {
         height: 100vh;
     }
 }
 
-/* Desvanecer */
 @keyframes phone-fadeOut {
     0% {
         opacity: 1;
@@ -158,7 +145,6 @@
     }
 }
 
-/* Feedback visual en touch */
 .phone-option-art a:active,
 .phone-option-web a:active {
     transform: scale(0.98);

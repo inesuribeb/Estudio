@@ -8,57 +8,26 @@
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     z-index: 9999;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     animation: fadeIn 0.3s ease;
 }
 
-/* .modal-phone-content {
-    background-color: var(--light-color);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 12px;
-    width: 100%;
-    height: 100svh;
-    overflow: hidden;
-    animation: slideUp 0.3s ease;
-} */
 .modal-phone-content {
     background-color: var(--light-color);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    /* border-radius: 12px; */
     width: 100%;
     height: 100dvh;
     overflow: hidden;
     animation: slideUp 0.3s ease;
-    position: relative; /* Para posicionar el botón absoluto */
+    position: relative;
 }
 
 .modal-phone-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 20px; */
 }
 
-
-
-/* .modal-close-btn {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #666;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: background-color 0.2s ease;
-} */
 .modal-close-btn {
     position: absolute;
     top: 20px;
@@ -75,16 +44,13 @@
     justify-content: center;
     border-radius: 50%;
     transition: background-color 0.2s ease;
-    z-index: 10; /* Por encima del contenido */
+    z-index: 10;
 }
 
 .modal-close-btn:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* .modal-categories-list {
-    padding: 10px 0;
-} */
 .modal-categories-list {
     padding: 0px 0;
     display: flex;
@@ -92,8 +58,7 @@
     justify-content: center;
     align-items: center;
     height: 100svh;
-    gap: 0rem; /* Espacio entre elementos */
-    /* padding-top: 0px;  */
+    gap: 0rem; 
 }
 
 .modal-category-item {
@@ -104,14 +69,10 @@
     color: black;
     transition: all 0.2s ease;
 
-    text-align: center; /* Centrar el texto dentro del item */
+    text-align: center; 
     width: fit-content; 
     
 }
-/* 
-.modal-category-item:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-} */
 
 .modal-category-item.active {
     color: #a1a1a1;
@@ -139,19 +100,10 @@
     }
 }
 
-
-/* .menu-number {
-    margin-right: 20px;
-    font-size: 0.8rem;
-    color: #999;
-    font-family: monospace;
-} */
-
 .modal-category-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* otros estilos del modal item */
 }
 
 .phone-menu-number {
@@ -160,4 +112,3 @@
     font-family: monospace;
     margin-bottom: 4px;
 }
-

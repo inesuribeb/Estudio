@@ -14,19 +14,15 @@ function Header2({ onContactClick }) {
     const iconRef = useRef(null);
     const titleRef = useRef(null);
     const menuRef = useRef(null);
-    // const { t, getRoute } = useLanguage();
     const { language, toggleLanguage, t, getRoute } = useLanguage();
 
 
     const handleLanguageChange = () => {
-        // Guardar la posición actual de scroll
         const scrollPosition = window.scrollY;
         localStorage.setItem(SCROLL_POSITION_KEY, scrollPosition.toString());
 
-        // Indicar que se está realizando un cambio de idioma
         localStorage.setItem('is_language_change', 'true');
 
-        // Llamar a la función de cambio de idioma del contexto
         toggleLanguage();
     };
 
@@ -152,14 +148,9 @@ function Header2({ onContactClick }) {
         <div className="header-container-mobile">
             <div className="header-top-section">
                 <div className='header-hamburger'>
-                    {/* <DragHandleIcon 
-                        ref={iconRef}
-                        sx={{ fontSize: 22 }} 
-                    /> */}
                     <div className='red-mini-circle'></div>
                 </div>
                 <div className='header-title-div'>
-                    {/* <Link to="/" onClick={handleNavClick} className="header-title"> */}
                     <Link to={getRoute('home')} onClick={handleNavClick} className="header-title">
                         <h1 ref={titleRef} className="title-with-spacing">
                             {titleLetters}
@@ -192,11 +183,9 @@ function Header2({ onContactClick }) {
                     <ul>
                         <li>
                             <Link
-                                // to="/services"
                                 to={getRoute('services')}
                                 onClick={handleNavClick}
-                                // className={isActive('/services') ? 'active' : ''}
-                                className={isActive(getRoute('services')) ? 'active' : ''}  // ✅ CORRECTO
+                                className={isActive(getRoute('services')) ? 'active' : ''} 
                             >
                                 {isActive(getRoute('services')) && <span className="active-indicator"></span>}
                                 {t('services')}
@@ -204,11 +193,9 @@ function Header2({ onContactClick }) {
                         </li>
                         <li>
                             <Link
-                                // to="/portfolio"
                                 to={getRoute('portfolio')}
                                 onClick={handleNavClick}
-                                // className={isActive('/portfolio') ? 'active' : ''}
-                                className={isActive(getRoute('portfolio')) ? 'active' : ''}  // ✅ CORRECTO
+                                className={isActive(getRoute('portfolio')) ? 'active' : ''} 
                             >
                                 {isActive(getRoute('portfolio')) && <span className="active-indicator"></span>}
                                 {t('portfolio')}
@@ -216,11 +203,9 @@ function Header2({ onContactClick }) {
                         </li>
                         <li>
                             <Link
-                                // to="/about"
                                 to={getRoute('about')}
                                 onClick={handleNavClick}
-                                // className={isActive('/about') ? 'active' : ''}
-                                className={isActive(getRoute('about')) ? 'active' : ''}  // ✅ CORRECTO
+                                className={isActive(getRoute('about')) ? 'active' : ''} 
                             >
                                 {isActive(getRoute('about')) && <span className="active-indicator"></span>}
                                 {t('about')}
