@@ -16,16 +16,12 @@ const PhotoDesignPhone = React.lazy(() => import('./pages/art/PhotoDesignPhone.j
 
 const WebProjects = React.lazy(() => import('./pages/code/WebProjects.jsx'));
 const PortfolioProjectSection = React.lazy(() => import('./pages/code/PortfolioProjectSection.jsx'));
-// const PortfolioProjectSection = React.lazy(() => import('./pages/code/WebProjects.jsx'));
 
 const Contact = React.lazy(() => import('./pages/contact/Contact.jsx'));
 const ContactPhone = React.lazy(() => import('./pages/contact/ContactPhone.jsx'));
 
-// const Services = React.lazy(() => import('./pages/services/Services.jsx'));
-// const ServicesPhone = React.lazy(() => import('./pages/services/ServicesPhone.jsx'));
 
 const ParentContainer = React.lazy(() => import('./pages/services/ParentContainer.jsx'));
-// const ServicesPhone = React.lazy(() => import('./pages/services/ParentContainer.jsx'));
 
 const Portfolio = React.lazy(() => import('./pages/portfolio/Portfolio.jsx'));
 const PortfolioPhone = React.lazy(() => import('./pages/portfolio/PortfolioPhone.jsx'));
@@ -33,8 +29,6 @@ const PortfolioPhone = React.lazy(() => import('./pages/portfolio/PortfolioPhone
 const About = React.lazy(() => import('./pages/about/About.jsx'));
 const AboutPhone = React.lazy(() => import('./pages/about/About.jsx'));
 
-// const MainMenu2 = React.lazy(() => import('./pages/mainMenu/MainMenu2.jsx'));
-// const MainMenuPhone = React.lazy(() => import('./pages/mainMenu/MainMenuPhone.jsx'));
 
 const ResponsiveComponent = ({ MobileVersion, DesktopVersion }) => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -117,13 +111,6 @@ const router = createBrowserRouter([
           DesktopVersion={About} 
         />
       },
-      // {
-      //   path: 'menu',
-      //   element: <ResponsiveComponent 
-      //     MobileVersion={MainMenuPhone} 
-      //     DesktopVersion={MainMenu2} 
-      //   />
-      // },
       
       // Rutas en inglés (mismos componentes, diferentes URLs)
       {
@@ -167,13 +154,7 @@ const router = createBrowserRouter([
           DesktopVersion={About} 
         />
       },
-      // {
-      //   path: 'main-menu',
-      //   element: <ResponsiveComponent 
-      //     MobileVersion={MainMenuPhone} 
-      //     DesktopVersion={MainMenu2} 
-      //   />
-      // },
+
     ]
   }
 ]);
