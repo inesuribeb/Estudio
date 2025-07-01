@@ -1,5 +1,3 @@
-// ProfessionalProjects.jsx
-
 const professionalProjects = [
     {
         id: "001",

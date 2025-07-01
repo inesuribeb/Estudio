@@ -12,7 +12,6 @@
     gap: 1rem;
 }
 
-/* Botón para abrir modal de servicios */
 .phone-services-button {
     display: flex;
     justify-content: space-between;
@@ -62,7 +61,6 @@
     margin: 0;
 }
 
-/* Estilos para cuando se muestran proyectos filtrados */
 .phone-filtered-projects {
     width: 100%;
     padding-bottom: 2rem;
@@ -80,7 +78,6 @@
     width: 100%;
 }
 
-/* Para tablets pequeñas */
 @media (min-width: 480px) and (max-width: 768px) {
     .phone-projects-grid {
         grid-template-columns: repeat(2, 1fr);

@@ -1,5 +1,3 @@
-// WebProjects.jsx
-
 const projectsData = [
     {
         title: "INMO ARTAZA",

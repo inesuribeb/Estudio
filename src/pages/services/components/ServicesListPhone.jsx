@@ -6,7 +6,6 @@ import './ServicesListPhone.css';
 function ServicesListPhone({ t, language, onServiceClick, filteredProjects, activeService }) {
     const { openCategoryModal } = useOutletContext();
     
-    // Si hay un servicio activo, mostrar los proyectos filtrados
     if (activeService) {
         return (
             <div className='phone-services-list'>
@@ -28,7 +27,6 @@ function ServicesListPhone({ t, language, onServiceClick, filteredProjects, acti
         );
     }
 
-    // Crear estructura de categorías para el modal
     const servicesCategories = {
         services: t('servicesList').reduce((acc, service, index) => {
             acc[service] = service;
@@ -36,11 +34,10 @@ function ServicesListPhone({ t, language, onServiceClick, filteredProjects, acti
         }, {})
     };
 
-    // Función para abrir el modal de servicios
     const handleOpenServicesModal = () => {
         openCategoryModal(
             servicesCategories,
-            null, // No hay categoría seleccionada inicialmente
+            null, 
             onServiceClick,
             'services'
         );
