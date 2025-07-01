@@ -13,7 +13,7 @@ const professionalProjects = [
             es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding", "Fotografía", "Identidad de marca"],
             en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding", "Photography", "Brand Identity"]
         },
-        web: "https://inmoartaza.es/inicio",
+        web: "https://inmoartaza.es",
         image: [
             { src: "/ProfessionalProjects/7.webp", alt: "Detalle interior de una esquina de un salon, con un sofa chaiselongue e iluminacion calida" },
             { src: "/ProfessionalProjects/9.webp", alt: "Detalle interior de una esquina de un salon, con un sofa chaiselongue e iluminacion calida" },

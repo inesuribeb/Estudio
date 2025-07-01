@@ -4,7 +4,7 @@ const projectsData = [
     {
         title: "INMO ARTAZA",
         mobileWebReady: true,
-        web: "https://artaza.inesuribe.es/",
+        web: "https://inmoartaza.es",
         description: {
             es: "Plataforma web moderna para Inmobiliaria Artaza, diseñada para mostrar propiedades en Getxo y alrededores con una experiencia visual sofisticada.",
             en: "A modern web platform for Inmobiliaria Artaza, crafted to showcase properties in Getxo and nearby areas with a refined and visually engaging experience."
