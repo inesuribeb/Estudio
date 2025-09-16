@@ -6,7 +6,7 @@ services:
     expose:
       - "80"
     environment:
-      - VIRTUAL_HOST=estudio.inesuribe.es
+      - VIRTUAL_HOST=estudio.inesuribe.es,www.estudio.inesuribe.es
       - LETSENCRYPT_HOST=estudio.inesuribe.es,www.estudio.inesuribe.es
       - LETSENCRYPT_EMAIL=email@inesuribe.es
     volumes:
