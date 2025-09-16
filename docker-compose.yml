@@ -7,7 +7,7 @@ services:
       - "80"
     environment:
       - VIRTUAL_HOST=estudio.inesuribe.es
-      - LETSENCRYPT_HOST=estudio.inesuribe.es
+      - LETSENCRYPT_HOST=estudio.inesuribe.es,www.estudio.inesuribe.es
       - LETSENCRYPT_EMAIL=email@inesuribe.es
     volumes:
       - ./web:/usr/share/nginx/html:ro
