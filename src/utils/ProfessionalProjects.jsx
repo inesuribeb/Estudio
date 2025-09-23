@@ -158,6 +158,29 @@ const professionalProjects = [
             en: ["Elite cycling experiences"]
         },
     },
+    {
+        id: "009",
+        mobileWebReady: true,
+        client: "Fundacion Azar de las Artes",
+        sector: {
+            es: ["Arte", "Cultura", "E-commerce"],
+            en: ["Art", "Culture", "E-commerce"]
+        },
+        services: {
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding", "Identidad de marca"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding", "Brand Identity"]
+        },
+        web: "https://fundacionazar.com/inicio",
+        image: [
+            { src: "/ProfessionalProjects/Azar/FundacionAzar1.jpg", alt: "Foto zoom de mujer ciclista de carretera" },
+            { src: "/ProfessionalProjects/Azar/FundacionAzar2.jpg", alt: "Foto zoom de mujer ciclista de carretera" },
+        ],
+        year: 2025,
+        slogan: {
+            es: ["Un hogar para el arte y las ideas"],
+            en: ["A home for art and ideas"]
+        },
+    },
 ];
 
 export default professionalProjects;

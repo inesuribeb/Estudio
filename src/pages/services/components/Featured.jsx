@@ -12,6 +12,7 @@ function Featured({ t, projects = [], language, getRoute }) {
     const machimbaProject = getProjectById("003");
     const lishomProject = getProjectById("004");
     const flabelusProject = getProjectById("006");
+    const azarProject = getProjectById("009");
 
     return (
         <div className='featured'>
@@ -53,7 +54,7 @@ function Featured({ t, projects = [], language, getRoute }) {
                     <div className='project-item-container'>
                         {machimbaProject && (
                             <ProjectItem
-                                project={machimbaProject}
+                                project={azarProject}
                                 language={language}
                                 className="project-half"
                             />
@@ -63,10 +64,19 @@ function Featured({ t, projects = [], language, getRoute }) {
                 <div className='column1'>
                     <div className='project-item-container'>
                     </div>
-                    <div className='project-item-container'>
+                    {/* <div className='project-item-container'>
                         {lishomProject && (
                             <ProjectItem
                                 project={lishomProject}
+                                language={language}
+                                className="project-half"
+                            />
+                        )}
+                    </div> */}
+                    <div className='project-item-container'>
+                        {machimbaProject && (
+                            <ProjectItem
+                                project={machimbaProject}
                                 language={language}
                                 className="project-half"
                             />
