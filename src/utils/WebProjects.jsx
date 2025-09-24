@@ -1,5 +1,33 @@
 const projectsData = [
     {
+        title: "FUNDACION AZAR DE LAS ARTES",
+        mobileWebReady: true,
+        web: "https://fundacionazar.com/inicio",
+        description: {
+            es: "Plataforma web para Fundación Azar de las Artes, diseñada para difundir sus iniciativas culturales y artísticas. Integra un sistema de e-commerce con Stripe para la venta de publicaciones, ofreciendo una experiencia visual limpia, funcional y orientada al usuario.",
+            en: "Web platform for Fundación Azar de las Artes, created to showcase its cultural and artistic initiatives. It integrates an e-commerce system with Stripe for the sale of publications, providing a clean, functional, and user-oriented visual experience."
+        },
+        category: "Full-stack",
+        method: "React • JavaScript • CSS3 • Stripe",
+        link: "https://github.com/inesuribeb/museo",
+        images: [
+            { src: "/portfolioWebs/Azar/Azar1.jpg", alt: "Captura pantalla web Fundacion Azar" },
+            { src: "/portfolioWebs/Azar/Azar2.jpg", alt: "Captura pantalla web Fundacion Azar" },
+            { src: "/portfolioWebs/Azar/Azar3.jpg", alt: "Captura pantalla web Fundacion Azar" },
+            { src: "/portfolioWebs/Azar/Azar4.jpg", alt: "Captura pantalla web Fundacion Azar" },
+            { src: "/portfolioWebs/Azar/Azar5.jpg", alt: "Captura pantalla web Fundacion Azar" },
+            { src: "/portfolioWebs/Azar/Azar6.jpg", alt: "Captura pantalla web Fundacion Azar" },
+            { src: "/portfolioWebs/Azar/Azar7.jpg", alt: "Captura pantalla web Fundacion Azar" },
+            { src: "/portfolioWebs/Azar/Azar8.jpg", alt: "Captura pantalla web Fundacion Azar" },
+            { src: "/portfolioWebs/Azar/Azar9.jpg", alt: "Captura pantalla web Fundacion Azar" },
+
+        ],
+        sector: {
+            es: ["Arte", "Cultura"],
+            en: ["Art", "Culture"]
+        },
+    },
+    {
         title: "INMO ARTAZA",
         mobileWebReady: true,
         web: "https://inmoartaza.es",
