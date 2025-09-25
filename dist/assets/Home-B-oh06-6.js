@@ -1,1 +1,0 @@
-import{u as t,r as e,j as s}from"./index-aYc4_LTy.js";const i=()=>{t();const[a,r]=e.useState(!1);return e.useState(!1),e.useRef(null),s.jsx("div",{className:"home-container",style:{cursor:a?"pointer":"default"},children:s.jsx("div",{className:"header-main",children:s.jsx("h1",{children:"ESTUDIø INES URIBE"})})})};export{i as default};
