@@ -14,3 +14,18 @@
 .error-404 {
     color: var(--corporative-color);
 }
+
+
+@media screen and (max-width: 600px) {
+    .page-not-found {
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: left;
+        height: 100dvh;
+    }
+    
+    .page-not-found h1 {
+        font-size: 0.7rem;
+    }
+}
+
