@@ -1,0 +1,16 @@
+.page-not-found {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 10rem;
+}
+
+.page-not-found h1 {
+    font-size: 0.8rem;
+}
+
+.error-404 {
+    color: var(--corporative-color);
+}

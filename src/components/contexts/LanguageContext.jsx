@@ -15,6 +15,7 @@ const translations = {
       categories: "Categories",
       warning: "Desktop only",
       seeOn: "See on",
+      notFound: "There is nothing here",
       ...headerTranslations.en,
       ...ServicesTranslations.en
     },
@@ -29,6 +30,7 @@ const translations = {
       categories: "Categorías",
       warning: "Solo Desktop",
       seeOn: "Ver en",
+      notFound: "No hay nada aquí",
       ...headerTranslations.es,
       ...ServicesTranslations.es
     }
