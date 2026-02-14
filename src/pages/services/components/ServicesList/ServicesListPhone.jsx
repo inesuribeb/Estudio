@@ -1,6 +1,8 @@
 import { useOutletContext } from 'react-router-dom';
-import { useLanguage } from '../../../components/contexts/LanguageContext';
-import ProjectItem from '../projectItem/ProjectItem';
+import { useLanguage } from '../../../../components/contexts/LanguageContext'
+// import ProjectItem from '../../projectItem/ProjectItem';
+import ProjectItem from '../../projectItem/ProjectItem';
+
 import './ServicesListPhone.css';
 
 function ServicesListPhone({ t, language, onServiceClick, filteredProjects, activeService }) {

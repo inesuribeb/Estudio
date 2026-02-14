@@ -1,4 +1,4 @@
-import ProjectItem from '../projectItem/ProjectItem';
+import ProjectItem from '../../projectItem/ProjectItem';
 import './Sectors.css'
 
 function Sectors({ t, language, sectors, onSectorClick, filteredProjects, activeSector }) {
@@ -34,7 +34,7 @@ function Sectors({ t, language, sectors, onSectorClick, filteredProjects, active
                             className="sector-item clickable"
                             onClick={() => onSectorClick(sector.name)}
                         >
-                            <span className="menu-number menu-number-right">[{(index + 1).toString().padStart(2, '0')}]</span>
+                            {/* <span className="menu-number menu-number-right">[{(index + 1).toString().padStart(2, '0')}]</span> */}
                             <li>
                                 {sector.name} ({sector.count})
                             </li>

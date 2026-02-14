@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import ProjectItem from '../projectItem/ProjectItem';
+// import ProjectItem from '../projectItem/ProjectItem';
+import ProjectItem from '../../projectItem/ProjectItem';
 import PortfolioIcon from '/flechasLaura/FLECHA WEB-02.svg'; 
 import './Featured.css'
 

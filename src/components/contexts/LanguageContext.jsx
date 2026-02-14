@@ -16,6 +16,7 @@ const translations = {
       warning: "Desktop only",
       seeOn: "See on",
       notFound: "There is nothing here",
+      all: "All",
       ...headerTranslations.en,
       ...ServicesTranslations.en
     },
@@ -31,6 +32,7 @@ const translations = {
       warning: "Solo Desktop",
       seeOn: "Ver en",
       notFound: "No hay nada aquí",
+      all: "Todos",
       ...headerTranslations.es,
       ...ServicesTranslations.es
     }
@@ -42,20 +44,24 @@ const translations = {
       art: "/art",
       code: "/code",
       contact: "/contact",
-      services: "/services",
+      // services: "/services",
+      services: "/studio",
       portfolio: "/portfolio",
       about: "/about",
       menu: "/main-menu",
+      project: "/project/:slug",
     },
     es: {
       home: "/",
       art: "/arte",
       code: "/codigo",
       contact: "/contacto",
-      services: "/servicios",
+      // services: "/servicios",
+      services: "/estudio",
       portfolio: "/portafolio",
       about: "/sobre-mi",
       menu: "/menu",
+      project: "/proyecto/:slug", 
     }
   };
   
@@ -63,7 +69,8 @@ const translations = {
     "/arte": "/art",
     "/codigo": "/code",
     "/contacto": "/contact",
-    "/servicios": "/services",
+    // "/servicios": "/services",
+    "/estudio": "/studio", 
     "/portafolio": "/portfolio",
     "/sobre-mi": "/about",
     "/menu" : "/main-menu",
@@ -71,7 +78,8 @@ const translations = {
     "/art": "/arte",
     "/code": "/codigo",
     "/contact": "/contacto",
-    "/services": "/servicios",
+    // "/services": "/servicios",
+    "/studio": "/estudio", 
     "/portfolio": "/portafolio",
     "/about": "/sobre-mi",
     "/main-menu" : "/menu",

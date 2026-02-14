@@ -1,0 +1,66 @@
+.studio-filter {
+    padding: 1rem 0rem;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.studio-filter button {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid transparent;
+    color: #7a7a7a;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-family: 'Pragmatica';
+    font-weight: 700;
+
+    font-size: 0.9rem;
+    font-family: var(--estudio-sans-serif);
+    font-weight: 300;
+}
+
+.studio-filter button.active {
+    color: #000;
+    background-color: rgba(221, 221, 221, 0.53);
+}
+
+.studio-filter button:hover {
+    background-color: rgba(221, 221, 221, 0.53);
+}
+
+.studio-filter button {
+    white-space: nowrap;
+    min-width: fit-content;
+    transition: all 0.3s ease;
+}
+
+
+.button-with-filter {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.filter-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.filter-render {
+    padding: 1rem 0rem;
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+}

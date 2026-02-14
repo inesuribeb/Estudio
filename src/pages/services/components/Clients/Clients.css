@@ -20,7 +20,9 @@
 }
 
 .clients-display li {
-    padding-bottom: 0.5rem;
+    /* padding-bottom: 0.5rem; */
+    padding-bottom: 0rem;
+
     border-bottom: none;
     text-decoration: none;
     color: black; 
@@ -32,6 +34,8 @@
     padding-left: 3rem;
     margin-right: 3rem;
     transition: color 0.3s ease, font-style 0.3s ease; 
+    margin-bottom: -0.4rem;
+    /* line-height: 1.5rem; */
 }
 
 .clients-display li:hover {
@@ -64,7 +68,7 @@
 .client-item {
     display: flex;
     align-items: center;
-    padding: 0.3rem 0;
+    padding: 0rem 0;
 }
 
 .client-item:last-child {

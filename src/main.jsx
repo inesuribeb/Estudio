@@ -197,6 +197,8 @@ import AboutPhone from './pages/about/About.jsx';
 
 import NotFound from './pages/notFound/NotFound.jsx';
 
+import Project from './pages/project/Project.jsx';
+
 const ResponsiveComponent = ({ MobileVersion, DesktopVersion }) => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
@@ -241,8 +243,12 @@ const router = createBrowserRouter([
         path: 'contacto',
         element: <ResponsiveComponent MobileVersion={ContactPhone} DesktopVersion={Contact} />,
       },
+      // {
+      //   path: 'servicios',
+      //   element: <ParentContainer />,
+      // },
       {
-        path: 'servicios',
+        path: 'estudio',
         element: <ParentContainer />,
       },
       {
@@ -252,6 +258,10 @@ const router = createBrowserRouter([
       {
         path: 'sobre-mi',
         element: <ResponsiveComponent MobileVersion={AboutPhone} DesktopVersion={About} />,
+      },
+      {
+        path: 'proyecto/:slug',
+        element: <Project />,
       },
 
       // Rutas en inglés (mismos componentes, diferentes URLs)
@@ -267,8 +277,12 @@ const router = createBrowserRouter([
         path: 'contact',
         element: <ResponsiveComponent MobileVersion={ContactPhone} DesktopVersion={Contact} />,
       },
+      // {
+      //   path: 'services',
+      //   element: <ParentContainer />,
+      // },
       {
-        path: 'services',
+        path: 'studio',
         element: <ParentContainer />,
       },
       {
@@ -278,6 +292,10 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <ResponsiveComponent MobileVersion={AboutPhone} DesktopVersion={About} />,
+      },
+      {
+        path: 'proyecto/:slug',
+        element: <Project />,
       },
 
 

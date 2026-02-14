@@ -1,15 +1,17 @@
 .animated-title {
-    width: 75%;
+    width: 70%;
     text-align: center;
     text-transform: none;
     font-family: var(--main-font);
     font-weight: 300;
     font-size: 2.8rem;
-    line-height: 3rem;
+    line-height: 2.4rem;
     position: fixed;
     left: 50%;
     z-index: 1000;
     transition: top 0.5s ease-out;
+    /* color: #000000d9; */
+
 }
 
 .animated-title.centered {
@@ -34,7 +36,7 @@
         width: 90%;
         font-size: 2.2rem;
         line-height: 2.5rem;
-        z-index: 1000; /* Asegurar que esté por debajo del header (1000) */
+        z-index: 1000;
     }
 
     .animated-title.centered {
@@ -50,8 +52,11 @@
 @media (max-width: 480px) {
     .animated-title {
         width: 95%;
+        /* font-size: 1.8rem;
+        line-height: 2.2rem; */
+
         font-size: 1.8rem;
-        line-height: 2.2rem;
+    line-height: 1.8rem;
     }
 
     .animated-title.centered {

@@ -1,285 +1,11 @@
-// const handleOpenClientsModal = () => {
-//     const clientsWithCount = getClientsWithCount();
-//     const clientsCategories = {
-//         clients: clientsWithCount.map(client => client.name)
-//     };
-
-//     openCategoryModal(
-//         clientsCategories,
-//         activeClient,
-//         applyClientFilter,
-//         'clients'
-//     );
-// };import { useLanguage } from '../../components/contexts/LanguageContext';
-// import { useOutletContext } from 'react-router-dom';
-// import { useState } from 'react';
-// import ServicesListPhone from './components/ServicesListPhone';
-// import ClientsPhone from './components/ClientsPhone';
-// import Featured from './components/Featured';
-// import SectorsPhone from './components/SectorsPhone';
-// import professionalProjects from '../../utils/ProfessionalProjects';
-// import './ServicesPhone.css';
-
-// function ServicesPhone({ showTitle = false }) {
-// const { language, toggleLanguage, t, getRoute} = useLanguage();
-// const { openCategoryModal } = useOutletContext();
-// const [activeComponent, setActiveComponent] = useState('Featured');
-
-// const [activeService, setActiveService] = useState(null);
-// const [activeSector, setActiveSector] = useState(null);
-// const [activeClient, setActiveClient] = useState(null);
-
-// const clearFilters = () => {
-//     setActiveService(null);
-//     setActiveSector(null);
-//     setActiveClient(null);
-//     setActiveComponent('Featured');
-// };
-
-// const applyServiceFilter = (service) => {
-//     setActiveService(service);
-//     setActiveSector(null);
-//     setActiveClient(null);
-//     setActiveComponent('Services');
-// };
-
-// const applySectorFilter = (sector) => {
-//     setActiveSector(sector);
-//     setActiveService(null);
-//     setActiveClient(null);
-//     setActiveComponent('Sectors');
-// };
-
-// const applyClientFilter = (client) => {
-//     setActiveClient(client);
-//     setActiveService(null);
-//     setActiveSector(null);
-//     setActiveComponent('Clients');
-// };
-
-// const handleOpenServicesModal = () => {
-//     const servicesCategories = {
-//         services: t('servicesList') 
-//     };
-
-//     openCategoryModal(
-//         servicesCategories,
-//         activeService, 
-//         applyServiceFilter,
-//         'services'
-//     );
-// };
-
-// const handleOpenSectorsModal = () => {
-//     const sectorsWithCount = getSectorsWithCount();
-//     const sectorsCategories = {
-//         sectors: sectorsWithCount.map(sector => sector.name) 
-//     };
-
-//     openCategoryModal(
-//         sectorsCategories,
-//         activeSector, 
-//         applySectorFilter,
-//         'sectors'
-//     );
-// };
-
-// const getFilteredProjects = () => {
-//     if (activeService) {
-//         return professionalProjects.filter(project =>
-//             project.services[language].includes(activeService)
-//         );
-//     }
-//     if (activeSector) {
-//         return professionalProjects.filter(project =>
-//             project.sector[language].includes(activeSector)
-//         );
-//     }
-//     if (activeClient) {
-//         return professionalProjects.filter(project =>
-//             project.client === activeClient
-//         );
-//     }
-//     return professionalProjects;
-// };
-
-// const getSectorsWithCount = () => {
-//     const sectorCount = {};
-
-//     professionalProjects.forEach(project => {
-//         project.sector[language].forEach(sector => {
-//             sectorCount[sector] = (sectorCount[sector] || 0) + 1;
-//         });
-//     });
-
-//     return Object.entries(sectorCount).map(([sector, count]) => ({
-//         name: sector,
-//         count: count
-//     }));
-// };
-
-// const getClientsWithCount = () => {
-//     const clientCount = {};
-
-//     professionalProjects.forEach(project => {
-//         clientCount[project.client] = (clientCount[project.client] || 0) + 1;
-//     });
-
-//     return Object.entries(clientCount).map(([client, count]) => ({
-//         name: client,
-//         count: count
-//     }));
-// };
-
-// const handleOpenClientsModal = () => {
-//     const clientsWithCount = getClientsWithCount();
-//     const clientsCategories = {
-//         clients: clientsWithCount.map(client => client.name)
-//     };
-
-//     openCategoryModal(
-//         clientsCategories,
-//         activeClient,
-//         applyClientFilter,
-//         'clients'
-//     );
-// };
-
-// const renderActiveComponent = () => {
-//     const filteredProjects = getFilteredProjects();
-
-//     switch (activeComponent) {
-//         case 'Services':
-//             return (
-//                 <ServicesListPhone
-//                     t={t}
-//                     language={language}
-//                     onServiceClick={applyServiceFilter}
-//                     filteredProjects={filteredProjects}
-//                     activeService={activeService}
-//                 />
-//             );
-//         case 'Sectors':
-//             return (
-//                 <SectorsPhone
-//                     t={t}
-//                     language={language}
-//                     sectors={getSectorsWithCount()}
-//                     onSectorClick={applySectorFilter}
-//                     filteredProjects={filteredProjects}
-//                     activeSector={activeSector}
-//                 />
-//             );
-//         case 'Featured':
-//             return <Featured t={t} projects={professionalProjects} language={language} getRoute={getRoute} />;
-//         case 'Clients':
-//             return (
-//                 <ClientsPhone
-//                     t={t}
-//                     language={language}
-//                     clients={getClientsWithCount()}
-//                     onClientClick={applyClientFilter}
-//                     filteredProjects={filteredProjects}
-//                     activeClient={activeClient}
-//                 />
-//             );
-//         default:
-//             return <Featured t={t} projects={professionalProjects} language={language} getRoute={getRoute} />;
-//         }
-// };
-
-// const renderButtonText = (baseText, activeFilter) => {
-//     if (activeFilter) {
-//         return (
-//             <span className="phone-button-with-filter">
-//                 {baseText}: {activeFilter}
-//                 <span className="phone-filter-close" onClick={(e) => {
-//                     e.stopPropagation();
-//                     clearFilters();
-//                 }}>
-//                     ×
-//                 </span>
-//             </span>
-//         );
-//     }
-//     return baseText;
-// };
-
-// return (
-//     <div className='phone-services-wrapper'>
-//         <div className='phone-statement'>
-//             <h2
-//                 className={showTitle ? 'phone-services-title-visible' : 'phone-services-title-hidden'}
-//                 dangerouslySetInnerHTML={{ __html: t('description') }}
-//             />
-//         </div>
-
-//         <div className='phone-studio-filter'>
-//             <button
-//                 onClick={() => clearFilters()}
-//                 className={activeComponent === 'Featured' ? 'active' : ''}
-//             >
-//                 {t('featured')}
-//             </button>
-
-//             <button
-//                 onClick={handleOpenServicesModal}
-//                 className={activeComponent === 'Services' ? 'active' : ''}
-//             >
-//                 {renderButtonText(t('services'), activeService)}
-//             </button>
-
-//             <button
-//                 onClick={handleOpenSectorsModal}
-//                 className={activeComponent === 'Sectors' ? 'active' : ''}
-//             >
-//                 {renderButtonText(t('sectors'), activeSector)}
-//             </button>
-
-//             <button
-//                 onClick={handleOpenClientsModal}
-//                 className={activeComponent === 'Clients' ? 'active' : ''}
-//             >
-//                 {renderButtonText(t('clients'), activeClient)}
-//             </button>
-//         </div>
-
-//         <div className="phone-filter-render">
-//             <div className="phone-animated-content" key={activeComponent}>
-//                 {renderActiveComponent()}
-//             </div>
-//         </div>
-
-//         <div className='phone-statement'>
-//             <h2 dangerouslySetInnerHTML={{ __html: t('personality') }} />
-//         </div>
-//     </div>
-// )
-// }
-
-// export default ServicesPhone;
-
-
-// Función para abrir el modal de clientes
-const handleOpenClientsModal = () => {
-    const clientsWithCount = getClientsWithCount();
-    const clientsCategories = {
-        clients: clientsWithCount // Pasar el objeto completo con name y count
-    };
-
-    openCategoryModal(
-        clientsCategories,
-        activeClient,
-        applyClientFilter,
-        'clients'
-    );
-}; import { useLanguage } from '../../components/contexts/LanguageContext';
+import { useLanguage } from '../../components/contexts/LanguageContext';
 import { useOutletContext } from 'react-router-dom';
 import { useState } from 'react';
-import ServicesListPhone from './components/ServicesListPhone';
-import ClientsPhone from './components/ClientsPhone';
-import Featured from './components/Featured';
-import SectorsPhone from './components/SectorsPhone';
+import ServicesListPhone from './components/ServicesList/ServicesListPhone';
+import ClientsPhone from './components/Clients/ClientsPhone';
+import Featured from './components/Featured/Featured';
+import SectorsPhone from './components/Sectors/SectorsPhone';
+import AllProjectsPhone from './components/AllProjects/AllProjectsPhone'; // Importar el componente
 import professionalProjects from '../../utils/ProfessionalProjects';
 import './ServicesPhone.css';
 
@@ -320,33 +46,44 @@ function ServicesPhone({ showTitle = false }) {
         setActiveComponent('Clients');
     };
 
-    // Función para abrir el modal de servicios
     const handleOpenServicesModal = () => {
-        // Crear estructura de categorías para el modal usando servicesList
         const servicesCategories = {
-            services: t('servicesList') // Directamente el array de servicios
+            services: t('servicesList')
         };
 
         openCategoryModal(
             servicesCategories,
-            activeService, // Categoría seleccionada actual
+            activeService,
             applyServiceFilter,
             'services'
         );
     };
 
-    // Función para abrir el modal de sectores
     const handleOpenSectorsModal = () => {
         const sectorsWithCount = getSectorsWithCount();
         const sectorsCategories = {
-            sectors: sectorsWithCount // Pasar el objeto completo con name y count
+            sectors: sectorsWithCount
         };
 
         openCategoryModal(
             sectorsCategories,
-            activeSector, // Sector seleccionado actual
+            activeSector,
             applySectorFilter,
             'sectors'
+        );
+    };
+
+    const handleOpenClientsModal = () => {
+        const clientsWithCount = getClientsWithCount();
+        const clientsCategories = {
+            clients: clientsWithCount
+        };
+
+        openCategoryModal(
+            clientsCategories,
+            activeClient,
+            applyClientFilter,
+            'clients'
         );
     };
 
@@ -397,31 +134,17 @@ function ServicesPhone({ showTitle = false }) {
         }));
     };
 
-    // Función para abrir el modal de clientes
-    // const handleOpenClientsModal = () => {
-    //     const clientsWithCount = getClientsWithCount();
-    //     const clientsCategories = {
-    //         clients: clientsWithCount.map(client => client.name)
-    //     };
-    const handleOpenClientsModal = () => {
-        const clientsWithCount = getClientsWithCount();
-        // console.log('Clients data:', clientsWithCount); 
-        const clientsCategories = {
-            clients: clientsWithCount
-        };
-
-        openCategoryModal(
-            clientsCategories,
-            activeClient,
-            applyClientFilter,
-            'clients'
-        );
-    };
-
     const renderActiveComponent = () => {
         const filteredProjects = getFilteredProjects();
 
         switch (activeComponent) {
+            case 'All':
+                return (
+                    <AllProjectsPhone
+                        projects={professionalProjects}
+                        language={language}
+                    />
+                );
             case 'Services':
                 return (
                     <ServicesListPhone
@@ -493,6 +216,18 @@ function ServicesPhone({ showTitle = false }) {
                     className={activeComponent === 'Featured' ? 'active' : ''}
                 >
                     {t('featured')}
+                </button>
+
+                <button
+                    onClick={() => {
+                        setActiveService(null);
+                        setActiveSector(null);
+                        setActiveClient(null);
+                        setActiveComponent('All');
+                    }}
+                    className={activeComponent === 'All' ? 'active' : ''}
+                >
+                    {t('all')}
                 </button>
 
                 <button

@@ -1,6 +1,8 @@
 const professionalProjects = [
     {
         id: "001",
+        slug: "inmobiliaria-artaza",
+        order: 8,
         client: "Inmobiliaria Artaza",
         mobileWebReady: true,
         sector: {
@@ -21,9 +23,20 @@ const professionalProjects = [
             es: ["Espacios con alma"],
             en: ["Homes with soul"]
         },
+        overview: {
+            es: [""],
+            en: [""],
+        },
+        credits: {
+            es: [""],
+            en: [""],
+        },
+        relatedProjects: ["", ""],
     },
     {
         id: "002",
+        slug: "swipe-agency",
+        order: 4,
         client: "Swipe Agency",
         mobileWebReady: true,
         sector: {
@@ -44,9 +57,20 @@ const professionalProjects = [
             es: ["Tradición moderna"],
             en: ["Modern tradition"]
         },
+        overview: {
+            es: [""],
+            en: [""],
+        },
+        credits: {
+            es: [""],
+            en: [""],
+        },
+        relatedProjects: ["", ""],
     },
     {
         id: "003",
+        slug: "rocio-machimbarrena",
+        order: 9,
         client: "Rocio Machimbarrena",
         mobileWebReady: false,
         sector: {
@@ -68,9 +92,20 @@ const professionalProjects = [
             es: ["Bolsos únicos y ediciones limitadas"],
             en: ["Unique bags and limited editions"]
         },
+        overview: {
+            es: [""],
+            en: [""],
+        },
+        credits: {
+            es: [""],
+            en: [""],
+        },
+        relatedProjects: ["", ""],
     },
     {
         id: "004",
+        slug: "lishom",
+        order: 10,
         client: "Lishom",
         mobileWebReady: true,
         sector: {
@@ -90,9 +125,20 @@ const professionalProjects = [
             es: ["A mano & con calma"],
             en: ["Slowly handmade"]
         },
+        overview: {
+            es: [""],
+            en: [""],
+        },
+        credits: {
+            es: [""],
+            en: [""],
+        },
+        relatedProjects: ["", ""],
     },
     {
         id: "005",
+        slug: "nwhr-clothing",
+        order: 5,
         client: "NWHR",
         mobileWebReady: true,
         sector: {
@@ -112,9 +158,20 @@ const professionalProjects = [
             es: ["Moda sin ruido"],
             en: ["Quiet clothing"]
         },
+        overview: {
+            es: [""],
+            en: [""],
+        },
+        credits: {
+            es: [""],
+            en: [""],
+        },
+        relatedProjects: ["", ""],
     },
     {
         id: "006",
+        slug: "flabelus",
+        order: 6,
         mobileWebReady: true,
         client: "Flabelus",
         sector: {
@@ -134,9 +191,20 @@ const professionalProjects = [
             es: ["Tradición reinterpretada"],
             en: ["A new take on tradition"]
         },
+        overview: {
+            es: [""],
+            en: [""],
+        },
+        credits: {
+            es: [""],
+            en: [""],
+        },
+        relatedProjects: ["", ""],
     },
     {
         id: "007",
+        slug: "the-bike-country",
+        order: 7,
         mobileWebReady: false,
         client: "The Bike Country",
         sector: {
@@ -157,9 +225,20 @@ const professionalProjects = [
             es: ["Ciclismo de élite"],
             en: ["Elite cycling experiences"]
         },
+        overview: {
+            es: [""],
+            en: [""],
+        },
+        credits: {
+            es: [""],
+            en: [""],
+        },
+        relatedProjects: ["", ""],
     },
     {
-        id: "009",
+        id: "008",
+        slug: "fundacion-azar",
+        order: 3,
         mobileWebReady: true,
         client: "Fundacion Azar de las Artes",
         sector: {
@@ -180,7 +259,84 @@ const professionalProjects = [
             es: ["Un hogar para el arte y las ideas"],
             en: ["A home for art and ideas"]
         },
+        overview: {
+            es: [""],
+            en: [""],
+        },
+        credits: {
+            es: [""],
+            en: [""],
+        },
+        relatedProjects: ["", ""],
     },
+    {
+        id: "009",
+        slug: "jota-arquitectura",
+        order: 2,
+        mobileWebReady: true,
+        client: "Jota Arquitectura",
+        sector: {
+            es: ["Arquitectura", "Cultura", "Portfolio"],
+            en: ["Architecture", "Culture", "Portfolio"]
+        },
+        services: {
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding", "Identidad de marca"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding", "Brand Identity"]
+        },
+        web: "https://www.jotaarquitectura.es/",
+        image: [
+            { src: "/ProfessionalProjects/JotaArq/JOTA1.png", alt: "" },
+            { src: "/ProfessionalProjects/JotaArq/JOTA4.png", alt: "" },
+        ],
+        year: 2025,
+        slogan: {
+            es: ["Arquitectura que genera valor"],
+            en: ["Architecture that creates value"]
+        },
+        overview: {
+            es: [""],
+            en: [""],
+        },
+        credits: {
+            es: [""],
+            en: [""],
+        },
+        relatedProjects: ["", ""],
+    },
+    {
+        id: "010",
+        slug: "bell-house",
+        order: 1,
+        mobileWebReady: true,
+        client: "Bell House",
+        sector: {
+            es: ["Decoración", "Interiorismo", "E-commerce"],
+            en: ["Decoration", "Interior Design", "E-commerce"]
+        },
+        services: {
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding", "Identidad de marca"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding", "Brand Identity"]
+        },
+        web: "https://test.bellhousebh.com/",
+        image: [
+            { src: "/ProfessionalProjects/BellHouse/bh_web.png", alt: "" },
+            { src: "/ProfessionalProjects/BellHouse/platos.webp", alt: "salon precioso con alfombra estampada y muebles modernos" },
+        ],
+        year: 2026,
+        slogan: {
+            es: ["Creando hogares desde 1980"],
+            en: ["Crafting homes since 1980"]
+        },
+        overview: {
+            es: [""],
+            en: [""],
+        },
+        credits: {
+            es: [""],
+            en: [""],
+        },
+        relatedProjects: ["", ""],
+    }
 ];
 
 export default professionalProjects;

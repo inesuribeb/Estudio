@@ -53,12 +53,18 @@
 
 .modal-categories-list {
     padding: 0px 0;
+    /* padding: 200px 0 20px 0;  */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100svh;
     gap: 0rem; 
+
+    overflow-y: auto;
+    overflow-x: hidden;  /* 👈 AÑADE ESTO (opcional) */
+    -webkit-overflow-scrolling: touch; 
 }
 
 .modal-category-item {
@@ -112,3 +118,45 @@
     font-family: monospace;
     margin-bottom: 4px;
 }
+
+
+
+
+
+
+
+
+
+/* 👇 ESTILOS PARA SERVICES/SECTORS/CLIENTS (sin números) */
+.modal-categories-list.modal-categories-list-filters {
+    padding: 100px 10px 20px 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.modal-filter-item {
+    padding: 0px 20px;
+    cursor: pointer;
+    font-family: var(--main-font);
+    font-size: 1.8rem;
+    color: black;
+    transition: all 0.2s ease;
+    text-align: left;  /* 👈 Cambiado de center a left */
+    width: 100%;  /* 👈 Cambiado de fit-content a 100% */
+    margin-bottom: -10px;
+}
+
+.modal-filter-item.active {
+    color: #a1a1a1;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.phone-menu-number {
+    font-size: 0.8rem;
+    color: #999;
+    font-family: monospace;
+    margin-bottom: 4px;
+}
+
+/* .phone-menu-text {
+} */

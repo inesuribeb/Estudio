@@ -1,4 +1,4 @@
-import ProjectItem from '../projectItem/ProjectItem';
+import ProjectItem from '../../projectItem/ProjectItem';
 import './Clients.css'
 
 function Clients({ t, language, clients, onClientClick, filteredProjects, activeClient }) {
@@ -34,7 +34,7 @@ function Clients({ t, language, clients, onClientClick, filteredProjects, active
                             className="client-item clickable"
                             onClick={() => onClientClick(client.name)}
                         >
-                            <span className="menu-number menu-number-right">[{(index + 1).toString().padStart(2, '0')}]</span>
+                            {/* <span className="menu-number menu-number-right">[{(index + 1).toString().padStart(2, '0')}]</span> */}
                             <li>
                                 {client.name} ({client.count})
                             </li>

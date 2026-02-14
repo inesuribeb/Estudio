@@ -1,4 +1,4 @@
-import ProjectItem from '../projectItem/ProjectItem';
+import ProjectItem from '../../projectItem/ProjectItem';
 import './ServicesList.css'
 
 function ServicesList({ t, language, onServiceClick, filteredProjects, activeService }) {
@@ -34,7 +34,7 @@ function ServicesList({ t, language, onServiceClick, filteredProjects, activeSer
                             className="service-item clickable"
                             onClick={() => onServiceClick(service)}
                         >
-                            <span className="menu-number menu-number-right">[{(index + 1).toString().padStart(2, '0')}]</span>
+                            {/* <span className="menu-number menu-number-right">[{(index + 1).toString().padStart(2, '0')}]</span> */}
                             <li>{service}</li>
                         </div>
                     ))}

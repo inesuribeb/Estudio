@@ -1,0 +1,55 @@
+/* Estilos para AllProjects en móvil */
+.phone-services-wrapper .services-list {
+    padding: 0;
+}
+
+.phone-services-wrapper .services-display {
+    padding: 0;
+}
+
+.phone-services-wrapper .filtered-projects {
+    width: 100%;
+}
+
+.phone-services-wrapper .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+}
+
+.phone-services-wrapper .project-item {
+    width: 100%;
+}
+
+.phone-services-wrapper .project-item .image-container {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.phone-services-wrapper .project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.phone-services-wrapper .project-item h4 {
+    font-size: 1rem;
+    margin: 0.5rem 0 0.3rem 0;
+    font-family: var(--estudio-sans-serif);
+}
+
+.phone-services-wrapper .project-item .project-slogan {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0;
+    font-family: var(--estudio-sans-serif);
+}
+
+/* Para tablets pequeñas */
+@media (min-width: 480px) and (max-width: 768px) {
+    .phone-services-wrapper .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}

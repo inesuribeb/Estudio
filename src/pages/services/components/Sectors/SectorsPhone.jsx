@@ -1,7 +1,6 @@
 import { useOutletContext } from 'react-router-dom';
-import { useLanguage } from '../../../components/contexts/LanguageContext';
-import ProjectItem from '../projectItem/ProjectItem';
-import './SectorsPhone.css';
+import { useLanguage } from '../../../../components/contexts/LanguageContext';
+import ProjectItem from '../../projectItem/ProjectItem';
 
 function SectorsPhone({ t, language, sectors, onSectorClick, filteredProjects, activeSector }) {
     const { openCategoryModal } = useOutletContext();
