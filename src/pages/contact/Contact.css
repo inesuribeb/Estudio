@@ -82,6 +82,10 @@
     box-sizing: border-box;
     font-size: clamp(0.8rem, 1vw, 1rem);
     color: wheat;
+
+    font-size: 0.7rem;
+    font-family: var(--estudio-sans-serif);
+    font-weight: 300;
 }
 
 .third-column-contact p {
@@ -112,6 +116,10 @@
     font-weight: 800;
     width: 80%;
     color: wheat;
+
+    font-size: 0.7rem;
+    font-family: var(--estudio-sans-serif);
+    font-weight: 300;
 }
 
 .second-line-contact ul li a {

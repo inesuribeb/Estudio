@@ -1,4 +1,4 @@
-.web-section {
+/* .web-section {
     width: 100vw;
     margin-left: calc((100% - 100vw) / 2);
     margin-right: calc((100% - 100vw) / 2);
@@ -8,6 +8,8 @@
 .web-section .first-line h3,
 .web-section .first-line p {
     font-family: 'Work Sans', sans-serif;
+
+    font-family: var(--estudio-sans-serif);
 }
 
 .first-line {
@@ -17,7 +19,7 @@
     border-top: 1px solid rgb(165, 165, 165);
     box-sizing: border-box;
     padding-top: 5px;
-    padding-bottom: 15px;
+    padding-bottom: 45px;
 }
 
 .first-line h3,
@@ -34,8 +36,100 @@
 }
 
 .first-line h3 {
-    font-size: 20px;
-    letter-spacing: 1.1px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.first-line p {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.first-line h3 svg {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    vertical-align: top;
+}
+
+.second-line {
+    width: 100%;
+    margin-top: 0px;
+}
+
+.second-line .carousel {
+    width: 100%;
+    overflow: hidden;
+} */
+
+.web-section {
+    width: 100vw;
+    margin-left: calc((100% - 100vw) / 2);
+    margin-right: calc((100% - 100vw) / 2);
+    padding: 0;
+}
+
+.web-section .first-line h3,
+.web-section .first-line p {
+    font-family: var(--estudio-sans-serif);
+}
+
+.first-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    border-top: 1px solid rgb(165, 165, 165);
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 45px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 1rem;
+}
+
+/* Contenedores con anchos fijos */
+.title-container {
+    flex: 0 0 350px; /* Ancho fijo de 200px */
+    min-width: 200px;
+}
+
+.description-container {
+    flex: 1 1 auto; /* Crece y se encoge */
+    max-width: 600px;
+}
+
+.method-container {
+    flex: 0 0 150px; /* Ancho fijo de 150px */
+    min-width: 200px;
+}
+
+.github-container {
+    flex: 0 0 50px; /* Ancho fijo de 50px */
+    min-width: 50px;
+    text-align: right;
+
+}
+
+.first-line h3,
+.first-line p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.first-line .description {
+    line-height: 1.2;
+}
+
+.first-line h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.first-line p {
+    font-size: 0.8rem;
+    font-weight: 300;
 }
 
 .first-line h3 svg {

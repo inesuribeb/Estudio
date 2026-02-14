@@ -62,6 +62,9 @@ main {
   --mono-font-weight: 500;
   --mono-font-style: normal;
 
+  --estudio-sans-serif: 'estudio-sans-serif', sans-serif;
+
+
 }
 
 ::selection {

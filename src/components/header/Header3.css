@@ -54,19 +54,22 @@
     display: flex;
     align-items: center;
 
-    padding-right: 50px;
-    padding-top: 35px;
+    padding-right: 60px;
+    padding-top: 40px;
     padding-bottom: 6px;
     margin-top: -35px;
     margin-bottom: -6px;
 }
 
 .header-title-text {
-    font-size: 0.8rem;
-    font-weight: 500;
+    /* font-size: 0.8rem;
+    font-weight: 500; */
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 0;
+    font-size: 0.7rem;
+    font-family: var(--estudio-sans-serif);
+    font-weight: 300;
 }
 
 .header-nav {
@@ -119,18 +122,21 @@
 .nav-link {
     text-decoration: none;
     color: #999;
-    font-size: 0.7rem;
+    /* font-size: 0.7rem; */
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: color 0.3s ease;
     position: relative;
-    font-weight: 300;
+    /* font-weight: 300; */
     white-space: nowrap;
-    font-family: 'Pragmatica';
+    /* font-family: 'Pragmatica'; */
+    font-size: 0.7rem;
+    font-family: var(--estudio-sans-serif);
+    font-weight: 300;
 
     /* AÑADIR el padding aquí */
     display: block;
-    padding-top: 35px;
+    padding-top: 40px;
     padding-bottom: 6px;
     padding-left: 10px;
     padding-right: 50px;
@@ -240,12 +246,15 @@
     padding-left: 50px;
     display: flex;
     align-items: center;
-    font-family: 'Pragmatica';
+    /* font-family: 'Pragmatica'; */
     flex-shrink: 0;
 }
 
 .lang-option {
     font-size: 0.7rem;
+    font-family: var(--estudio-sans-serif);
+    font-weight: 300;
+    /* font-size: 0.7rem; */
     cursor: pointer;
     color: #999;
     transition: color 0.3s ease;

@@ -41,6 +41,10 @@
     font-family: 'Pragmatica', sans-serif;
     overflow: hidden;
     cursor: pointer;
+
+    font-size: 0.85rem;
+    font-family: var(--estudio-sans-serif);
+    font-weight: 300;
 }
 
 .contact-links-to button.instagram-c,
@@ -116,5 +120,7 @@
     .contact-links-to button {
         width: 100%;
         text-align: center;
+        font-weight: 400;
+
     }
 }

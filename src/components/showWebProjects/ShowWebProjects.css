@@ -7,7 +7,9 @@
 
 .web-section-mobile .first-line-intro h3,
 .web-section-mobile .first-line-intro p {
-    font-family: 'Work Sans', sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
+    font-family: var(--estudio-sans-serif);
+
 }
 
 .first-line-intro {
@@ -30,7 +32,8 @@
 
 .first-line-intro h3 {
     font-size: 18px;
-    letter-spacing: 1.1px;
+    /* letter-spacing: 1.1px; */
+    font-weight: 400;
 }
 
 .first-line-intro h3 svg {
@@ -57,18 +60,21 @@
     margin: 0;
     margin-inline: 1em;
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     padding-bottom: 15px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: var(--estudio-sans-serif);
+    font-weight: 300;
 }
 
 .third-line-intro p {
     margin: 0;
     margin-inline: 1em;
     display: block;
-    font-size: 12px;
-    padding-bottom: 25px;
-    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    padding-bottom: 35px;
+    font-family: var(--estudio-sans-serif);
+    font-weight: 300;
+
 }
 
 .second-line {
