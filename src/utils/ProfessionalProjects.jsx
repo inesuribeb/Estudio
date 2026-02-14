@@ -151,7 +151,9 @@ const professionalProjects = [
         },
         web: "https://nwhr.eu/",
         image: [
-            { src: "/ProfessionalProjects/nwhrPP.jpg", alt: "Pescador del puesto de Caion con pescado en mano llevando camiseta de la marca NWHR Clothing" },
+            { src: "/ProfessionalProjects/Nwhr/nwhrPP.jpg", alt: "Pescador del puesto de Caion con pescado en mano llevando camiseta de la marca NWHR Clothing" },
+            { src: "/ProfessionalProjects/Nwhr/nwhr_hover.png", alt: "Pescador del puesto de Caion con pescado en mano llevando camiseta de la marca NWHR Clothing" },
+
         ],
         year: 2025,
         slogan: {
@@ -319,8 +321,9 @@ const professionalProjects = [
         },
         web: "https://test.bellhousebh.com/",
         image: [
+            { src: "/ProfessionalProjects/BellHouse/bhPrueba.png", alt: "salon precioso con alfombra estampada y muebles modernos" },
             { src: "/ProfessionalProjects/BellHouse/bh_web.png", alt: "" },
-            { src: "/ProfessionalProjects/BellHouse/platos.webp", alt: "salon precioso con alfombra estampada y muebles modernos" },
+            // { src: "/ProfessionalProjects/BellHouse/platos.webp", alt: "salon precioso con alfombra estampada y muebles modernos" },
         ],
         year: 2026,
         slogan: {

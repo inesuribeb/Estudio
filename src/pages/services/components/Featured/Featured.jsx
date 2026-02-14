@@ -11,18 +11,20 @@ function Featured({ t, projects = [], language, getRoute }) {
     const swipeProject = getProjectById("002");
     const nwhrProject = getProjectById("005");
     const machimbaProject = getProjectById("003");
-    const lishomProject = getProjectById("004");
-    const flabelusProject = getProjectById("006");
-    const azarProject = getProjectById("009");
+    // const lishomProject = getProjectById("004");
+    // const flabelusProject = getProjectById("006");
+    const azarProject = getProjectById("008");
+    const jotaProject = getProjectById("009");
+    const bhProject = getProjectById("010");
 
     return (
         <div className='featured'>
             <div className='first-line-ft'>
                 <div className='column1'>
                     <div className='project-item-container'>
-                        {artazaProject && (
+                        {nwhrProject && (
                             <ProjectItem
-                                project={artazaProject}
+                                project={nwhrProject}
                                 language={language}
                                 className="project-half"
                             />
@@ -40,9 +42,9 @@ function Featured({ t, projects = [], language, getRoute }) {
                 </div>
                 <div className='column2'>
                     <div className='project-item-container'>
-                        {nwhrProject && (
+                        {bhProject && (
                             <ProjectItem
-                                project={nwhrProject}
+                                project={bhProject}
                                 language={language}
                                 className="project-full"
                             />
@@ -75,9 +77,9 @@ function Featured({ t, projects = [], language, getRoute }) {
                         )}
                     </div> */}
                     <div className='project-item-container'>
-                        {machimbaProject && (
+                        {jotaProject && (
                             <ProjectItem
-                                project={machimbaProject}
+                                project={jotaProject}
                                 language={language}
                                 className="project-half"
                             />

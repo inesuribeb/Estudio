@@ -46,11 +46,24 @@ function ServicesPhone({ showTitle = false }) {
         setActiveComponent('Clients');
     };
 
-    const handleOpenServicesModal = () => {
-        const servicesCategories = {
-            services: t('servicesList')
-        };
+    // const handleOpenServicesModal = () => {
+    //     const servicesCategories = {
+    //         services: t('servicesList')
+    //     };
 
+    //     openCategoryModal(
+    //         servicesCategories,
+    //         activeService,
+    //         applyServiceFilter,
+    //         'services'
+    //     );
+    // };
+    const handleOpenServicesModal = () => {
+        const servicesWithCount = getServicesWithCount();
+        const servicesCategories = {
+            services: servicesWithCount
+        };
+    
         openCategoryModal(
             servicesCategories,
             activeService,
@@ -106,6 +119,22 @@ function ServicesPhone({ showTitle = false }) {
         return professionalProjects;
     };
 
+    const getServicesWithCount = () => {
+        const serviceCount = {};
+    
+        professionalProjects.forEach(project => {
+            project.services[language].forEach(service => {
+                serviceCount[service] = (serviceCount[service] || 0) + 1;
+            });
+        });
+    
+        return Object.entries(serviceCount).map(([service, count]) => ({
+            name: service,
+            count: count
+        }));
+    };
+
+
     const getSectorsWithCount = () => {
         const sectorCount = {};
 
@@ -153,6 +182,7 @@ function ServicesPhone({ showTitle = false }) {
                         onServiceClick={applyServiceFilter}
                         filteredProjects={filteredProjects}
                         activeService={activeService}
+                        services={getServicesWithCount()} 
                     />
                 );
             case 'Sectors':

@@ -128,7 +128,7 @@
 
 
 /* 👇 ESTILOS PARA SERVICES/SECTORS/CLIENTS (sin números) */
-.modal-categories-list.modal-categories-list-filters {
+/* .modal-categories-list.modal-categories-list-filters {
     padding: 100px 10px 20px 0px;
     justify-content: flex-start;
     align-items: flex-start;
@@ -140,9 +140,55 @@
     font-size: 1.8rem;
     color: black;
     transition: all 0.2s ease;
-    text-align: left;  /* 👈 Cambiado de center a left */
-    width: 100%;  /* 👈 Cambiado de fit-content a 100% */
+    text-align: left;  
+    width: 100%;  
     margin-bottom: -10px;
+}
+
+.modal-filter-item.active {
+    color: #a1a1a1;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.phone-menu-number {
+    font-size: 0.8rem;
+    color: #999;
+    font-family: monospace;
+    margin-bottom: 4px;
+} */
+
+.modal-categories-list.modal-categories-list-filters {
+    padding: 100px 10px 20px 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.modal-filter-item {
+    /* padding: 0px 20px;
+    cursor: pointer;
+    font-family: var(--main-font);
+    font-size: 1.8rem;
+    color: black;
+    transition: all 0.2s ease;
+    text-align: left;
+    width: 100%;
+    margin-bottom: -10px;
+    position: relative;  */
+    
+    padding: 0px 20px;
+    cursor: pointer;
+    font-family: var(--main-font);
+    font-size: 1.8rem;
+    color: black;
+    transition: all 0.2s ease;
+    text-align: left;
+    width: 100%;
+    margin-bottom: -10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* 👈 Añadir esto */
+    align-items: baseline; 
 }
 
 .modal-filter-item.active {
@@ -158,5 +204,42 @@
     margin-bottom: 4px;
 }
 
-/* .phone-menu-text {
-} */
+.phone-menu-text {
+    position: relative;
+    display: inline-block;
+}
+
+.phone-menu-text .sector-name {
+    display: inline-block;
+    transition: font-style 0.3s ease;
+}
+
+.phone-menu-text .sector-count {
+    /* position: absolute;
+    top: 0.2rem;
+    left: 90%; 
+    margin-left: 0.8rem;
+    font-size: 0.8rem;
+    color: #999;
+    font-weight: 300;
+    font-style: normal !important;
+    font-family: var(--estudio-sans-serif);
+    white-space: nowrap; */
+    /* Quitar position absolute */
+    font-size: 0.8rem;
+    color: #999;
+    font-weight: 400;
+    font-style: normal !important;
+    font-family: var(--estudio-sans-serif);
+    white-space: nowrap;
+    margin-left: auto; /* 👈 Empuja a la derecha */
+    padding-left: 1rem; 
+}
+
+.modal-filter-item:hover .sector-name {
+    font-style: italic;
+}
+
+.modal-filter-item:hover .sector-count {
+    font-style: normal !important;
+}

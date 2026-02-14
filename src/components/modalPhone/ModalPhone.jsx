@@ -39,7 +39,7 @@
 //     const renderCategories = () => {
 //         if (type === 'services') {
 //             if (!categories.services || !Array.isArray(categories.services)) return null;
-            
+
 //             return categories.services.map((service, index) => (
 //                 <div
 //                     key={`service-${index}`}
@@ -53,7 +53,7 @@
 
 //         if (type === 'sectors') {
 //             if (!categories.sectors || !Array.isArray(categories.sectors)) return null;
-            
+
 //             return categories.sectors.map((sector, index) => (
 //                 <div
 //                     key={`sector-${index}`}
@@ -67,7 +67,7 @@
 
 //         if (type === 'clients') {
 //             if (!categories.clients || !Array.isArray(categories.clients)) return null;
-            
+
 //             return categories.clients.map((client, index) => (
 //                 <div
 //                     key={`client-${index}`}
@@ -111,9 +111,9 @@
 //         <div className="modal-phone-overlay" onClick={onClose}>
 //             <div className="modal-phone-content" onClick={(e) => e.stopPropagation()}>
 //                 <button className="about-close-btn" onClick={onClose}>
-                    
+
 //                 </button>
-                
+
 //                 <div className="modal-categories-list">
 //                     {renderCategories()}
 //                 </div>
@@ -159,49 +159,74 @@ function ModalPhone({ isOpen, onClose, categories, selectedCategory, onCategoryS
 
     const handleCategoryClick = (categoryKey) => {
         onCategorySelect(categoryKey);
-        onClose(); 
+        onClose();
     };
 
     const renderCategories = () => {
-        // Para services, sectors, clients (sin numeración)
+        // if (type === 'services') {
+        //     if (!categories.services || !Array.isArray(categories.services)) return null;
+
+        //     return categories.services.map((service, index) => (
+        //         <div
+        //             key={`service-${index}`}
+        //             className={`modal-filter-item ${selectedCategory === service ? 'active' : ''}`}
+        //             onClick={() => handleCategoryClick(service)}
+        //         >
+        //             <span className="phone-menu-text">{service}</span>
+        //         </div>
+        //     ));
+        // }
+
+        // Para services con count
         if (type === 'services') {
             if (!categories.services || !Array.isArray(categories.services)) return null;
-            
+
             return categories.services.map((service, index) => (
                 <div
                     key={`service-${index}`}
-                    className={`modal-filter-item ${selectedCategory === service ? 'active' : ''}`}
-                    onClick={() => handleCategoryClick(service)}
+                    className={`modal-filter-item ${selectedCategory === service.name ? 'active' : ''}`}
+                    onClick={() => handleCategoryClick(service.name)}
                 >
-                    <span className="phone-menu-text">{service}</span>
+                    <span className="phone-menu-text">
+                        <span className="sector-name">{service.name}</span>
+                        <span className="sector-count">({service.count})</span>
+                    </span>
                 </div>
             ));
         }
 
         if (type === 'sectors') {
             if (!categories.sectors || !Array.isArray(categories.sectors)) return null;
-            
+
             return categories.sectors.map((sector, index) => (
                 <div
                     key={`sector-${index}`}
                     className={`modal-filter-item ${selectedCategory === sector.name ? 'active' : ''}`}
                     onClick={() => handleCategoryClick(sector.name)}
                 >
-                    <span className="phone-menu-text">{sector.name} ({sector.count})</span>
+                    {/* <span className="phone-menu-text">{sector.name} ({sector.count})</span> */}
+                    <span className="phone-menu-text">
+                        <span className="sector-name">{sector.name}</span>
+                        <span className="sector-count">({sector.count})</span>
+                    </span>
                 </div>
             ));
         }
 
         if (type === 'clients') {
             if (!categories.clients || !Array.isArray(categories.clients)) return null;
-            
+
             return categories.clients.map((client, index) => (
                 <div
                     key={`client-${index}`}
                     className={`modal-filter-item ${selectedCategory === client.name ? 'active' : ''}`}
                     onClick={() => handleCategoryClick(client.name)}
                 >
-                    <span className="phone-menu-text">{client.name} ({client.count})</span>
+                    {/* <span className="phone-menu-text">{client.name} ({client.count})</span> */}
+                    <span className="phone-menu-text">
+                        <span className="sector-name">{client.name}</span>
+                        <span className="sector-count">({client.count})</span>
+                    </span>
                 </div>
             ));
         }
@@ -241,7 +266,7 @@ function ModalPhone({ isOpen, onClose, categories, selectedCategory, onCategoryS
                 <button className="modal-close-btn" onClick={onClose}>
                     ×
                 </button>
-                
+
                 {/* <div className="modal-categories-list"> */}
                 <div className={`modal-categories-list ${(type === 'services' || type === 'sectors' || type === 'clients') ? 'modal-categories-list-filters' : ''}`}>
                     {renderCategories()}
