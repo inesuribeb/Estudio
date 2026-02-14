@@ -67,9 +67,9 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 0;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-family: var(--estudio-sans-serif);
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .header-nav {

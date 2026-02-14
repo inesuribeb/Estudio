@@ -55,7 +55,8 @@ function Header3({ onContactClick, onAboutClick }) {
                                     className={`nav-link ${isActive(getRoute('services')) ? 'nav-active' : ''}`}
                                 >
                                     {isActive(getRoute('services')) && <span className="link-indicator"></span>}
-                                    [{t('studio')}]
+                                    {/* [{t('studio')}] */}
+                                    {t('studio')}
                                 </Link>
                             </li>
                             
@@ -69,7 +70,9 @@ function Header3({ onContactClick, onAboutClick }) {
                                     className={`nav-link ${isActive(getRoute('portfolio')) ? 'nav-active' : ''}`}
                                 >
                                     {isActive(getRoute('portfolio')) && <span className="link-indicator"></span>}
-                                    [{t('portfolio')}]
+                                    {/* [{t('portfolio')}] */}
+                                    {t('portfolio')}
+
                                 </Link>
                                 
                                 {shouldShowSubmenu && showSubmenu && otherRoute && (
@@ -90,7 +93,8 @@ function Header3({ onContactClick, onAboutClick }) {
                                 className="nav-link" 
                                 onClick={onAboutClick}
                             >
-                                [{t('about')}]
+                                {/* [{t('about')}] */}
+                                {t('about')}
                             </button>
                         </li>
                         </ul>

@@ -56,7 +56,8 @@ function Header3Phone({ onContactClick, onAboutClick }) {
                                         className={`phone-nav-link ${isActive(getRoute('services')) ? 'phone-nav-active' : ''}`}
                                     >
                                         {isActive(getRoute('services')) && <span className="phone-link-indicator"></span>}
-                                        [{t('studio')}]
+                                        {/* [{t('studio')}] */}
+                                        {t('studio')}
                                     </Link>
                                 </li>
                                 <li 
@@ -69,7 +70,8 @@ function Header3Phone({ onContactClick, onAboutClick }) {
                                         className={`phone-nav-link ${isActive(getRoute('portfolio')) ? 'phone-nav-active' : ''}`}
                                     >
                                         {isActive(getRoute('portfolio')) && <span className="phone-link-indicator"></span>}
-                                        [{t('portfolio')}]
+                                        {/* [{t('portfolio')}] */}
+                                        {t('portfolio')}
                                     </Link>
                                     
                                     {shouldShowSubmenu && showSubmenu && otherRoute && (
@@ -90,7 +92,8 @@ function Header3Phone({ onContactClick, onAboutClick }) {
                                         className="phone-nav-link" 
                                         onClick={onAboutClick}
                                     >
-                                        [{t('about')}]
+                                        {/* [{t('about')}] */}
+                                        {t('about')}
                                     </button>
                                 </li>
                             </ul>
