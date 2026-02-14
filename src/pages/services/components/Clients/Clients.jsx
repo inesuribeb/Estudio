@@ -34,11 +34,21 @@ function Clients({ t, language, clients, onClientClick, filteredProjects, active
                             className="client-item clickable"
                             onClick={() => onClientClick(client.name)}
                         >
-                            {/* <span className="menu-number menu-number-right">[{(index + 1).toString().padStart(2, '0')}]</span> */}
                             <li>
-                                {client.name} ({client.count})
+                                {client.name} <span className="sector-count">({client.count})</span>
                             </li>
                         </div>
+                        // <div
+                        //     key={index}
+                        //     className="sector-item clickable"
+                        //     onClick={() => onSectorClick(sector.name)}
+                        // >
+
+                        //     <li>
+                        //         {sector.name} <span className="sector-count">({sector.count})</span>
+                        //     </li>
+                        // </div>
+                        
                     ))}
                 </ul>
             </div>

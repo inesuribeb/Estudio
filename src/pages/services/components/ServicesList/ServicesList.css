@@ -26,9 +26,9 @@
     text-decoration: none;
     color: black; 
     font-family: var(--main-font);
-    letter-spacing: 0.05em;
+    /* letter-spacing: 0.05em; */
     font-weight: 100;
-    font-size: 1.8rem;
+    font-size: 1.75rem;
     position: relative;
     /* padding-left: 3rem; */
     margin-right: 3rem;
@@ -89,6 +89,8 @@
 
 .services-display li {
     padding: 0;
+    margin-bottom: -0.4rem;
+
 }
 
 .service-item.clickable {

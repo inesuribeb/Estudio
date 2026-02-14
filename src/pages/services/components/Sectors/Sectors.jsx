@@ -2,7 +2,7 @@ import ProjectItem from '../../projectItem/ProjectItem';
 import './Sectors.css'
 
 function Sectors({ t, language, sectors, onSectorClick, filteredProjects, activeSector }) {
-    
+
     if (activeSector) {
         return (
             <div className='sectors-list'>
@@ -11,10 +11,10 @@ function Sectors({ t, language, sectors, onSectorClick, filteredProjects, active
                         <div className="projects-grid">
                             {filteredProjects.map((project) => (
                                 <div key={project.id} className="project-item">
-                                    <ProjectItem 
-                                    project={project}
-                                    language={language}
-                                     />
+                                    <ProjectItem
+                                        project={project}
+                                        language={language}
+                                    />
                                 </div>
                             ))}
                         </div>
@@ -29,16 +29,22 @@ function Sectors({ t, language, sectors, onSectorClick, filteredProjects, active
             <div className='sectors-display'>
                 <ul>
                     {sectors.map((sector, index) => (
-                        <div 
-                            key={index} 
+                        <div
+                            key={index}
                             className="sector-item clickable"
                             onClick={() => onSectorClick(sector.name)}
                         >
-                            {/* <span className="menu-number menu-number-right">[{(index + 1).toString().padStart(2, '0')}]</span> */}
+
                             <li>
-                                {sector.name} ({sector.count})
+                                {sector.name} <span className="sector-count">({sector.count})</span>
                             </li>
                         </div>
+                        // <div className="sector-item clickable" onClick={() => onSectorClick(sector.name)}>
+                        //     <li>
+                        //         <span className="sector-name">{sector.name}</span>
+                        //         <span className="sector-count">({sector.count})</span>
+                        //     </li>
+                        // </div>
                     ))}
                 </ul>
             </div>

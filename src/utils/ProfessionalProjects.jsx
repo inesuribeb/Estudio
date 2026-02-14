@@ -10,8 +10,8 @@ const professionalProjects = [
             en: ["Real Estate"]
         },
         services: {
-            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding", "Fotografía", "Identidad de marca"],
-            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding", "Photography", "Brand Identity"]
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Fotografía", "Identidad de marca"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Photography", "Brand Identity"]
         },
         web: "https://inmoartaza.es",
         image: [
@@ -44,8 +44,8 @@ const professionalProjects = [
             en: ["Fashion"]
         },
         services: {
-            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding", "Identidad de marca"],
-            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding", "Brand Identity"]
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Identidad de marca"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Brand Identity"]
         },
         web: "https://swipeagency.es/",
         image: [
@@ -212,8 +212,8 @@ const professionalProjects = [
             en: ["Tourism", "Sports"]
         },
         services: {
-            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding", "Identidad de marca"],
-            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding", "Brand Identity"]
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Identidad de marca"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Brand Identity"]
         },
         web: "https://bikecountry.inesuribe.es/",
         image: [
@@ -246,8 +246,8 @@ const professionalProjects = [
             en: ["Art", "Culture", "E-commerce"]
         },
         services: {
-            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding", "Identidad de marca"],
-            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding", "Brand Identity"]
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Identidad de marca"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Brand Identity"]
         },
         web: "https://fundacionazar.com/inicio",
         image: [
@@ -280,8 +280,8 @@ const professionalProjects = [
             en: ["Architecture", "Culture", "Portfolio"]
         },
         services: {
-            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding", "Identidad de marca"],
-            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding", "Brand Identity"]
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Identidad de marca"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Brand Identity"]
         },
         web: "https://www.jotaarquitectura.es/",
         image: [
@@ -314,8 +314,8 @@ const professionalProjects = [
             en: ["Decoration", "Interior Design", "E-commerce"]
         },
         services: {
-            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding", "Identidad de marca"],
-            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding", "Brand Identity"]
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Identidad de marca"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Brand Identity"]
         },
         web: "https://test.bellhousebh.com/",
         image: [
