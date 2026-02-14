@@ -25,7 +25,9 @@
     background-color: rgba(221, 221, 221, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 6px;
-    padding: 23px 20px 6px 10px;
+    /* padding: 23px 20px 6px 10px; */
+    padding-top: 23px;
+    padding-bottom: 10px;
     flex-shrink: 0;
     width: fit-content;
     pointer-events: auto;
@@ -38,16 +40,31 @@
     background-color: var(--corporative-color);
     border-radius: 50%;
     margin-right: 0.8rem;
+    margin-left: 10px;
 }
+
+/* .phone-header-title-link {
+    text-decoration: none;
+    color: inherit;
+    pointer-events: auto;
+} */
 
 .phone-header-title-link {
     text-decoration: none;
     color: inherit;
     pointer-events: auto;
+    display: flex;
+    align-items: center;
+    /* Añadir padding horizontal y compensar el vertical con margin negativo */
+    padding-right: 20px;
+    padding-top: 23px;
+    padding-bottom: 6px;
+    margin-top: -23px;
+    margin-bottom: -6px;
 }
 
 .phone-header-title-text {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -96,10 +113,10 @@
 .phone-nav-item {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    background-color: rgba(221, 221, 221, 0.6);
+    background-color: rgba(221, 221, 221, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 6px;
-    padding: 15px 10px 6px 10px;
+    /* padding: 15px 10px 6px 10px; */
     position: relative;
     flex-shrink: 0;
     width: fit-content;
@@ -107,7 +124,7 @@
 }
 
 .phone-nav-link {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: color 0.3s ease;
@@ -120,6 +137,10 @@
     background: none;
     border: none;
     cursor: pointer;
+
+     /* AÑADIR el padding aquí */
+     display: block;
+     padding: 20px 12px 6px 10px;
 }
 
 .phone-nav-active {
@@ -180,7 +201,7 @@
 }
 
 .phone-lang-option {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     cursor: pointer;
     color: #999;
     transition: color 0.3s ease;
