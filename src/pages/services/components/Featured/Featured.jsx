@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 // import ProjectItem from '../projectItem/ProjectItem';
 import ProjectItem from '../../projectItem/ProjectItem';
-import PortfolioIcon from '/flechasLaura/FLECHA WEB-02.svg'; 
+import PortfolioIcon from '/flechasLaura/FLECHA WEB-02.svg';
 import './Featured.css'
 
 function Featured({ t, projects = [], language, getRoute }) {
@@ -22,18 +22,20 @@ function Featured({ t, projects = [], language, getRoute }) {
             <div className='first-line-ft'>
                 <div className='column1'>
                     <div className='project-item-container'>
-                        {nwhrProject && (
+
+                        {jotaProject && (
                             <ProjectItem
-                                project={nwhrProject}
+                                project={jotaProject}
                                 language={language}
                                 className="project-half"
                             />
                         )}
                     </div>
                     <div className='project-item-container'>
-                        {swipeProject && (
+
+                        {azarProject && (
                             <ProjectItem
-                                project={swipeProject}
+                                project={azarProject}
                                 language={language}
                                 className="project-half"
                             />
@@ -55,9 +57,10 @@ function Featured({ t, projects = [], language, getRoute }) {
             <div className='second-line-ft'>
                 <div className='column2'>
                     <div className='project-item-container'>
-                        {machimbaProject && (
+                        
+                        {nwhrProject && (
                             <ProjectItem
-                                project={azarProject}
+                                project={nwhrProject}
                                 language={language}
                                 className="project-half"
                             />
@@ -77,9 +80,9 @@ function Featured({ t, projects = [], language, getRoute }) {
                         )}
                     </div> */}
                     <div className='project-item-container'>
-                        {jotaProject && (
+                    {swipeProject && (
                             <ProjectItem
-                                project={jotaProject}
+                                project={swipeProject}
                                 language={language}
                                 className="project-half"
                             />

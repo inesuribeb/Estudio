@@ -285,7 +285,7 @@ const professionalProjects = [
             es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Identidad de marca"],
             en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Brand Identity"]
         },
-        web: "https://www.jotaarquitectura.es/",
+        web: "https://jotaarq.inesuribe.es/inicio",
         image: [
             { src: "/ProfessionalProjects/JotaArq/JOTA1.png", alt: "" },
             { src: "/ProfessionalProjects/JotaArq/JOTA4.png", alt: "" },

@@ -1,5 +1,55 @@
 const projectsData = [
     {
+        title: "BELL HOUSE",
+        mobileWebReady: true,
+        web: "https://test.bellhousebh.com/",
+        description: {
+            es: "Sitio web para Bell House, tienda y estudio de interiorismo en Getxo, especializado en reformas y decoración de hogares desde 1980. Desarrollado en WordPress con WooCommerce, cuenta con plantillas completamente personalizadas para ofrecer una experiencia visual elegante, funcional y adaptada al cliente, integrando la venta online de productos de interiorismo.",
+            en: "Website for Bell House, a store and interior design studio in Getxo, specializing in home renovations and decoration since 1980. Built with WordPress and WooCommerce, it features fully customized templates to provide an elegant, functional, and client-focused visual experience, integrating online sales of interior design products."
+        },
+        category: "Full-stack",
+        method: "Wordpress • Woocommerce • PHP • JavaScript • CSS3 • Stripe",
+        link: "https://github.com/inesuribeb/bellhouse-theme",
+        images: [
+            { src: "/ProfessionalProjects/BellHouse/bh2.png", alt: "" },
+            { src: "/ProfessionalProjects/BellHouse/bhPrueba.png", alt: "" },
+            // { src: "/ProfessionalProjects/BellHouse/benjamin1.png", alt: "" },
+            { src: "/ProfessionalProjects/BellHouse/bh_web1.png", alt: "" },
+            // { src: "/ProfessionalProjects/BellHouse/bh2.png", alt: "" },
+            // { src: "/ProfessionalProjects/BellHouse/bhPrueba.png", alt: "" },
+            { src: "/ProfessionalProjects/BellHouse/wow.avif", alt: "" },
+            { src: "/ProfessionalProjects/BellHouse/bh3.ong", alt: "" },
+        ],
+        sector: {
+            es: ["Decoración", "Interiorismo", "E-commerce"],
+            en: ["Decoration", "Interior Design", "E-commerce"]
+        },
+    },
+    {
+        title: "JOTA ARQUITECTURA",
+        mobileWebReady: true,
+        web: "https://jotaarq.inesuribe.es/inicio",
+        description: {
+            es: "Sitio web desarrollado a medida con React para JOTA Arquitectura, oficina multidisciplinar con sede en Bilbao que integra arquitectura, ingeniería, urbanismo y gestión. La plataforma refleja su visión de la arquitectura como herramienta de transformación, transmitiendo solidez, precisión y coherencia a través de una experiencia digital clara, estructurada y contemporánea.",
+            en: "Custom-built website developed with React for JOTA Arquitectura, a multidisciplinary firm based in Bilbao that brings together architecture, engineering, urban planning, and project management. The platform reflects their vision of architecture as a tool for transformation, conveying solidity, precision, and coherence through a clear, structured, and contemporary digital experience."
+        },
+        category: "Full-stack",
+        method: "React • JavaScript • CSS3",
+        link: "https://github.com/inesuribeb/JotaArq",
+        images: [
+            { src: "/ProfessionalProjects/JotaArq/JOTA1.png", alt: "" },
+            { src: "/ProfessionalProjects/JotaArq/JOTA2.png", alt: "" },
+            { src: "/ProfessionalProjects/JotaArq/jotaArq1.png", alt: "" },
+            { src: "/ProfessionalProjects/JotaArq/JOTA3.png", alt: "" },
+            { src: "/ProfessionalProjects/JotaArq/JOTA4.png", alt: "" },
+            { src: "/ProfessionalProjects/JotaArq/jotaArq2.png", alt: "" },
+        ],
+        sector: {
+            es: ["Decoración", "Interiorismo", "E-commerce"],
+            en: ["Decoration", "Interior Design", "E-commerce"]
+        },
+    },
+    {
         title: "FUNDACION AZAR DE LAS ARTES",
         mobileWebReady: true,
         web: "https://fundacionazar.com/inicio",
