@@ -4,8 +4,8 @@ const projectsData = [
         mobileWebReady: true,
         web: "https://test.bellhousebh.com/",
         description: {
-            es: "Sitio web para Bell House, tienda y estudio de interiorismo en Getxo, especializado en reformas y decoración de hogares desde 1980. Desarrollado en WordPress con WooCommerce, cuenta con plantillas completamente personalizadas para ofrecer una experiencia visual elegante, funcional y adaptada al cliente, integrando la venta online de productos de interiorismo.",
-            en: "Website for Bell House, a store and interior design studio in Getxo, specializing in home renovations and decoration since 1980. Built with WordPress and WooCommerce, it features fully customized templates to provide an elegant, functional, and client-focused visual experience, integrating online sales of interior design products."
+            es: "Sitio web para Bell House, tienda y estudio de interiorismo en Getxo, especializado en reformas y decoración de hogares desde 1980. Desarrollado en WordPress con WooCommerce, cuenta con plantillas completamente personalizadas para ofrecer una experiencia visual elegante, funcional y adaptada al cliente, integrando la venta online de productos de interiorismo. Proyecto hecho en colaboración con Estudio Virgulilla.",
+            en: "Website for Bell House, a store and interior design studio in Getxo, specializing in home renovations and decoration since 1980. Built with WordPress and WooCommerce, it features fully customized templates to provide an elegant, functional, and client-focused visual experience, integrating online sales of interior design products. A project developed in collaboration with Estudio Virgulilla."
         },
         category: "Full-stack",
         method: "Wordpress • Woocommerce • PHP • JavaScript • CSS3 • Stripe",

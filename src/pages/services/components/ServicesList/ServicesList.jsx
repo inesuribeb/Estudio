@@ -46,6 +46,9 @@
 
 // export default ServicesList;
 
+import ProjectItem from '../../projectItem/ProjectItem';
+import './ServicesList.css'
+
 function ServicesList({ t, language, onServiceClick, filteredProjects, activeService, services }) {
     
     if (activeService) {

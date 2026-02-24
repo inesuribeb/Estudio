@@ -10,8 +10,8 @@ const professionalProjects = [
             en: ["Real Estate"]
         },
         services: {
-            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Fotografía", "Identidad de marca"],
-            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Photography", "Brand Identity"]
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Fotografía"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Photography"]
         },
         web: "https://inmoartaza.es",
         image: [
@@ -23,6 +23,7 @@ const professionalProjects = [
             es: ["Espacios con alma"],
             en: ["Homes with soul"]
         },
+        soon: false,
         overview: {
             es: [""],
             en: [""],
@@ -44,8 +45,8 @@ const professionalProjects = [
             en: ["Fashion"]
         },
         services: {
-            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Identidad de marca"],
-            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Brand Identity"]
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Copywiting"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Copywiting"]
         },
         web: "https://swipeagency.es/",
         image: [
@@ -57,6 +58,7 @@ const professionalProjects = [
             es: ["Tradición moderna"],
             en: ["Modern tradition"]
         },
+        soon: false,
         overview: {
             es: [""],
             en: [""],
@@ -92,6 +94,7 @@ const professionalProjects = [
             es: ["Bolsos únicos y ediciones limitadas"],
             en: ["Unique bags and limited editions"]
         },
+        soon: false,
         overview: {
             es: [""],
             en: [""],
@@ -125,6 +128,7 @@ const professionalProjects = [
             es: ["A mano & con calma"],
             en: ["Slowly handmade"]
         },
+        soon: false,
         overview: {
             es: [""],
             en: [""],
@@ -160,6 +164,7 @@ const professionalProjects = [
             es: ["Moda sin ruido"],
             en: ["Quiet clothing"]
         },
+        soon: false,
         overview: {
             es: [""],
             en: [""],
@@ -193,6 +198,7 @@ const professionalProjects = [
             es: ["Tradición reinterpretada"],
             en: ["A new take on tradition"]
         },
+        soon: false,
         overview: {
             es: [""],
             en: [""],
@@ -214,8 +220,8 @@ const professionalProjects = [
             en: ["Tourism", "Sports"]
         },
         services: {
-            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Identidad de marca"],
-            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Brand Identity"]
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Copywiting"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Copywiting"]
         },
         web: "https://bikecountry.inesuribe.es/",
         image: [
@@ -227,6 +233,7 @@ const professionalProjects = [
             es: ["Ciclismo de élite"],
             en: ["Elite cycling experiences"]
         },
+        soon: false,
         overview: {
             es: [""],
             en: [""],
@@ -248,8 +255,8 @@ const professionalProjects = [
             en: ["Art", "Culture", "E-commerce"]
         },
         services: {
-            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Identidad de marca"],
-            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Brand Identity"]
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity"]
         },
         web: "https://fundacionazar.com/inicio",
         image: [
@@ -261,6 +268,7 @@ const professionalProjects = [
             es: ["Un hogar para el arte y las ideas"],
             en: ["A home for art and ideas"]
         },
+        soon: false,
         overview: {
             es: [""],
             en: [""],
@@ -282,8 +290,8 @@ const professionalProjects = [
             en: ["Architecture", "Culture", "Portfolio"]
         },
         services: {
-            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Identidad de marca"],
-            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Brand Identity"]
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Copywiting"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Copywiting"]
         },
         web: "https://jotaarq.inesuribe.es/inicio",
         image: [
@@ -295,6 +303,7 @@ const professionalProjects = [
             es: ["Arquitectura que genera valor"],
             en: ["Architecture that creates value"]
         },
+        soon: false,
         overview: {
             es: [""],
             en: [""],
@@ -316,8 +325,8 @@ const professionalProjects = [
             en: ["Decoration", "Interior Design", "E-commerce"]
         },
         services: {
-            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Identidad de marca"],
-            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Brand Identity"]
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Copywiting"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Copywiting"]
         },
         web: "https://test.bellhousebh.com/",
         image: [
@@ -330,6 +339,7 @@ const professionalProjects = [
             es: ["Creando hogares desde 1980"],
             en: ["Crafting homes since 1980"]
         },
+        soon: true,
         overview: {
             es: [""],
             en: [""],

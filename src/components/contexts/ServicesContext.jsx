@@ -37,6 +37,7 @@ export const ServicesTranslations = {
         "Branding & Identidad",
         // "Identidad de marca",
         "Estrategia",
+        "Copywriting"
       ],
       personality: "<em>Mostrar tu</em> PERSONALIDAD <em>es una habilidad</em><br />PODEROSA <em>para</em> DIFERENCIARTE.",
       // services: "Servicios",
