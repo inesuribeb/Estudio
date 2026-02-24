@@ -1,13 +1,15 @@
-import { useOutletContext } from 'react-router-dom';
+// import { useOutletContext } from 'react-router-dom';
 import { useLanguage } from '../../../../components/contexts/LanguageContext'
 // import ProjectItem from '../../projectItem/ProjectItem';
 import ProjectItem from '../../projectItem/ProjectItem';
 
 import './ServicesListPhone.css';
 
-function ServicesListPhone({ t, language, onServiceClick, filteredProjects, activeService }) {
-    const { openCategoryModal } = useOutletContext();
-    
+// function ServicesListPhone({ t, language, onServiceClick, filteredProjects, activeService }) {
+function ServicesListPhone({ t, language, onServiceClick, filteredProjects, activeService, openCategoryModal }) {
+
+    // const { openCategoryModal } = useOutletContext();
+
     if (activeService) {
         return (
             <div className='phone-services-list'>
@@ -16,7 +18,7 @@ function ServicesListPhone({ t, language, onServiceClick, filteredProjects, acti
                         <div className="phone-projects-grid">
                             {filteredProjects.map((project) => (
                                 <div key={project.id} className="phone-project-item">
-                                    <ProjectItem 
+                                    <ProjectItem
                                         project={project}
                                         language={language}
                                     />
@@ -39,7 +41,7 @@ function ServicesListPhone({ t, language, onServiceClick, filteredProjects, acti
     const handleOpenServicesModal = () => {
         openCategoryModal(
             servicesCategories,
-            null, 
+            null,
             onServiceClick,
             'services'
         );

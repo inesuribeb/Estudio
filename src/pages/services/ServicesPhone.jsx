@@ -173,6 +173,7 @@ function ServicesPhone({ showTitle = false, openCategoryModal }) {
                         filteredProjects={filteredProjects}
                         activeService={activeService}
                         services={getServicesWithCount()}
+                        openCategoryModal={openCategoryModal}  // añadir
                     />
                 );
             case 'Sectors':
@@ -184,6 +185,7 @@ function ServicesPhone({ showTitle = false, openCategoryModal }) {
                         onSectorClick={applySectorFilter}
                         filteredProjects={filteredProjects}
                         activeSector={activeSector}
+                        openCategoryModal={openCategoryModal}  // añadir
                     />
                 );
             case 'Featured':
@@ -197,6 +199,7 @@ function ServicesPhone({ showTitle = false, openCategoryModal }) {
                         onClientClick={applyClientFilter}
                         filteredProjects={filteredProjects}
                         activeClient={activeClient}
+                        openCategoryModal={openCategoryModal}  // añadir
                     />
                 );
             default:

@@ -1,10 +1,12 @@
-import { useOutletContext } from 'react-router-dom';
+// import { useOutletContext } from 'react-router-dom';
 import { useLanguage } from '../../../../components/contexts/LanguageContext';
 import ProjectItem from '../../projectItem/ProjectItem';
 
-function SectorsPhone({ t, language, sectors, onSectorClick, filteredProjects, activeSector }) {
-    const { openCategoryModal } = useOutletContext();
-    
+// function SectorsPhone({ t, language, sectors, onSectorClick, filteredProjects, activeSector }) {
+function SectorsPhone({ t, language, sectors, onSectorClick, filteredProjects, activeSector, openCategoryModal }) {
+
+    // const { openCategoryModal } = useOutletContext();
+
     if (activeSector) {
         return (
             <div className='phone-sectors-list'>
@@ -13,7 +15,7 @@ function SectorsPhone({ t, language, sectors, onSectorClick, filteredProjects, a
                         <div className="phone-projects-grid">
                             {filteredProjects.map((project) => (
                                 <div key={project.id} className="phone-project-item">
-                                    <ProjectItem 
+                                    <ProjectItem
                                         project={project}
                                         language={language}
                                     />
@@ -28,12 +30,12 @@ function SectorsPhone({ t, language, sectors, onSectorClick, filteredProjects, a
 
     const handleOpenSectorsModal = () => {
         const sectorsCategories = {
-            sectors: sectors 
+            sectors: sectors
         };
 
         openCategoryModal(
             sectorsCategories,
-            activeSector, 
+            activeSector,
             onSectorClick,
             'sectors'
         );
