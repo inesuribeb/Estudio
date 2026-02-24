@@ -243,14 +243,14 @@ const router = createBrowserRouter([
         path: 'contacto',
         element: <ResponsiveComponent MobileVersion={ContactPhone} DesktopVersion={Contact} />,
       },
-      // {
-      //   path: 'servicios',
-      //   element: <ParentContainer />,
-      // },
       {
         path: 'estudio',
         element: <ParentContainer />,
       },
+      // {
+      //   path: 'estudio',
+      //   element: null,
+      // },
       {
         path: 'portafolio',
         element: <ResponsiveComponent MobileVersion={PortfolioPhone} DesktopVersion={Portfolio} />,
@@ -277,14 +277,14 @@ const router = createBrowserRouter([
         path: 'contact',
         element: <ResponsiveComponent MobileVersion={ContactPhone} DesktopVersion={Contact} />,
       },
-      // {
-      //   path: 'services',
-      //   element: <ParentContainer />,
-      // },
       {
         path: 'studio',
         element: <ParentContainer />,
       },
+      // {
+      //   path: 'studio',
+      //   element: null,
+      // },
       {
         path: 'portfolio',
         element: <ResponsiveComponent MobileVersion={PortfolioPhone} DesktopVersion={Portfolio} />,
