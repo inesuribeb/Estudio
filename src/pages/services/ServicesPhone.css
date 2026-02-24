@@ -10,7 +10,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    /* padding: 1rem; */
+    padding: 0rem;
+
 }
 
 .phone-statement:first-child {
@@ -50,6 +52,7 @@
     transition: opacity 0.5s ease;
 }
 
+/*este*/
 .phone-statement h2 {
     width: 95%;
     /* width: 100%; */

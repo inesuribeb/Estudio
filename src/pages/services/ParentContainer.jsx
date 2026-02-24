@@ -6,14 +6,15 @@ import AnimatedTitle from './AnimatedTitle';
 import Services from './Services';
 import ServicesPhone from './ServicesPhone';
 
-function ParentContainer() {
+function ParentContainer({ openCategoryModal }) {
     const { t } = useLanguage();
     const [startTitleAnimation, setStartTitleAnimation] = useState(false);
     const [startCurtainFade, setStartCurtainFade] = useState(false);
     const [showServicesTitle, setShowServicesTitle] = useState(false);
     const [isAnimating, setIsAnimating] = useState(true);
-    
+
     const isMobile = useMediaQuery({ maxWidth: 768 });
+
 
     useEffect(() => {
         if (isAnimating) {
@@ -34,7 +35,7 @@ function ParentContainer() {
     const handleTitleReachedPosition = () => {
         setStartCurtainFade(true);
         setShowServicesTitle(true);
-        
+
         setTimeout(() => {
             setIsAnimating(false);
         }, 1000);
@@ -42,19 +43,24 @@ function ParentContainer() {
 
     return (
         <div className="parent-container">
-            <Curtain 
+            <Curtain
                 onAnimationStart={handleAnimationStart}
                 startFade={startCurtainFade}
             />
-            
-            <AnimatedTitle 
-                t={t} 
+
+            <AnimatedTitle
+                t={t}
                 startAnimation={startTitleAnimation}
                 onReachedPosition={handleTitleReachedPosition}
             />
-            
-            {isMobile ? (
+
+            {/* {isMobile ? (
                 <ServicesPhone showTitle={showServicesTitle} />
+            ) : (
+                <Services showTitle={showServicesTitle} />
+            )} */}
+            {isMobile ? (
+                <ServicesPhone showTitle={showServicesTitle} openCategoryModal={openCategoryModal} />
             ) : (
                 <Services showTitle={showServicesTitle} />
             )}

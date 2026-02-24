@@ -7,7 +7,8 @@
     /* background-color: var(--pink-color); */
     background-color: var(--burgundy);
 
-    z-index: 999;
+    /* z-index: 999; */
+    z-index: 2000;
     transition: opacity 0.5s ease-out;
 }
 
@@ -20,7 +21,9 @@
 @media (max-width: 768px) {
     .curtain {
         height: 100dvh; /* Ya está usando dvh, perfecto para móvil */
-        z-index: 999; /* Mantener por debajo del header (1000) */
+        /* z-index: 999;  */
+        z-index: 2000; 
+
     }
 }
 
@@ -38,7 +41,6 @@
 /* Para dispositivos muy pequeños */
 @media (max-width: 480px) {
     .curtain {
-        /* Optimización para pantallas pequeñas */
-        will-change: opacity; /* Optimizar animación */
+        will-change: opacity; 
     }
 }

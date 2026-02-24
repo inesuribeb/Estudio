@@ -243,9 +243,13 @@ const router = createBrowserRouter([
         path: 'contacto',
         element: <ResponsiveComponent MobileVersion={ContactPhone} DesktopVersion={Contact} />,
       },
+      // {
+      //   path: 'estudio',
+      //   element: <ParentContainer />,
+      // },
       {
         path: 'estudio',
-        element: <ParentContainer />,
+        element: null,
       },
       {
         path: 'portafolio',
@@ -273,9 +277,13 @@ const router = createBrowserRouter([
         path: 'contact',
         element: <ResponsiveComponent MobileVersion={ContactPhone} DesktopVersion={Contact} />,
       },
+      // {
+      //   path: 'studio',
+      //   element: <ParentContainer />,
+      // },
       {
         path: 'studio',
-        element: <ParentContainer />,
+        element: null,
       },
       {
         path: 'portfolio',

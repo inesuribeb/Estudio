@@ -45,8 +45,8 @@ const professionalProjects = [
             en: ["Fashion"]
         },
         services: {
-            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Copywiting"],
-            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Copywiting"]
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Copywriting"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Copywriting"]
         },
         web: "https://swipeagency.es/",
         image: [
@@ -220,8 +220,8 @@ const professionalProjects = [
             en: ["Tourism", "Sports"]
         },
         services: {
-            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Copywiting"],
-            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Copywiting"]
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Copywriting"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Copywriting"]
         },
         web: "https://bikecountry.inesuribe.es/",
         image: [
@@ -290,8 +290,8 @@ const professionalProjects = [
             en: ["Architecture", "Culture", "Portfolio"]
         },
         services: {
-            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Copywiting"],
-            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Copywiting"]
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Copywriting"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Copywriting"]
         },
         web: "https://jotaarq.inesuribe.es/inicio",
         image: [
@@ -325,8 +325,8 @@ const professionalProjects = [
             en: ["Decoration", "Interior Design", "E-commerce"]
         },
         services: {
-            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Copywiting"],
-            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Copywiting"]
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Copywriting"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Copywriting"]
         },
         web: "https://test.bellhousebh.com/",
         image: [

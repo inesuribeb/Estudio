@@ -8,7 +8,9 @@
     line-height: 2.4rem;
     position: fixed;
     left: 50%;
-    z-index: 1000;
+    /* z-index: 1000; */
+    z-index: 2001;
+
     transition: top 0.5s ease-out;
     /* color: #000000d9; */
     /* color: var(--burgundy); */
@@ -37,7 +39,9 @@
         width: 90%;
         font-size: 2.2rem;
         line-height: 2.5rem;
-        z-index: 1000;
+        /* z-index: 1000; */
+        z-index: 2001; 
+
     }
 
     .animated-title.centered {
@@ -53,9 +57,6 @@
 @media (max-width: 480px) {
     .animated-title {
         width: 95%;
-        /* font-size: 1.8rem;
-        line-height: 2.2rem; */
-
         font-size: 1.8rem;
     line-height: 1.8rem;
     }

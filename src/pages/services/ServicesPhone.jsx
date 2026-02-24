@@ -1,5 +1,5 @@
 import { useLanguage } from '../../components/contexts/LanguageContext';
-import { useOutletContext } from 'react-router-dom';
+// import { useOutletContext } from 'react-router-dom';
 import { useState } from 'react';
 import ServicesListPhone from './components/ServicesList/ServicesListPhone';
 import ClientsPhone from './components/Clients/ClientsPhone';
@@ -9,9 +9,11 @@ import AllProjectsPhone from './components/AllProjects/AllProjectsPhone'; // Imp
 import professionalProjects from '../../utils/ProfessionalProjects';
 import './ServicesPhone.css';
 
-function ServicesPhone({ showTitle = false }) {
+// function ServicesPhone({ showTitle = false }) {
+function ServicesPhone({ showTitle = false, openCategoryModal }) {
+
     const { language, toggleLanguage, t, getRoute } = useLanguage();
-    const { openCategoryModal } = useOutletContext();
+    // const { openCategoryModal } = useOutletContext();
     const [activeComponent, setActiveComponent] = useState('Featured');
 
     const [activeService, setActiveService] = useState(null);
@@ -46,24 +48,12 @@ function ServicesPhone({ showTitle = false }) {
         setActiveComponent('Clients');
     };
 
-    // const handleOpenServicesModal = () => {
-    //     const servicesCategories = {
-    //         services: t('servicesList')
-    //     };
-
-    //     openCategoryModal(
-    //         servicesCategories,
-    //         activeService,
-    //         applyServiceFilter,
-    //         'services'
-    //     );
-    // };
     const handleOpenServicesModal = () => {
         const servicesWithCount = getServicesWithCount();
         const servicesCategories = {
             services: servicesWithCount
         };
-    
+
         openCategoryModal(
             servicesCategories,
             activeService,
@@ -121,13 +111,13 @@ function ServicesPhone({ showTitle = false }) {
 
     const getServicesWithCount = () => {
         const serviceCount = {};
-    
+
         professionalProjects.forEach(project => {
             project.services[language].forEach(service => {
                 serviceCount[service] = (serviceCount[service] || 0) + 1;
             });
         });
-    
+
         return Object.entries(serviceCount).map(([service, count]) => ({
             name: service,
             count: count
@@ -182,7 +172,7 @@ function ServicesPhone({ showTitle = false }) {
                         onServiceClick={applyServiceFilter}
                         filteredProjects={filteredProjects}
                         activeService={activeService}
-                        services={getServicesWithCount()} 
+                        services={getServicesWithCount()}
                     />
                 );
             case 'Sectors':
