@@ -53,6 +53,7 @@
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { createPortal } from 'react-dom';
+import { useLanguage } from '../../../components/contexts/LanguageContext';
 import './ProjectItem.css'
 
 function ProjectItem({ project, language }) {
@@ -60,6 +61,7 @@ function ProjectItem({ project, language }) {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [showOverlay, setShowOverlay] = useState(false);
     const isMobile = useMediaQuery({ maxWidth: 768 });
+    const { t } = useLanguage();
     
     const handleImageClick = () => {
         if (project.soon) {
@@ -109,17 +111,29 @@ function ProjectItem({ project, language }) {
                 <p className="project-slogan">{project.slogan[language][0]}</p>
             </div>
 
-            {!isMobile && project.soon && isHovered && createPortal(
+            {/* {!isMobile && project.soon && isHovered && createPortal(
                 <span
                     className="soon-button"
-                    data-text="Próximamente"
+                    data-text={t('soon')}
                     style={{
                         left: mousePosition.x,
                         top: mousePosition.y,
                     }}
                 />,
                 document.body
-            )}
+            )} */}
+            {!isMobile && project.soon && isHovered && createPortal(
+    <span
+        className="soon-button"
+        style={{
+            left: mousePosition.x,
+            top: mousePosition.y,
+        }}
+    >
+        {t('soon')}
+    </span>,
+    document.body
+)}
         </div>
     )
 }

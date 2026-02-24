@@ -17,6 +17,7 @@ const translations = {
       seeOn: "See on",
       notFound: "There is nothing here",
       all: "All",
+      soon: "Confidential — Coming Soon",
       ...headerTranslations.en,
       ...ServicesTranslations.en
     },
@@ -33,6 +34,7 @@ const translations = {
       seeOn: "Ver en",
       notFound: "No hay nada aquí",
       all: "Todos",
+      soon: "Confidencial — Próximamente",
       ...headerTranslations.es,
       ...ServicesTranslations.es
     }
