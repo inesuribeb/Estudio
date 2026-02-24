@@ -32,3 +32,17 @@
     font-family: 'Ampersand';
     src: url('/fonts/Ampersand.otf') format('opentype');
 }
+
+@font-face {
+    font-family: 'estudio-sans-serif';
+    src: url('/fonts/NeueHaasGrotDispRound-45Light-Trial.otf') format('opentype');
+}
+@font-face {
+    font-family: 'estudio-sans-serif';
+    src: url('/fonts/NeueHaasGrotDispRound-55Roman-Trial.otf') format('opentype');
+}
+@font-face {
+    font-family: 'estudio-sans-serif';
+    src: url('/fonts/NeueHaasGrotDispRound-65Medium-Trial.otf') format('opentype');
+}
+

@@ -4,7 +4,9 @@
     left: 0;
     width: 100vw;
     height: 100dvh;
-    background-color: var(--pink-color);
+    /* background-color: var(--pink-color); */
+    background-color: var(--burgundy);
+
     z-index: 999;
     transition: opacity 0.5s ease-out;
 }

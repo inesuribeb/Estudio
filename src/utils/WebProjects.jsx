@@ -11,14 +11,12 @@ const projectsData = [
         method: "Wordpress • Woocommerce • PHP • JavaScript • CSS3 • Stripe",
         link: "https://github.com/inesuribeb/bellhouse-theme",
         images: [
+            { src: "/ProfessionalProjects/BellHouse/formatoinsta11.png", alt: "" },
             { src: "/ProfessionalProjects/BellHouse/bh2.png", alt: "" },
             { src: "/ProfessionalProjects/BellHouse/bhPrueba.png", alt: "" },
-            // { src: "/ProfessionalProjects/BellHouse/benjamin1.png", alt: "" },
             { src: "/ProfessionalProjects/BellHouse/bh_web1.png", alt: "" },
-            // { src: "/ProfessionalProjects/BellHouse/bh2.png", alt: "" },
-            // { src: "/ProfessionalProjects/BellHouse/bhPrueba.png", alt: "" },
             { src: "/ProfessionalProjects/BellHouse/wow.avif", alt: "" },
-            { src: "/ProfessionalProjects/BellHouse/bh3.ong", alt: "" },
+            { src: "/ProfessionalProjects/BellHouse/bh3.png", alt: "" },
         ],
         sector: {
             es: ["Decoración", "Interiorismo", "E-commerce"],

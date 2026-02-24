@@ -1,8 +1,9 @@
 .footer-wrapper {
     display: flex;
     flex-direction: column;
-    background-color: var(--pink-color);
-    color: black;
+    /* background-color: var(--pink-color); */
+    background-color: var(--burgundy);
+    color: var(--corporative-color);
     width: 100%;
 }
 
@@ -22,7 +23,10 @@
 .first-line-footer h5 {
     margin-top: 1rem;
     font-family: 'Pragmatica';
-    letter-spacing: 0.10em;
+    font-family: var(--estudio-sans-serif);
+    font-weight: 300;
+    letter-spacing: 0em;
+    font-size: 1.1rem;
 }
 
 .footer-text {
@@ -67,7 +71,7 @@
     }
     
     .titulo-cortado.mobile-scroll h1 {
-        animation: scrollLeft 30s linear infinite;
+        animation: scrollLeft 80s linear infinite;
     }
     
     .titulo-cortado.mobile-scroll h1::after {

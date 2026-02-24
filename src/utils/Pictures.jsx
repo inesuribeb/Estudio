@@ -3,13 +3,16 @@ const column1Images = [
     { src: "/artOpt/chicocapucharoja.jpg", alt: "RETRATO DE CHUCO CON CAPUCHA ROJA", category: "Photography", order: 2 },
     { src: "/artOpt/2.jpg", alt: "nose", category: "Photography", order: 3 },
     { src: "/artOpt/2.2.2.jpg", alt: "", category: "Photography", order: 4 },
-    { src: "/artOpt/albaylabrador.jpg", alt: "chico y chica sentados", category: "Photography", order: 5 },
-    { src: "/artOpt/design1.jpg", alt: "chico y chica sentados", category: "Design", order: 6 },
-    { src: "/artOpt/ramoflores.jpg", alt: "ramo de flores", category: "Photography", order: 7 },
-    { src: "/artOpt/albaamarillo.jpg", alt: "imagen de chica con camiseta amarilla", category: "Photography", order: 8 },
-    { src: "/artOpt/MANU6.jpg", alt: "foto de chico bailando en un desguace", category: "Photography", order: 9 },
-    { src: "/artOpt/ZPLAYA.jpg", alt: "atardecer con pesca", category: "Photography", order: 10 },
-    { src: "/artOpt/design10.jpg", alt: "atardecer con pesca", category: "Design", order: 11 }
+
+    { src: "/ProfessionalProjects/BellHouse/formatoinsta11.png", alt: "branding Bell House", category: "Design", order: 5 },
+
+    { src: "/artOpt/albaylabrador.jpg", alt: "chico y chica sentados", category: "Photography", order: 6 },
+    { src: "/artOpt/design1.jpg", alt: "chico y chica sentados", category: "Design", order: 7 },
+    { src: "/artOpt/ramoflores.jpg", alt: "ramo de flores", category: "Photography", order: 8 },
+    { src: "/artOpt/albaamarillo.jpg", alt: "imagen de chica con camiseta amarilla", category: "Photography", order: 9 },
+    { src: "/artOpt/MANU6.jpg", alt: "foto de chico bailando en un desguace", category: "Photography", order: 10 },
+    { src: "/artOpt/ZPLAYA.jpg", alt: "atardecer con pesca", category: "Photography", order: 11 },
+    { src: "/artOpt/design10.jpg", alt: "atardecer con pesca", category: "Design", order: 12 }
   ];
   
   const column2Images = [

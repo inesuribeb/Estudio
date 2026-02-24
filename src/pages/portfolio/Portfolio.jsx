@@ -7,31 +7,34 @@ function Portfolio() {
     const { t, getRoute } = useLanguage();
     const navigate = useNavigate();
     const [animatingDiv, setAnimatingDiv] = useState(null);
-    
+
     const handleClick = (e, route) => {
         e.preventDefault();
-        
+
         const isArt = route === getRoute('art');
         setAnimatingDiv(isArt ? 'art' : 'code');
-        
+
         setTimeout(() => {
             navigate(route);
         }, 3000);
     };
-    
+
     return (
         <div className='portfolio-wrapper'>
             <div className='portfolio-options'>
                 <div className={`option-art ${animatingDiv === 'art' ? 'animating' : ''}`}>
                     <Link to={getRoute('art')} onClick={(e) => handleClick(e, getRoute('art'))}>
                         <h1>{t('art')}</h1>
-                        <img src="/CAPTURAS/alazne.png" alt="" />
+                        {/* <img src="/CAPTURAS/alazne.png" alt="" /> */}
+                        <img src="/ProfessionalProjects/BellHouse/bhPrueba.png" alt="" />
                     </Link>
                 </div>
                 <div className={`option-web ${animatingDiv === 'code' ? 'animating' : ''}`}>
                     <Link to={getRoute('code')} onClick={(e) => handleClick(e, getRoute('code'))}>
                         <h1>{t('code')}</h1>
                         <img src="/CAPTURAS/prueba.jpg" alt="" />
+                        {/* <img src="/ProfessionalProjects/BellHouse/bh2.png" alt="" /> */}
+
                     </Link>
                 </div>
             </div>

@@ -27,7 +27,9 @@ function PortfolioPhone() {
                 <div className={`phone-option-art ${animatingDiv === 'art' ? 'phone-animating' : ''}`}>
                     <Link to={getRoute('art')} onClick={(e) => handleClick(e, getRoute('art'))}>
                         <h1>{t('art')}</h1>
-                        <img src="/CAPTURAS/alazne.png" alt="" />
+                        {/* <img src="/CAPTURAS/alazne.png" alt="" /> */}
+                        <img src="/ProfessionalProjects/BellHouse/bhPrueba.png" alt="" />
+
                     </Link>
                 </div>
                 <div className={`phone-option-web ${animatingDiv === 'code' ? 'phone-animating' : ''}`}>
