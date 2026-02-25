@@ -349,6 +349,41 @@ const professionalProjects = [
             en: [""],
         },
         relatedProjects: ["", ""],
+    },
+    {
+        id: "011",
+        slug: "summit-pt",
+        order: 11,
+        mobileWebReady: true,
+        client: "Summit",
+        sector: {
+            es: ["Fitness", "Deporte", "Salud y Bienestar"],
+            en: ["Fitness", "Sports", "Health & Wellness"]
+        },
+        services: {
+            es: ["Dirección Creativa", "Fotografía"],
+            en: ["Creative Direction", "Photography"]
+        },
+        web: "https://summitpt.es/",
+        image: [
+            { src: "/ProfessionalProjects/Summit/web1.png", alt: "" },
+            { src: "/ProfessionalProjects/Summit/web2.png", alt: "" },
+        ],
+        year: 2026,
+        slogan: {
+            es: ["Conquista tu cima"],
+            en: ["Reach Your Peak"]
+        },
+        soon: false,
+        overview: {
+            es: [""],
+            en: [""],
+        },
+        credits: {
+            es: [""],
+            en: [""],
+        },
+        relatedProjects: ["", ""],
     }
 ];
 

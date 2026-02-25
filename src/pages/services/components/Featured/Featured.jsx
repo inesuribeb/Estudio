@@ -16,6 +16,7 @@ function Featured({ t, projects = [], language, getRoute }) {
     const azarProject = getProjectById("008");
     const jotaProject = getProjectById("009");
     const bhProject = getProjectById("010");
+    const summitProject = getProjectById("011");
 
     return (
         <div className='featured'>
@@ -57,7 +58,7 @@ function Featured({ t, projects = [], language, getRoute }) {
             <div className='second-line-ft'>
                 <div className='column2'>
                     <div className='project-item-container'>
-                        
+
                         {nwhrProject && (
                             <ProjectItem
                                 project={nwhrProject}
@@ -80,13 +81,47 @@ function Featured({ t, projects = [], language, getRoute }) {
                         )}
                     </div> */}
                     <div className='project-item-container'>
-                    {swipeProject && (
+                        {swipeProject && (
                             <ProjectItem
                                 project={swipeProject}
                                 language={language}
                                 className="project-half"
                             />
                         )}
+                    </div>
+                </div>
+            </div>
+            <div className='second-line-ft'>
+                <div className='column2'>
+                    <div className='project-item-container'>
+
+                        {/* {nwhrProject && (
+                            <ProjectItem
+                                project={nwhrProject}
+                                language={language}
+                                className="project-half"
+                            />
+                        )} */}
+                    </div>
+                </div>
+                <div className='column1'>
+                    <div className='project-item-container'>
+                        {summitProject && (
+                            <ProjectItem
+                                project={summitProject}
+                                language={language}
+                                className="project-half"
+                            />
+                        )}
+                    </div>
+                    <div className='project-item-container'>
+                        {/* {swipeProject && (
+                            <ProjectItem
+                                project={swipeProject}
+                                language={language}
+                                className="project-half"
+                            />
+                        )} */}
                     </div>
                 </div>
             </div>
