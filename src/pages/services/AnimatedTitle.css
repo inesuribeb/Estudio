@@ -8,18 +8,18 @@
     line-height: 2.4rem;
     position: fixed;
     left: 50%;
-    /* z-index: 1000; */
     z-index: 2001;
-
     transition: top 0.5s ease-out;
-    /* color: #000000d9; */
-    /* color: var(--burgundy); */
 
+    /* opacity: 0;
+    transition: top 0.5s ease-out, opacity 0.8s ease; */
 }
 
 .animated-title.centered {
     top: 38vh;
     transform: translateX(-50%); 
+
+    /* opacity: 1; */
 }
 
 .animated-title.moving {
@@ -33,27 +33,24 @@
 }
 
 
-/* Adaptación para móvil */
 @media (max-width: 768px) {
     .animated-title {
         width: 90%;
         font-size: 2.2rem;
         line-height: 2.5rem;
-        /* z-index: 1000; */
         z-index: 2001; 
 
     }
 
     .animated-title.centered {
-        top: 35vh; /* Ajustar para móvil */
+        top: 35vh; 
     }
 
     .animated-title.moving {
-        top: 22vh; /* Posición final más alta para evitar el header */
+        top: 22vh;
     }
 }
 
-/* Para pantallas muy pequeñas */
 @media (max-width: 480px) {
     .animated-title {
         width: 95%;

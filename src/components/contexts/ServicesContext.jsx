@@ -1,7 +1,6 @@
 export const ServicesTranslations = {
     en: {
       agencyPhrase: "Creative agency for aspirational brands.",
-      // description: "We are a creative studio using technology to expand creativity, guided by a clear philosophy: Impact + Intention.",
       description: "<em>We are a </em> STUDIØ <em> using</em> TECHNOLOGY <em>to expand</em> CREATIVITY, <em>guided by a</em> CLEAR <em>philosophy:</em> IMPACT + INTENTION.",
       impact: "IMPACT means creating visual experiences that leave a mark.",
       intention: "INTENTION means designing with purpose, sensitivity, and coherence.",

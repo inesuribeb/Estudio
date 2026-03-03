@@ -331,7 +331,7 @@ const professionalProjects = [
         web: "https://test.bellhousebh.com/",
         image: [
             { src: "/ProfessionalProjects/BellHouse/bhPrueba.png", alt: "salon precioso con alfombra estampada y muebles modernos" },
-            { src: "/ProfessionalProjects/BellHouse/bh_web.png", alt: "" },
+            // { src: "/ProfessionalProjects/BellHouse/bh_web.png", alt: "" },
             // { src: "/ProfessionalProjects/BellHouse/platos.webp", alt: "salon precioso con alfombra estampada y muebles modernos" },
         ],
         year: 2026,
