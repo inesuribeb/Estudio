@@ -1,0 +1,174 @@
+.hero-project-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4rem;
+}
+
+.first-line-hero {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.first-column-hero,
+.second-column-hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-column-hero h1 {
+    font-size: 3.8rem;
+    font-family: var(--main-font);
+    letter-spacing: 0;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    line-height: 3.1rem;
+}
+
+.first-column-hero p {
+    padding: 0;
+    margin: 0;
+    margin-top: -0.5rem;
+    font-size: 2.8rem;
+    font-family: var(--main-font);
+    letter-spacing: 0;
+    font-style: italic;
+}
+
+.second-column-hero {
+    gap: 3rem;
+}
+
+.second-column-hero p {
+    padding: 0;
+    margin: 0;
+    /* margin-top: -0.5rem; */
+    font-size: 2.8rem;
+    font-family: var(--main-font);
+    letter-spacing: 0;
+    font-style: italic;
+    line-height: 2.8rem;
+    margin-top: 0.8rem;
+}
+
+.services-included h2 {
+    font-size: 0.9rem;
+    font-family: var(--estudio-sans-serif);
+    font-weight: 300;
+    color: #7a7a7a;
+}
+
+.services-included ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    row-gap: 0.5rem;
+}
+
+.services-included li {
+    white-space: nowrap;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-family: var(--estudio-sans-serif);
+    font-weight: 300;
+    color: #7a7a7a;
+    padding: 0.4rem 0.8rem;
+    background-color: rgba(221, 221, 221, 0.53);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.services-included li:hover {
+    color: black;
+}
+
+
+
+
+
+.second-line-hero {
+    display: flex;
+    width: 100%;
+    height: 130vh;
+}
+
+.second-line-hero img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+    .first-line-hero {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .first-column-hero h1 {
+        font-size: 3rem;
+        line-height: 2.6rem;
+        width: 100%;
+    }
+
+    .first-column-hero p {
+        font-size: 2.2rem;
+    }
+
+    .second-column-hero p {
+        font-size: 2.2rem;
+        line-height: 2.2rem;
+    }
+
+    .second-line-hero {
+        height: 80vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-project-section {
+        gap: 2rem;
+    }
+
+    .first-line-hero {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .first-column-hero h1 {
+        font-size: 2.2rem;
+        line-height: 2rem;
+        width: 100%;
+    }
+
+    .first-column-hero p {
+        font-size: 1.6rem;
+        margin-top: -0.3rem;
+    }
+
+    .second-column-hero {
+        gap: 1.5rem;
+    }
+
+    .second-column-hero p {
+        font-size: 1.1rem;
+        letter-spacing: -0.5px;
+        line-height: 1.3rem;
+        margin-top: 0;
+        font-family: var(--estudio-sans-serif);
+        font-style: normal;
+        font-weight: 300;
+    }
+
+    .second-line-hero {
+        height: 60vw;
+    }
+}

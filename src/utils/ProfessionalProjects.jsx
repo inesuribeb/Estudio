@@ -23,7 +23,12 @@ const professionalProjects = [
             es: ["Espacios con alma"],
             en: ["Homes with soul"]
         },
+        description: {
+            es: "Conectando propiedades únicas con las personas adecuadas a través de una visión profundamente local.",
+            en: "Connecting distinctive properties with the right people through a deeply local understanding."
+        },
         soon: false,
+        imgHero: { src: "/ProfessionalProjects/7.webp", alt: "Detalle interior de una esquina de un salon, con un sofa chaiselongue e iluminacion calida" },
         overview: {
             es: [""],
             en: [""],
@@ -58,7 +63,12 @@ const professionalProjects = [
             es: ["Tradición moderna"],
             en: ["Modern tradition"]
         },
+        description: {
+            es: "Impulsando marcas de moda contemporáneas mediante una dirección creativa que conecta tradición, cultura y visión actual.",
+            en: "Empowering contemporary fashion brands through creative direction that connects tradition, culture, and a modern vision."
+        },
         soon: false,
+        imgHero: { src: "/ProfessionalProjects/gloverall1PP.jpg", alt: "Fotografía lookbook de moda de modelo en exterior con una prenda Gloverall" },
         overview: {
             es: [""],
             en: [""],
@@ -94,7 +104,12 @@ const professionalProjects = [
             es: ["Bolsos únicos y ediciones limitadas"],
             en: ["Unique bags and limited editions"]
         },
+        description: {
+            es: "Elevando la artesanía contemporánea al terreno digital para revelar el valor de lo único en un mercado de producción masiva.",
+            en: "Elevating contemporary craftsmanship into the digital space to reveal the value of the unique in a mass-produced market."
+        },
         soon: false,
+        imgHero: { src: "/ProfessionalProjects/MachimPP2.jpg", alt: "Detalle bolso artesanal marca Rocio Marchimbarrena" },
         overview: {
             es: [""],
             en: [""],
@@ -128,7 +143,12 @@ const professionalProjects = [
             es: ["A mano & con calma"],
             en: ["Slowly handmade"]
         },
+        description: {
+            es: "Reivindicando el valor de la moda lenta a través de una dirección creativa que celebra el trabajo hecho a mano.",
+            en: "Reclaiming the value of slow fashion through a creative direction that celebrates the craft of making by hand."
+        },
         soon: false,
+        imgHero: { src: "/ProfessionalProjects/lishomPP2.jpg", alt: "Foto de modelo con un gran bolso de lino blanco con los remates en cuero negro" },
         overview: {
             es: [""],
             en: [""],
@@ -164,7 +184,12 @@ const professionalProjects = [
             es: ["Moda sin ruido"],
             en: ["Quiet clothing"]
         },
+        description: {
+            es: "Reivindicando una forma más consciente de vestir al conectar la moda contemporánea con la naturaleza, la libertad y lo esencial.",
+            en: "Reclaiming a more conscious way of dressing by reconnecting contemporary clothing with nature, freedom, and the essentials."
+        },
         soon: false,
+        imgHero: { src: "/ProfessionalProjects/Nwhr/nwhrPP.jpg", alt: "Pescador del puesto de Caion con pescado en mano llevando camiseta de la marca NWHR Clothing" },
         overview: {
             es: [""],
             en: [""],
@@ -198,7 +223,12 @@ const professionalProjects = [
             es: ["Tradición reinterpretada"],
             en: ["A new take on tradition"]
         },
+        description: {
+            es: "Reimaginando la tradición del calzado mediante una dirección creativa que transforma artesanía histórica en diseño contemporáneo.",
+            en: "Reimagining the tradition of footwear through creative direction that transforms historic craftsmanship into contemporary design."
+        },
         soon: false,
+        imgHero: { src: "/ProfessionalProjects/FlabelusPP.jpg", alt: "Mujer sentada en una terraza de un castillo medieval llevando unos zapatos coloridos Flabelus" },
         overview: {
             es: [""],
             en: [""],
@@ -233,7 +263,12 @@ const professionalProjects = [
             es: ["Ciclismo de élite"],
             en: ["Elite cycling experiences"]
         },
+        description: {
+            es: "Definiendo una experiencia de cicloturismo que conecta a las personas con los lugares que recorren y la historia que descubren.",
+            en: "Defining a cycling travel experience that connects people with the places they traverse and the stories they uncover."
+        },
         soon: false,
+        imgHero: { src: "/ProfessionalProjects/tbcPP.avif", alt: "Foto zoom de mujer ciclista de carretera" },
         overview: {
             es: [""],
             en: [""],
@@ -268,7 +303,12 @@ const professionalProjects = [
             es: ["Un hogar para el arte y las ideas"],
             en: ["A home for art and ideas"]
         },
+        description: {
+            es: "Definiendo un espacio para la experimentación y el encuentro, donde artistas, artesanos y pensadores exploran nuevas formas de creación.",
+            en: "Defining a space for experimentation and exchange, where artists, craftsmen, and thinkers explore new forms of creation."
+        },
         soon: false,
+        imgHero: { src: "/ProfessionalProjects/Azar/FundacionAzar1.jpg", alt: "Foto zoom de mujer ciclista de carretera" },
         overview: {
             es: [""],
             en: [""],
@@ -303,7 +343,12 @@ const professionalProjects = [
             es: ["Arquitectura que genera valor"],
             en: ["Architecture that creates value"]
         },
+        description: {
+            es: "Reimaginando la arquitectura como un motor de valor cultural y social.",
+            en: "Reimagining architecture as a driver of cultural and social value."
+        },
         soon: false,
+        imgHero: { src: "/ProfessionalProjects/JotaArq/JOTA1.png", alt: "" },
         overview: {
             es: [""],
             en: [""],
@@ -339,7 +384,12 @@ const professionalProjects = [
             es: ["Creando hogares desde 1980"],
             en: ["Crafting homes since 1980"]
         },
+        description: {
+            es: "Reimaginando la decoración y el interiorismo mediante un enfoque que moderniza la tradición.",
+            en: "Reimagining decoration and interior design through an approach that modernizes tradition."
+        },
         soon: false,
+        imgHero: { src: "/ProfessionalProjects/BellHouse/bhPrueba.png", alt: "salon precioso con alfombra estampada y muebles modernos" },
         overview: {
             es: [""],
             en: [""],
@@ -374,7 +424,12 @@ const professionalProjects = [
             es: ["Conquista tu cima"],
             en: ["Reach Your Peak"]
         },
+        description: {
+            es: "Entrenamiento premium con método y propósito en cada movimiento.",
+            en: "Premium training with method and purpose in every movement."
+        },
         soon: false,
+        imgHero:  { src: "/ProfessionalProjects/Summit/web1.png", alt: "" },
         overview: {
             es: [""],
             en: [""],

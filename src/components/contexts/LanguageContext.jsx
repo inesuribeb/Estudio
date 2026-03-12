@@ -18,6 +18,11 @@ const translations = {
       notFound: "There is nothing here",
       all: "All",
       soon: "Coming Soon",
+      projectNotFound: "Project not found",
+      overview: "Overview",
+      credits: "Credits",
+      relatedProjects: "RELATED Projects",
+      allProjects: "All Projects",
       ...headerTranslations.en,
       ...ServicesTranslations.en
     },
@@ -35,6 +40,11 @@ const translations = {
       notFound: "No hay nada aquí",
       all: "Todos",
       soon: "Próximamente",
+      projectNotFound: "Proyecto no encontrado",
+      overview: "Contexto",
+      credits: "Créditos",
+      relatedProjects: "Proyectos RELACIONADOS",
+      allProjects: "Todos los Proyectos",
       ...headerTranslations.es,
       ...ServicesTranslations.es
     }

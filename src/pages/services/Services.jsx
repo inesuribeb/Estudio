@@ -9,11 +9,17 @@ import AllProjects from './components/AllProjects/AllProjects';
 import StudioFilter from './Filter/StudioFilter'; // 👈 Import nuevo
 import './Services.css'
 
-function Services({ showTitle = false }) {
-    const { language, toggleLanguage, t, getRoute } = useLanguage();
-    const [activeComponent, setActiveComponent] = useState('Featured');
+// function Services({ showTitle = false }) {
+//     const { language, toggleLanguage, t, getRoute } = useLanguage();
+//     const [activeComponent, setActiveComponent] = useState('Featured');
+// const [activeService, setActiveService] = useState(null);
 
-    const [activeService, setActiveService] = useState(null);
+function Services({ showTitle = false, initialService = null }) {
+    const { language, toggleLanguage, t, getRoute } = useLanguage();
+    const [activeComponent, setActiveComponent] = useState(initialService ? 'Services' : 'Featured');
+    const [activeService, setActiveService] = useState(initialService ? decodeURIComponent(initialService) : null);
+
+
     const [activeSector, setActiveSector] = useState(null);
     const [activeClient, setActiveClient] = useState(null);
 

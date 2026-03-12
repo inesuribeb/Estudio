@@ -1,5 +1,4 @@
 import { useLanguage } from '../../components/contexts/LanguageContext';
-// import { useOutletContext } from 'react-router-dom';
 import { useState } from 'react';
 import ServicesListPhone from './components/ServicesList/ServicesListPhone';
 import ClientsPhone from './components/Clients/ClientsPhone';
@@ -9,14 +8,17 @@ import AllProjectsPhone from './components/AllProjects/AllProjectsPhone'; // Imp
 import professionalProjects from '../../utils/ProfessionalProjects';
 import './ServicesPhone.css';
 
-// function ServicesPhone({ showTitle = false }) {
-function ServicesPhone({ showTitle = false, openCategoryModal }) {
+// function ServicesPhone({ showTitle = false, openCategoryModal }) {
 
+//     const { language, toggleLanguage, t, getRoute } = useLanguage();
+//     const [activeComponent, setActiveComponent] = useState('Featured');
+
+//     const [activeService, setActiveService] = useState(null);
+function ServicesPhone({ showTitle = false, openCategoryModal, initialService = null }) {
     const { language, toggleLanguage, t, getRoute } = useLanguage();
-    // const { openCategoryModal } = useOutletContext();
-    const [activeComponent, setActiveComponent] = useState('Featured');
-
-    const [activeService, setActiveService] = useState(null);
+    const [activeComponent, setActiveComponent] = useState(initialService ? 'Services' : 'Featured');
+    const [activeService, setActiveService] = useState(initialService ? decodeURIComponent(initialService) : null);
+    
     const [activeSector, setActiveSector] = useState(null);
     const [activeClient, setActiveClient] = useState(null);
 
@@ -173,7 +175,7 @@ function ServicesPhone({ showTitle = false, openCategoryModal }) {
                         filteredProjects={filteredProjects}
                         activeService={activeService}
                         services={getServicesWithCount()}
-                        openCategoryModal={openCategoryModal}  // añadir
+                        openCategoryModal={openCategoryModal} 
                     />
                 );
             case 'Sectors':
@@ -185,7 +187,7 @@ function ServicesPhone({ showTitle = false, openCategoryModal }) {
                         onSectorClick={applySectorFilter}
                         filteredProjects={filteredProjects}
                         activeSector={activeSector}
-                        openCategoryModal={openCategoryModal}  // añadir
+                        openCategoryModal={openCategoryModal}  
                     />
                 );
             case 'Featured':
@@ -199,7 +201,7 @@ function ServicesPhone({ showTitle = false, openCategoryModal }) {
                         onClientClick={applyClientFilter}
                         filteredProjects={filteredProjects}
                         activeClient={activeClient}
-                        openCategoryModal={openCategoryModal}  // añadir
+                        openCategoryModal={openCategoryModal}  
                     />
                 );
             default:
