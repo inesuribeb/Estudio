@@ -328,7 +328,7 @@ const professionalProjects = [
             es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Copywriting"],
             en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Copywriting"]
         },
-        web: "https://test.bellhousebh.com/",
+        web: "https://bellhousebh.com/",
         image: [
             { src: "/ProfessionalProjects/BellHouse/bhPrueba.png", alt: "salon precioso con alfombra estampada y muebles modernos" },
             { src: "/ProfessionalProjects/BellHouse/bh_web.png", alt: "" },
