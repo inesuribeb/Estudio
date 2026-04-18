@@ -81,6 +81,10 @@ const router = createBrowserRouter([
       //   element: <ParentContainer />,
       // },
       {
+        path: 'servicios',
+        element: <ParentContainer initialTab="Services" />,
+      },
+      {
         path: 'estudio',
         element: null,
       },
@@ -114,6 +118,10 @@ const router = createBrowserRouter([
       //   path: 'studio',
       //   element: <ParentContainer />,
       // },
+      {
+        path: 'services',
+        element: <ParentContainer initialTab="Services" />,
+      },
       {
         path: 'studio',
         element: null,

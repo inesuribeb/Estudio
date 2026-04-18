@@ -100,12 +100,12 @@ function ProjectItem({ project, language }) {
         if (isMobile && !project.mobileWebReady) return;
 
         // OPCIÓN A: Navegar a página de proyecto
-        navigate(`/proyecto/${project.slug}`);
+        // navigate(`/proyecto/${project.slug}`);
 
         // OPCIÓN B: Abrir web en blank (descomentar cuando esté en producción)
-        // if (project.web) {
-        //     window.open(project.web, '_blank');
-        // }
+        if (project.web) {
+            window.open(project.web, '_blank');
+        }
     };
 
     const handleMouseMove = (e) => {

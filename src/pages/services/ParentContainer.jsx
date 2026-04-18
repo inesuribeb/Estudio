@@ -74,10 +74,13 @@ import AnimatedTitle from './AnimatedTitle';
 import Services from './Services';
 import ServicesPhone from './ServicesPhone';
 
-function ParentContainer({ openCategoryModal }) {
+function ParentContainer({ openCategoryModal, initialTab = null  }) {
     const { t } = useLanguage();
     const [searchParams] = useSearchParams();
     const serviceParam = searchParams.get('service');
+
+    // Si hay query param o initialTab, saltamos la animación
+    const skipAnimation = !!serviceParam || initialTab === 'Services';
 
     // Si hay query param, saltamos la animación directamente
     const [startTitleAnimation, setStartTitleAnimation] = useState(!!serviceParam);
@@ -112,9 +115,18 @@ function ParentContainer({ openCategoryModal }) {
             <AnimatedTitle t={t} startAnimation={startTitleAnimation} onReachedPosition={handleTitleReachedPosition} />
             {isMobile ? (
                 // <ServicesPhone showTitle={showServicesTitle} openCategoryModal={openCategoryModal} />
-                <ServicesPhone showTitle={showServicesTitle} openCategoryModal={openCategoryModal} initialService={serviceParam} />
+                <ServicesPhone 
+                showTitle={showServicesTitle} 
+                openCategoryModal={openCategoryModal} 
+                initialService={serviceParam}
+                initialTab={initialTab}  
+                 />
             ) : (
-                <Services showTitle={showServicesTitle} initialService={serviceParam} />
+                <Services
+                showTitle={showServicesTitle} 
+                initialService={serviceParam} 
+                initialTab={initialTab}  
+                />
             )}
         </div>
     );

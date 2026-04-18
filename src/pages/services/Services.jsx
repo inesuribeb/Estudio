@@ -14,9 +14,17 @@ import './Services.css'
 //     const [activeComponent, setActiveComponent] = useState('Featured');
 // const [activeService, setActiveService] = useState(null);
 
-function Services({ showTitle = false, initialService = null }) {
+function Services({ showTitle = false, initialService = null, initialTab = null }) {
     const { language, toggleLanguage, t, getRoute } = useLanguage();
-    const [activeComponent, setActiveComponent] = useState(initialService ? 'Services' : 'Featured');
+    // Prioridad: initialService > initialTab > 'Featured'
+    const getInitialComponent = () => {
+        if (initialService) return 'Services';
+        if (initialTab) return initialTab;
+        return 'Featured';
+    };
+
+    // const [activeComponent, setActiveComponent] = useState(initialService ? 'Services' : 'Featured');
+    const [activeComponent, setActiveComponent] = useState(getInitialComponent());
     const [activeService, setActiveService] = useState(initialService ? decodeURIComponent(initialService) : null);
 
 
@@ -72,13 +80,13 @@ function Services({ showTitle = false, initialService = null }) {
 
     const getServicesWithCount = () => {
         const serviceCount = {};
-    
+
         professionalProjects.forEach(project => {
             project.services[language].forEach(service => {
                 serviceCount[service] = (serviceCount[service] || 0) + 1;
             });
         });
-    
+
         return Object.entries(serviceCount).map(([service, count]) => ({
             name: service,
             count: count
@@ -133,7 +141,7 @@ function Services({ showTitle = false, initialService = null }) {
                         onServiceClick={applyServiceFilter}
                         filteredProjects={filteredProjects}
                         activeService={activeService}
-                        services={getServicesWithCount()} 
+                        services={getServicesWithCount()}
                     />
                 );
             case 'Sectors':
@@ -175,7 +183,7 @@ function Services({ showTitle = false, initialService = null }) {
             </div>
 
             {/* 👇 Componente separado */}
-            <StudioFilter 
+            <StudioFilter
                 t={t}
                 activeComponent={activeComponent}
                 activeService={activeService}

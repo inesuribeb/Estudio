@@ -8,17 +8,20 @@ import AllProjectsPhone from './components/AllProjects/AllProjectsPhone'; // Imp
 import professionalProjects from '../../utils/ProfessionalProjects';
 import './ServicesPhone.css';
 
-// function ServicesPhone({ showTitle = false, openCategoryModal }) {
-
-//     const { language, toggleLanguage, t, getRoute } = useLanguage();
-//     const [activeComponent, setActiveComponent] = useState('Featured');
-
-//     const [activeService, setActiveService] = useState(null);
-function ServicesPhone({ showTitle = false, openCategoryModal, initialService = null }) {
+function ServicesPhone({ showTitle = false, openCategoryModal, initialService = null, initialTab = null }) {
     const { language, toggleLanguage, t, getRoute } = useLanguage();
-    const [activeComponent, setActiveComponent] = useState(initialService ? 'Services' : 'Featured');
-    const [activeService, setActiveService] = useState(initialService ? decodeURIComponent(initialService) : null);
-    
+
+    const [activeComponent, setActiveComponent] = useState(() => {
+        if (initialService) return 'Services';
+        if (initialTab) return initialTab;
+        return 'Featured';
+    });
+
+    // const [activeComponent, setActiveComponent] = useState(initialService ? 'Services' : 'Featured');
+    // const [activeService, setActiveService] = useState(initialService ? decodeURIComponent(initialService) : null);
+    const [activeService, setActiveService] = useState(
+        initialService ? decodeURIComponent(initialService) : null
+    );
     const [activeSector, setActiveSector] = useState(null);
     const [activeClient, setActiveClient] = useState(null);
 
