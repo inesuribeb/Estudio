@@ -2,7 +2,7 @@ const professionalProjects = [
     {
         id: "001",
         slug: "inmobiliaria-artaza",
-        order: 8,
+        order: 9,
         client: "Inmobiliaria Artaza",
         mobileWebReady: true,
         sector: {
@@ -42,7 +42,7 @@ const professionalProjects = [
     {
         id: "002",
         slug: "swipe-agency",
-        order: 4,
+        order: 5,
         client: "Swipe Agency",
         mobileWebReady: true,
         sector: {
@@ -82,7 +82,7 @@ const professionalProjects = [
     {
         id: "003",
         slug: "rocio-machimbarrena",
-        order: 9,
+        order: 10,
         client: "Rocio Machimbarrena",
         mobileWebReady: false,
         sector: {
@@ -123,7 +123,7 @@ const professionalProjects = [
     {
         id: "004",
         slug: "lishom",
-        order: 10,
+        order: 11,
         client: "Lishom",
         mobileWebReady: true,
         sector: {
@@ -162,7 +162,7 @@ const professionalProjects = [
     {
         id: "005",
         slug: "nwhr-clothing",
-        order: 5,
+        order: 6,
         client: "NWHR",
         mobileWebReady: true,
         sector: {
@@ -203,7 +203,7 @@ const professionalProjects = [
     {
         id: "006",
         slug: "flabelus",
-        order: 6,
+        order: 7,
         mobileWebReady: true,
         client: "Flabelus",
         sector: {
@@ -242,7 +242,7 @@ const professionalProjects = [
     {
         id: "007",
         slug: "the-bike-country",
-        order: 7,
+        order: 8,
         mobileWebReady: false,
         client: "The Bike Country",
         sector: {
@@ -282,7 +282,7 @@ const professionalProjects = [
     {
         id: "008",
         slug: "fundacion-azar",
-        order: 3,
+        order: 4,
         mobileWebReady: true,
         client: "Fundacion Azar de las Artes",
         sector: {
@@ -322,7 +322,7 @@ const professionalProjects = [
     {
         id: "009",
         slug: "jota-arquitectura",
-        order: 2,
+        order: 3,
         mobileWebReady: true,
         client: "Jota Arquitectura",
         sector: {
@@ -362,7 +362,7 @@ const professionalProjects = [
     {
         id: "010",
         slug: "bell-house",
-        order: 1,
+        order: 2,
         mobileWebReady: true,
         client: "Bell House",
         sector: {
@@ -403,7 +403,7 @@ const professionalProjects = [
     {
         id: "011",
         slug: "summit-pt",
-        order: 11,
+        order: 12,
         mobileWebReady: true,
         client: "Summit",
         sector: {
@@ -429,7 +429,48 @@ const professionalProjects = [
             en: "Premium training with method and purpose in every movement."
         },
         soon: false,
-        imgHero:  { src: "/ProfessionalProjects/Summit/web1.png", alt: "" },
+        imgHero: { src: "/ProfessionalProjects/Summit/web1.png", alt: "" },
+        overview: {
+            es: [""],
+            en: [""],
+        },
+        credits: {
+            es: [""],
+            en: [""],
+        },
+        relatedProjects: ["", ""],
+    },
+    {
+        id: "012",
+        slug: "ilba-international",
+        order: 1,
+        mobileWebReady: true,
+        client: "Ilba International",
+        sector: {
+            es: ["Wellness", "Medicina Estética", "E-commerce"],
+            en: ["Wellness", "Aesthetic Medicine", "E-commerce"]
+        },
+        services: {
+            es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Copywriting"],
+            en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Copywriting"]
+        },
+        web: "https://ilbainternational.com/",
+        image: [
+            { src: "/ProfessionalProjects/Ilba/ilba2.webp", alt: "" },
+            { src: "/ProfessionalProjects/Ilba/recepcion2.webp", alt: "" },
+            // { src: "/ProfessionalProjects/Ilba/ilba2.webp", alt: "" },
+        ],
+        year: 2026,
+        slogan: {
+            es: ["Medicina estética consciente"],
+            en: ["Conscious Aesthetic Medicine"]
+        },
+        description: {
+            es: "Un lugar donde la medicina estética se trabaja de forma consciente, natural y personalizada.",
+            en: "A space where aesthetic medicine is approached with intention, natural results, and personalized care."
+        },
+        soon: false,
+        imgHero: { src: "/ProfessionalProjects/Ilba/", alt: "" },
         overview: {
             es: [""],
             en: [""],

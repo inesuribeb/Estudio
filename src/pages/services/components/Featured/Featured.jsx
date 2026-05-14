@@ -17,6 +17,8 @@ function Featured({ t, projects = [], language, getRoute }) {
     const jotaProject = getProjectById("009");
     const bhProject = getProjectById("010");
     const summitProject = getProjectById("011");
+    const ilbaProject = getProjectById("012");
+
 
     return (
         <div className='featured'>
@@ -26,7 +28,7 @@ function Featured({ t, projects = [], language, getRoute }) {
 
                         {jotaProject && (
                             <ProjectItem
-                                project={jotaProject}
+                                project={ilbaProject}
                                 language={language}
                                 className="project-half"
                             />
@@ -36,7 +38,7 @@ function Featured({ t, projects = [], language, getRoute }) {
 
                         {azarProject && (
                             <ProjectItem
-                                project={azarProject}
+                                project={jotaProject}
                                 language={language}
                                 className="project-half"
                             />
@@ -61,7 +63,7 @@ function Featured({ t, projects = [], language, getRoute }) {
 
                         {nwhrProject && (
                             <ProjectItem
-                                project={nwhrProject}
+                                project={azarProject}
                                 language={language}
                                 className="project-half"
                             />
@@ -83,7 +85,7 @@ function Featured({ t, projects = [], language, getRoute }) {
                     <div className='project-item-container'>
                         {swipeProject && (
                             <ProjectItem
-                                project={swipeProject}
+                                project={nwhrProject}
                                 language={language}
                                 className="project-half"
                             />

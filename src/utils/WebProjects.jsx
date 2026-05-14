@@ -1,4 +1,27 @@
 const projectsData = [
+    {
+        title: "ILBA INTERNATIONAL",
+        mobileWebReady: true,
+        web: "https://ilbainternational.com/",
+        description: {
+            es: "Plataforma digital desarrollada para ILBA International, espacio dedicado a la medicina estética, el bienestar y el cuidado integral. El proyecto integra servicios médicos, contenido y e-commerce dentro de un ecosistema digital desarrollado en WordPress y WooCommerce.",
+            en: "Digital platform developed for ILBA International, a space dedicated to aesthetic medicine, wellness, and holistic care. The project integrates medical services, content, and e-commerce within a digital ecosystem built with WordPress and WooCommerce."        },
+        category: "Full-stack",
+        method: "Wordpress • Woocommerce • PHP • JavaScript • CSS3 • Stripe",
+        link: "https://github.com/inesuribeb/ILBA",
+        images: [
+            { src: "/ProfessionalProjects/Ilba/web1.webp", alt: "" },
+            { src: "/ProfessionalProjects/Ilba/ilba2.webp", alt: "" },
+            { src: "/ProfessionalProjects/Ilba/web2.webp", alt: "" },
+            { src: "/ProfessionalProjects/Ilba/web3.webp", alt: "" },
+            { src: "/ProfessionalProjects/Ilba/web4.webp", alt: "" },
+            { src: "/ProfessionalProjects/Ilba/web5.webp", alt: "" },
+        ],
+        sector: {
+            es: ["Wellness", "Medicina Estética", "E-commerce"],
+            en: ["Wellness", "Aesthetic Medicine", "E-commerce"]
+        },
+    },
     
     {
         title: "BELL HOUSE",
