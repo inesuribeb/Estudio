@@ -67,8 +67,8 @@ const projectsData = [
             { src: "/ProfessionalProjects/JotaArq/jotaArq2.png", alt: "" },
         ],
         sector: {
-            es: ["Decoración", "Interiorismo", "E-commerce"],
-            en: ["Decoration", "Interior Design", "E-commerce"]
+            es: ["Arquitectura", "Portfolio"],
+            en: ["Architecture", "Portfolio"]
         },
     },
     {
@@ -97,6 +97,30 @@ const projectsData = [
         sector: {
             es: ["Arte", "Cultura"],
             en: ["Art", "Culture"]
+        },
+    },
+    {
+        title: "KAUVE FACHADAS",
+        mobileWebReady: true,
+        web: "https://kauve.es/",
+        description: {
+            es: "Diseño web para Kauve Fachadas: instalación de sistemas de fachada con agilidad y comunicación directa.",
+            en: "Website design for Kauve Fachadas: fast and efficient facade system installation with direct communication."
+        },
+        category: "Full-stack",
+        method: "Wordpress • PHP • JavaScript • CSS3",
+        link: "https://github.com/inesuribeb",
+        images: [
+            { src: "/ProfessionalProjects/kauve/kauve-1.webp", alt: "" },
+            { src: "/ProfessionalProjects/kauve/kauve-4.webp", alt: "" },
+            { src: "/ProfessionalProjects/kauve/kauve-2.webp", alt: "" },
+            { src: "/ProfessionalProjects/kauve/kauve-5.webp", alt: "" },
+            { src: "/ProfessionalProjects/kauve/kauve-3.webp", alt: "" },
+            { src: "/ProfessionalProjects/kauve/kauve-6.webp", alt: "" },
+        ],
+        sector: {
+            es: ["Arquitectura", "Portfolio"],
+            en: ["Architecture", "Portfolio"]
         },
     },
     {

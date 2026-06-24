@@ -2,7 +2,7 @@ const professionalProjects = [
     {
         id: "001",
         slug: "inmobiliaria-artaza",
-        order: 9,
+        order: 11,
         client: "Inmobiliaria Artaza",
         mobileWebReady: true,
         sector: {
@@ -42,7 +42,7 @@ const professionalProjects = [
     {
         id: "002",
         slug: "swipe-agency",
-        order: 5,
+        order: 7,
         client: "Swipe Agency",
         mobileWebReady: true,
         sector: {
@@ -82,7 +82,7 @@ const professionalProjects = [
     {
         id: "003",
         slug: "rocio-machimbarrena",
-        order: 10,
+        order: 12,
         client: "Rocio Machimbarrena",
         mobileWebReady: false,
         sector: {
@@ -123,7 +123,7 @@ const professionalProjects = [
     {
         id: "004",
         slug: "lishom",
-        order: 11,
+        order: 13,
         client: "Lishom",
         mobileWebReady: true,
         sector: {
@@ -162,7 +162,7 @@ const professionalProjects = [
     {
         id: "005",
         slug: "nwhr-clothing",
-        order: 6,
+        order: 8,
         client: "NWHR",
         mobileWebReady: true,
         sector: {
@@ -203,7 +203,7 @@ const professionalProjects = [
     {
         id: "006",
         slug: "flabelus",
-        order: 7,
+        order: 9,
         mobileWebReady: true,
         client: "Flabelus",
         sector: {
@@ -242,7 +242,7 @@ const professionalProjects = [
     {
         id: "007",
         slug: "the-bike-country",
-        order: 8,
+        order: 10,
         mobileWebReady: false,
         client: "The Bike Country",
         sector: {
@@ -403,7 +403,7 @@ const professionalProjects = [
     {
         id: "011",
         slug: "summit-pt",
-        order: 12,
+        order: 6,
         mobileWebReady: true,
         client: "Summit",
         sector: {
@@ -480,7 +480,47 @@ const professionalProjects = [
             en: [""],
         },
         relatedProjects: ["", ""],
-    }
+    },
+    {
+        id: "013",
+        slug: "kauve-fachadas",
+        order: 5,
+        mobileWebReady: true,
+        client: "Kauve Fachadas",
+        sector: {
+            es: ["Arquitectura", "Portfolio"],
+            en: ["Architecture", "Portfolio"]
+        },
+        services: {
+            es: ["Diseño Web", "Dirección Creativa"],
+            en: ["Web Design", "Creative Direction"]
+        },
+        web: "https://kauve.es/",
+        image: [
+            { src: "/ProfessionalProjects/kauve/kauve-1.webp", alt: "" },
+            { src: "/ProfessionalProjects/kauve/kauve-3.webp", alt: "" },
+        ],
+        year: 2025,
+        slogan: {
+            es: ["Fachadas de aluminio y vidrio"],
+            en: ["Aluminum and Glass Facades"]
+        },
+        description: {
+            es: "Empresa especializada en la instalación de sistemas de fachada en aluminio y vidrio, orientada a la correcta resolución de cada intervención.",
+            en: "Experts in aluminum and glass facade systems, providing efficient and reliable solutions for every project."
+        },
+        soon: false,
+        imgHero: { src: "/ProfessionalProjects/JotaArq/JOTA1.png", alt: "" },
+        overview: {
+            es: [""],
+            en: [""],
+        },
+        credits: {
+            es: [""],
+            en: [""],
+        },
+        relatedProjects: ["", ""],
+    },
 ];
 
 export default professionalProjects;

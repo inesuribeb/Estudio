@@ -7,10 +7,10 @@ import './Featured.css'
 function Featured({ t, projects = [], language, getRoute }) {
     const getProjectById = (id) => projects.find(project => project.id === id);
 
-    const artazaProject = getProjectById("001");
+    // const artazaProject = getProjectById("001");
     const swipeProject = getProjectById("002");
     const nwhrProject = getProjectById("005");
-    const machimbaProject = getProjectById("003");
+    // const machimbaProject = getProjectById("003");
     // const lishomProject = getProjectById("004");
     // const flabelusProject = getProjectById("006");
     const azarProject = getProjectById("008");
@@ -18,6 +18,8 @@ function Featured({ t, projects = [], language, getRoute }) {
     const bhProject = getProjectById("010");
     const summitProject = getProjectById("011");
     const ilbaProject = getProjectById("012");
+    const kauveProject = getProjectById("013");
+
 
 
     return (
@@ -93,17 +95,10 @@ function Featured({ t, projects = [], language, getRoute }) {
                     </div>
                 </div>
             </div>
-            <div className='second-line-ft'>
+            {/* <div className='second-line-ft'>
                 <div className='column2'>
                     <div className='project-item-container'>
 
-                        {/* {nwhrProject && (
-                            <ProjectItem
-                                project={nwhrProject}
-                                language={language}
-                                className="project-half"
-                            />
-                        )} */}
                     </div>
                 </div>
                 <div className='column1'>
@@ -117,13 +112,42 @@ function Featured({ t, projects = [], language, getRoute }) {
                         )}
                     </div>
                     <div className='project-item-container'>
-                        {/* {swipeProject && (
+                        
+                    </div>
+                </div>
+            </div> */}
+            <div className='first-line-ft'>
+                <div className='column1'>
+                    <div className='project-item-container'>
+
+                        {kauveProject && (
                             <ProjectItem
-                                project={swipeProject}
+                                project={kauveProject}
+                                language={language}
+                                className="project-half"
+                            />
+                        )}
+                    </div>
+                    <div className='project-item-container'>
+
+                        {/* {azarProject && (
+                            <ProjectItem
+                                project={jotaProject}
                                 language={language}
                                 className="project-half"
                             />
                         )} */}
+                    </div>
+                </div>
+                <div className='column2'>
+                    <div className='project-item-container'>
+                    {summitProject && (
+                            <ProjectItem
+                                project={summitProject}
+                                language={language}
+                                className="project-half"
+                            />
+                        )}
                     </div>
                 </div>
             </div>
