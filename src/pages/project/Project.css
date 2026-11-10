@@ -17,13 +17,13 @@
 /* ---------- Tablet ---------- */
 @media (max-width: 1024px) {
     .project-single-page {
-        padding-top: 15vh;
+        padding-top: 20vh;
     }
 }
 
 /* ---------- Móvil ---------- */
 @media (max-width: 768px) {
     .project-single-page {
-        padding-top: 7rem;
+        padding-top: 10rem;
     }
 }
