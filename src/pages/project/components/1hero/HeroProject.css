@@ -54,12 +54,15 @@
     font-style: italic;
     line-height: 2.4rem;
     margin-top: 0.8rem;
+    font-weight: 300;
 }
 
 .services-included h2 {
     font-size: 0.9rem;
     font-family: var(--estudio-sans-serif);
     font-weight: 300;
+    font-weight: 300;
+
     color: #7a7a7a;
 }
 
@@ -76,7 +79,7 @@
     border-radius: 6px;
     font-size: 0.9rem;
     font-family: var(--estudio-sans-serif);
-    font-weight: 300;
+    font-weight: 400;
     color: #7a7a7a;
     padding: 0.4rem 0.8rem;
     background-color: rgba(221, 221, 221, 0.53);
@@ -153,6 +156,7 @@
     .first-column-hero p {
         font-size: 1.6rem;
         margin-top: -0.3rem;
+    
     }
 
     .second-column-hero {
@@ -166,7 +170,7 @@
         margin-top: 0;
         font-family: var(--estudio-sans-serif);
         font-style: normal;
-        font-weight: 300;
+        font-weight: 400;
     }
 
     .second-line-hero {
