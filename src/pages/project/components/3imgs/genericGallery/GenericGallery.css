@@ -24,8 +24,21 @@
     grid-column: 1 / -1;
 }
 
+/* ---------- Tablet ---------- */
+@media (max-width: 1024px) {
+    .generic-gallery {
+        grid-auto-rows: 70vh;
+        grid-auto-rows: 70svh;
+        padding-bottom: 7rem;
+    }
+}
+
+/* ---------- Móvil ---------- */
 @media (max-width: 768px) {
     .generic-gallery {
-        grid-template-columns: 1fr;
+        container-type: inline-size;
+        grid-auto-rows: calc(100cqw * 9 / 16);
+        gap: 0.5rem;
+        padding-bottom: 5rem;
     }
 }
