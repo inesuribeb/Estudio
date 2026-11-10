@@ -1,4 +1,4 @@
- .project-item {
+.project-item {
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease;
@@ -18,9 +18,10 @@
 .project-image {
     width: 100%;
     aspect-ratio: 4 / 5;
-    object-fit: cover; 
+    object-fit: cover;
     object-position: center;
-    animation: fadeIn 0.8s ease-in-out; 
+    display: block;
+    animation: fadeIn 0.8s ease-in-out;
 }
 
 .project-image.clickable-image {
@@ -35,6 +36,56 @@
         opacity: 1;
     }
 }
+
+/* ---------- Botón web ---------- */
+
+.project-web-button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 2;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--light-color);
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    /* transform: translateY(-4px); */
+    transition: opacity 0.8s ease, transform 0.3s ease;
+}
+
+.project-web-button svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover .project-web-button,
+.project-web-button:focus-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.project-web-button:hover {
+    /* transform: translateX(3px); */
+        background: #d7d7d8;
+}
+
+/* En pantallas táctiles no hay hover: el botón se ve siempre */
+@media (hover: none) {
+    .project-web-button {
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+    }
+}
+
+/* ---------- Textos ---------- */
 
 .project-info h4 {
     margin: 0;
@@ -59,6 +110,7 @@
     line-height: 0.8;
 }
 
+/* ---------- Próximamente ---------- */
 
 .soon-button {
     position: fixed;
@@ -66,9 +118,7 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    color: var(--light-color);
     border-radius: 30px;
-    font-size: 1.2rem;
     font-family: var(--main-font);
     font-size: 1.8rem;
     font-weight: 300;
@@ -77,7 +127,6 @@
     pointer-events: none;
     z-index: 10;
     transform: translate(-50%, -90%);
-    /* width: 180px; */
     width: fit-content;
     padding: 0 20px;
     height: 50px;
@@ -85,24 +134,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    cursor: pointer;
 }
-
-.soon-button::before {
-    content: attr(data-text);
-    position: absolute;
-    white-space: nowrap;
-    animation: scrollText 4s linear infinite;
-}
-
-/* @keyframes scrollText {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-} */
 
 .soon-overlay {
     position: absolute;

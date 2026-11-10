@@ -625,6 +625,7 @@ const professionalProjects = [
             en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Copywriting"]
         },
         web: "https://ilbainternational.com/",
+
         image: [
             { src: "/ProfessionalProjects/Ilba/ilba2.webp", alt: "" },
             { src: "/ProfessionalProjects/Ilba/recepcion2.webp", alt: "" },
