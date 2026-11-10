@@ -37,7 +37,17 @@ const professionalProjects = [
             es: [""],
             en: [""],
         },
-        relatedProjects: ["", ""],
+        customGallery: false,
+        gallery: [
+            { src: "/ProfessionalProjects/7.webp", alt: "" },
+            { src: "/ProfessionalProjects/7.webp", alt: "" },
+            { src: "/ProfessionalProjects/7.webp", alt: "" },
+            { src: "/ProfessionalProjects/7.webp", alt: "" },
+            { src: "/ProfessionalProjects/7.webp", alt: "" },
+            { src: "/ProfessionalProjects/7.webp", alt: "" },
+            { src: "/ProfessionalProjects/7.webp", alt: "" },
+        ],
+        // relatedProjects: ["", ""],
     },
     {
         id: "002",
@@ -491,6 +501,16 @@ const professionalProjects = [
                 link: "https://www.instagram.com/ikerbasterretxea/"
 
             },
+        ],
+        customGallery: false,
+        gallery: [
+            { src: "/ProfessionalProjects/7.webp", alt: "" },
+            { src: "/ProfessionalProjects/7.webp", alt: "" },
+            { src: "/ProfessionalProjects/7.webp", alt: "" },
+            { src: "/ProfessionalProjects/7.webp", alt: "" },
+            { src: "/ProfessionalProjects/7.webp", alt: "" },
+            { src: "/ProfessionalProjects/7.webp", alt: "" },
+            { src: "/ProfessionalProjects/7.webp", alt: "" },
         ],
         relatedProjects: ["", ""],
     },
