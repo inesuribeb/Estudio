@@ -395,8 +395,8 @@ const professionalProjects = [
             en: [""],
         },
         credits: {
-            es: [""],
-            en: [""],
+            es: ["Hola"],
+            en: ["Hola"],
         },
         relatedProjects: ["", ""],
     },
@@ -470,15 +470,28 @@ const professionalProjects = [
             en: "A space where aesthetic medicine is approached with intention, natural results, and personalized care."
         },
         soon: false,
-        imgHero: { src: "/ProfessionalProjects/Ilba/", alt: "" },
+        imgHero: { src: "/ProfessionalProjects/Ilba/portada_ilba.webp", alt: "" },
         overview: {
-            es: [""],
-            en: [""],
+            es: ["Para ILBA International desarrollamos una identidad digital que refleja una nueva forma de entender la medicina estética: más consciente, natural y personalizada.<br/><br/>El proyecto parte de la construcción de un universo visual y verbal capaz de transmitir confianza, rigor médico y sensibilidad estética. Una experiencia digital diseñada para poner en valor la filosofía de la marca, conectar con sus pacientes y acompañar su crecimiento en el entorno online."],
+            en: ["For ILBA International, we developed a digital identity that reflects a more conscious, natural and personalized approach to aesthetic medicine.<br/><br/>The project involved building a visual and verbal universe that conveys trust, medical expertise and aesthetic sensibility. A digital experience designed to bring the brand’s philosophy to life, connect with its patients and support its growth online."],
         },
-        credits: {
-            es: [""],
-            en: [""],
-        },
+        // credits: {
+        //     es: ["Virgulilla Estudio"],
+        //     en: ["Virgulilla Estudio"],
+        // },
+        credits: [
+            {
+                function: { es: "UX & Copy", en: "UX & Copy" },
+                name: "Virgulilla Estudio",
+                link: "https://virgulillaestudio.com/"
+            },
+            {
+                function: { es: "Fotografía", en: "Photography" },
+                name: "Iker Basterretxea",
+                link: "https://www.instagram.com/ikerbasterretxea/"
+
+            },
+        ],
         relatedProjects: ["", ""],
     },
     {

@@ -23,6 +23,9 @@ const translations = {
       credits: "Credits",
       relatedProjects: "RELATED Projects",
       allProjects: "All Projects",
+      overview: "Overview",
+      sector: "Sector",
+      credits: 'Collaborations',
       ...headerTranslations.en,
       ...ServicesTranslations.en
     },
@@ -45,6 +48,9 @@ const translations = {
       credits: "Créditos",
       relatedProjects: "Proyectos RELACIONADOS",
       allProjects: "Todos los Proyectos",
+      overview: "Visión general",
+      sector: "Sector",
+      credits: 'Colaboraciones',
       ...headerTranslations.es,
       ...ServicesTranslations.es
     }
