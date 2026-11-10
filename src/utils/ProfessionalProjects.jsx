@@ -673,8 +673,10 @@ const professionalProjects = [
             { src: "/ProfessionalProjects/Ilba/espacio4.jpg", alt: "" },
 
             { src: "/ProfessionalProjects/Ilba/2_ilba.webp", alt: "" },
+            { src: "/ProfessionalProjects/Ilba/TIPO.png", alt: "" },
+
             { src: "/ProfessionalProjects/Ilba/espacio2.webp", alt: "" },
-            { src: "/ProfessionalProjects/Ilba/espacio4.jpg", alt: "" },
+            // { src: "/ProfessionalProjects/Ilba/espacio4.jpg", alt: "" },
             { src: "/ProfessionalProjects/Ilba/logo_ilba.webp", alt: "" },
             // { src: "/ProfessionalProjects/Ilba/pie.webp", alt: "" },
 
