@@ -119,7 +119,8 @@ const professionalProjects = [
             es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Fotografía"],
             en: ["Web Design", "Creative Direction", "Full Stack Development", "Photography"]
         },
-        web: "https://machimba.inesuribe.es/home",
+        // web: "https://machimba.inesuribe.es/home",
+        web: "",
         image: [
             { src: "/ProfessionalProjects/MachimPP2.jpg", alt: "Detalle bolso artesanal marca Rocio Marchimbarrena" },
             { src: "/ProfessionalProjects/Machim2PP.jpg", alt: "Detalle bolso estampado artesanal marca Rocio Marchimbarrena en una silla vintage" },
@@ -178,7 +179,9 @@ const professionalProjects = [
             es: ["Dirección Creativa", "Fotografía"],
             en: ["Creative Direction", "Photography"]
         },
-        web: "https://lishom.com/",
+        // web: "https://lishom.com/",
+        web: "",
+
         image: [
             { src: "/ProfessionalProjects/lishomPP2.jpg", alt: "Foto de modelo con un gran bolso de lino blanco con los remates en cuero negro" },
         ],
