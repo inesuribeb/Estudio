@@ -298,7 +298,7 @@ const professionalProjects = [
             en: "Reimagining the tradition of footwear through creative direction that transforms historic craftsmanship into contemporary design."
         },
         soon: false,
-        imgHero: { src: "/ProfessionalProjects/FlabelusPP.jpg", alt: "Mujer sentada en una terraza de un castillo medieval llevando unos zapatos coloridos Flabelus" },
+        imgHero: { src: "/ProfessionalProjects/Flabelus/flabelus_hero.webp", alt: "Mujer sentada en una terraza de un castillo medieval llevando unos zapatos coloridos Flabelus" },
         overview: {
             es: ["Flabelus parte de la tradición del calzado para construir un universo propio, donde conviven referencias clásicas, imaginario literario y una mirada contemporánea llena de color. Una marca ecléctica y expresiva que juega con los contrastes: lo romántico y lo inesperado, lo artesanal y lo pop, lo familiar y lo extraordinario. Más que seguir una estética concreta, Flabelus invita a entrar en un mundo con códigos y personalidad propios.<br/><br/>En este proyecto trabajamos la dirección creativa y la fotografía para trasladar ese imaginario a un lenguaje visual. Una propuesta que combina escenarios con carácter, referencias históricas y una actitud desenfadada, dejando que el producto dialogue con un universo tan singular como la propia marca."],
             en: ["Flabelus draws on the heritage of traditional footwear to create a world of its own, where classic references, literary influences and a contemporary, colourful sensibility come together. An eclectic and expressive brand that plays with contrasts: romantic and unexpected, handcrafted and pop, familiar and extraordinary. Rather than adhering to a single aesthetic, Flabelus invites you into a world with its own distinctive codes and personality.<br/><br/>For this project, we developed the creative direction and photography to translate that universe into a visual language. A concept combining characterful settings, historical references and a playful attitude, allowing the product to interact with a world as distinctive as the brand itself."],
@@ -336,7 +336,8 @@ const professionalProjects = [
             es: ["Diseño Web", "Dirección Creativa", "Desarrollo Full Stack", "Branding & Identidad", "Copywriting"],
             en: ["Web Design", "Creative Direction", "Full Stack Development", "Branding & Identity", "Copywriting"]
         },
-        web: "https://bikecountry.inesuribe.es/",
+        // web: "https://bikecountry.inesuribe.es/",
+        web: "",
         image: [
             { src: "/ProfessionalProjects/tbcPP.avif", alt: "Foto zoom de mujer ciclista de carretera" },
             { src: "/ProfessionalProjects/tbc2PP.jpg", alt: "Foto zoom de mujer ciclista de carretera" },
@@ -351,7 +352,7 @@ const professionalProjects = [
             en: "Defining a cycling travel experience that connects people with the places they traverse and the stories they uncover."
         },
         soon: false,
-        imgHero: { src: "/ProfessionalProjects/tbcPP.avif", alt: "Foto zoom de mujer ciclista de carretera" },
+        imgHero: { src: "/ProfessionalProjects/TBC/tbc_hero.webp", alt: "Foto zoom de mujer ciclista de carretera" },
         overview: {
             es: ["The Bike Country propone una forma distinta de descubrir el territorio: sobre dos ruedas, a otro ritmo y con una mirada que va más allá del recorrido. Especializada en experiencias ciclistas de alto nivel, la marca combina la pasión por el ciclismo con el conocimiento del entorno, acercando a sus viajeros a la cultura, la historia y las personas que dan forma a cada lugar. Una invitación a viajar con tiempo, descubrir lo que hay más allá del camino y vivir cada destino desde dentro.<br/><br/>El proyecto abarcó la creación de la identidad y el universo digital de la marca, desde la dirección creativa y el relato hasta el diseño y desarrollo de la web. Construimos una plataforma que transmite el carácter de estas experiencias y acompaña al viajero desde el primer contacto, haciendo convivir la exigencia deportiva con una manera más consciente de explorar el mundo."],
             en: ["The Bike Country offers a different way to discover a place: on two wheels, at a slower pace and with a perspective that goes beyond the ride itself. Specialising in high-end cycling experiences, the brand brings together a passion for cycling and an intimate knowledge of the local landscape, connecting travellers with the culture, history and people that shape each destination. An invitation to take your time, look beyond the road and experience a place from within.<br/><br/>The project involved creating the brand’s identity and digital world, from creative direction and storytelling to website design and full-stack development. We built a platform that captures the spirit of these experiences and guides travellers from their very first interaction, bringing together sporting ambition and a more conscious way of exploring the world."],
@@ -365,13 +366,10 @@ const professionalProjects = [
         ],
         customGallery: false,
         gallery: [
-            // { src: "/ProfessionalProjects/7.webp", alt: "" },
-            // { src: "/ProfessionalProjects/7.webp", alt: "" },
-            // { src: "/ProfessionalProjects/7.webp", alt: "" },
-            // { src: "/ProfessionalProjects/7.webp", alt: "" },
-            // { src: "/ProfessionalProjects/7.webp", alt: "" },
-            // { src: "/ProfessionalProjects/7.webp", alt: "" },
-            // { src: "/ProfessionalProjects/7.webp", alt: "" },
+            { src: "/ProfessionalProjects/TBC/tbc_stories.webp", alt: "" },
+            { src: "/ProfessionalProjects/TBC/tbc_izq.webp", alt: "" },
+            { src: "/ProfessionalProjects/TBC/tbc_der.webp", alt: "" },
+            { src: "/ProfessionalProjects/TBC/tbc_cycling.webp", alt: "" },
         ],
         relatedProjects: ["", ""],
     },
@@ -578,7 +576,7 @@ const professionalProjects = [
             en: "Premium training with method and purpose in every movement."
         },
         soon: false,
-        imgHero: { src: "/ProfessionalProjects/Summit/web1.png", alt: "" },
+        imgHero: { src: "/ProfessionalProjects/Summit/summit_hero.webp", alt: "" },
         overview: {
             es: ["Summit es un proyecto de entrenamiento personal con una metodología propia y una comunidad construida alrededor del esfuerzo, la constancia y la evolución de cada persona. Con dos centros en funcionamiento y un modelo de entrenamiento consolidado, su calidad de servicio llevaba tiempo por delante de su presencia digital. El objetivo era acercar ambos mundos y construir una comunicación que estuviera a la altura de lo que sucede cada día dentro de sus centros.<br/><br/>La dirección creativa y la fotografía partieron de una premisa: mostrar Summit desde dentro. En lugar de recurrir a modelos o imágenes de archivo, los protagonistas de la sesión fueron sus propios clientes, personas reales que representan la comunidad y los resultados del método. Una mirada cercana y honesta que se aleja de los códigos visuales más convencionales del fitness para reflejar la personalidad, el rigor y la dimensión humana de la marca."],
             en: ["Summit is a personal training studio built around its own methodology and a community shaped by commitment, consistency and individual progress. With two established training centres, the quality of its service had long outgrown its digital presence. The goal was to bring both worlds closer together, creating a communication approach that reflected what was already happening inside the studios.<br/><br/>Creative direction and photography were guided by one principle: showing Summit from within. Rather than relying on models or stock imagery, the campaign featured the studio’s own clients — real people who embody its community and the results of its training method. An honest, human perspective that moves away from conventional fitness imagery to capture the brand’s personality, rigour and sense of community."],
@@ -603,10 +601,10 @@ const professionalProjects = [
         ],
         customGallery: false,
         gallery: [
-            // { src: "/ProfessionalProjects/7.webp", alt: "" },
-            // { src: "/ProfessionalProjects/7.webp", alt: "" },
-            // { src: "/ProfessionalProjects/7.webp", alt: "" },
-            // { src: "/ProfessionalProjects/7.webp", alt: "" },
+            { src: "/ProfessionalProjects/Summit/summit_1.webp", alt: "" },
+            { src: "/ProfessionalProjects/Summit/summit_1izq.webp", alt: "" },
+            { src: "/ProfessionalProjects/Summit/summit_1der.webp", alt: "" },
+            { src: "/ProfessionalProjects/Summit/summit_final.webp", alt: "" },
             // { src: "/ProfessionalProjects/7.webp", alt: "" },
             // { src: "/ProfessionalProjects/7.webp", alt: "" },
             // { src: "/ProfessionalProjects/7.webp", alt: "" },
