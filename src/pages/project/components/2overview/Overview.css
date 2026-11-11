@@ -34,7 +34,9 @@
 .overview-included p{
     font-size: 1.2rem;
     font-family: var(--estudio-sans-serif);
-    font-weight: 400;
+    /* font-weight: 400; */
+    font-weight: 300;
+
     letter-spacing: -0.2px;
     width: 80%;
 }
@@ -49,7 +51,9 @@
     padding-top: 1.75rem;
 
     font-family: var(--estudio-sans-serif);
-    font-weight: 400;
+    /* font-weight: 400; */
+    font-weight: 300;
+
     letter-spacing: -0.2px;
     font-size: 1.2rem;
 
@@ -112,6 +116,7 @@
     .overview-included p {
         font-size: 1.05rem;
         max-width: none;
+        font-weight: 300;
     }
 
     .credits-list {
@@ -119,6 +124,7 @@
         row-gap: 0;
         padding-top: 1.25rem;
         font-size: 1.05rem;
+        font-weight: 400;
     }
 
     .credits-list dt {
